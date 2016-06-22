@@ -3,6 +3,36 @@
 
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center|top">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="50dp"
+        android:id="@+id/vraag3"
+        android:text="@string/question_3"
+        android:textSize="30sp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/awnser_a_to_question_3"
+        android:textSize="30sp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/awnser_b_to_question_3"
+        android:textSize="30sp"/>
+
 
 </LinearLayout>
