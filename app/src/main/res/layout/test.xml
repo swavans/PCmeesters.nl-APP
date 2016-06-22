@@ -25,7 +25,9 @@
             android:text="@string/button1_name"
             android:id="@+id/button1"
             android:textAlignment="center"
-            android:layout_marginStart="150dp"/>
+            android:layout_marginStart="150dp"
+            android:background="#1CAFDB"
+            android:textColor="#ffffff" />
 
     </android.support.v7.widget.LinearLayoutCompat>
 

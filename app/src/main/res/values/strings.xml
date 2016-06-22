@@ -4,9 +4,10 @@
     <string name="button1_name">Button1</string>
     <string name="intro_question">Heeft u een probleem met uw computer klik dan hier onder:</string>
     <string name="contact_question">Neemt u liever direct contact op?</string>
-    <string name="awnser_b_to_question_3">awnser b to question 3</string>
-    <string name="question_3">Question 3</string>
-    <string name="awnser_a_to_question_3">awnser a to question 3</string>
+    <string name="question_3">Heeft u een desktop of een laptop?</string>
+    <string name="awnser_b_to_question_3">Ik heb een desktop</string>
+
+    <string name="awnser_a_to_question_3">Ik heb een laptop</string>
     <string name="activate_phone">Klik dan hier</string>
 
 </resources>
