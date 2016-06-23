@@ -7,7 +7,7 @@
     <string name="question_3">Heeft u een desktop of een laptop?</string>
     <string name="awnser_b_to_question_3">Ik heb een desktop</string>
 
-    <string name="awnser_a_to_question_3">Ik heb een laptop</string>
+    <string name="awnser_a_to_question_3">Ik heb een notebook</string>
     <string name="activate_phone">Klik dan hier</string>
 
 </resources>

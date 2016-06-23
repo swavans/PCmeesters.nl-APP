@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="nl.pcmeesters.pcmeestersnl.MainActivity">
+    <include layout="@layout/content_main" />
+
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:layout_gravity="center"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/vraag3"
+            android:text="@string/question_3"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="left"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <ImageButton
+            android:background = "@drawable/rounded_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/computer_scherm_aan"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="button2"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textAlignment="center"
+            android:id="@+id/antwoord3A"
+            android:text="@string/awnser_a_to_question_3"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="right"
+
+                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                android:layout_marginStart="15dp">
+                >
+        <ImageButton
+            android:background = "@drawable/rounded_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/notebook_scherm_aan"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="button1"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textAlignment="center"
+            android:id="@+id/antwoord3B"
+            android:text="@string/awnser_b_to_question_3"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    <include layout="@layout/bottom_main" />
+
+
+</android.support.design.widget.CoordinatorLayout>
