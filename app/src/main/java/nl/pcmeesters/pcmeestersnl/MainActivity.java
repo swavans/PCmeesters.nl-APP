@@ -68,5 +68,11 @@ public class MainActivity extends AppCompatActivity {
 
         this.startActivity(Intent.createChooser(emailIntent, "Send mail..."));
     }
+    public void facebook(View view)
+    {
+        String uri = "fb://messaging/475877505906388";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        startActivity(intent);
+    }
 
 }

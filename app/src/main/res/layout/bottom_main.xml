@@ -54,6 +54,18 @@
         android:longClickable="true"
         android:onClick="mail"
         />
+    <ImageView
+        android:contentDescription="Mail Button"
+        android:layout_width="@dimen/contact_image_size"
+        android:layout_height="@dimen/contact_image_size"
+        android:layout_marginStart="@dimen/contact_image_size"
+        android:id="@+id/imageView4"
+        android:src="@drawable/message"
+        android:layout_gravity="center|bottom"
+        android:clickable="true"
+        android:longClickable="true"
+        android:onClick="facebook"
+        />
 </LinearLayout>
 
 
