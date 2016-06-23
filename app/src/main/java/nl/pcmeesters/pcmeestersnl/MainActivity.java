@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(),
                 "calling", Toast.LENGTH_SHORT);
         toast.show();
-            Intent in=new Intent(Intent.ACTION_DIAL,Uri.parse("0639664374"));
+            Intent in=new Intent(Intent.ACTION_DIAL,Uri.parse("tel:0633094338"));
             try{
                 startActivity(in);
             }
