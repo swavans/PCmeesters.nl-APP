@@ -25,17 +25,16 @@ tools:context="nl.pcmeesters.pcmeestersnl.MainActivity">
             android:text="@string/question_3"
             android:textSize="30sp"/>
 
-        <Button
+        <ImageButton
             android:background = "@drawable/rounded_button"
-            android:layout_width="@dimen/button_width"
-            android:layout_height="@dimen/button_height"
-            android:layout_marginTop="25dp"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:text="@string/awnser_a_to_question_3"
-            android:textSize="30sp"
-            android:textColor="#ffffff"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/computer_scherm_aan"
+            android:scaleType="fitCenter" />
+
+
 
         <Button
             android:padding="10dp"
