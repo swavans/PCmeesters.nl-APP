@@ -8,9 +8,9 @@ tools:context=".MainActivity3">
     <include layout="@layout/content_main" />
 
     <LinearLayout
-        android:layout_margin="30dp"
         android:layout_gravity="center"
-
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,8 +18,9 @@ tools:context=".MainActivity3">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:layout_marginBottom="10dp">
+            android:layout_gravity="top|center"
+
+            android:layout_marginBottom="30dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -29,24 +30,7 @@ tools:context=".MainActivity3">
                 android:text="@string/greet"
                 android:textSize="15sp"
                  />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|center"
-                android:textAlignment="center"
-                android:id="@+id/name"
-                android:text=""
-                android:textSize="15sp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|right"
-                android:textAlignment="center"
-                android:id="@+id/repair"
-                android:text="@string/greet2"
-                android:textSize="15sp"
-               />
+
         </LinearLayout>
 
 
