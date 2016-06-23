@@ -63,16 +63,35 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.setType("plain/text");
         emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
         emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
-        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Beste PCmeester," +
-                "");
+        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Beste PCmeester,\n\n");
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Bezig met starten van de Email Applicatie", Toast.LENGTH_SHORT);
+        toast.show();
+        try{this.startActivity(Intent.createChooser(emailIntent, "Email starten"));
+        }
+        catch (android.content.ActivityNotFoundException ex){
+            Toast.makeText(getApplicationContext(),"Email kon niet worden geopend",Toast.LENGTH_SHORT).show();
+        }
 
-        this.startActivity(Intent.createChooser(emailIntent, "Send mail..."));
     }
     public void facebook(View view)
     {
         String uri = "fb://messaging/475877505906388";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-        startActivity(intent);
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Bezig met starten van Facebook Messenger", Toast.LENGTH_SHORT);
+        toast.show();
+        try{
+            startActivity(intent);
+        }
+        catch (android.content.ActivityNotFoundException ex){
+
+            Toast.makeText(getApplicationContext(),"Messenger niet geïnstalleerd, de website wordt nu geopend.",Toast.LENGTH_SHORT).show();
+            String url = "http://www.facebook.com/pcmeesters.nl/messages/";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
     }
 
 }
