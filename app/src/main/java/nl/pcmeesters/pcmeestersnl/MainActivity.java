@@ -1,98 +1,123 @@
 package nl.pcmeesters.pcmeestersnl;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.GoogleApiClient;
+
+import org.w3c.dom.Text;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+
+    //Signin button
+    private SignInButton signInButton;
+
+    //Signing Options
+    private GoogleSignInOptions gso;
+
+    //google api client
+    private GoogleApiClient mGoogleApiClient;
+
+    //Signin constant to check the activity result
+    private int RC_SIGN_IN = 100;
+
+    //TextViews
+    private TextView textViewName;
+    private TextView textViewEmail;
+    private NetworkImageView profilePhoto;
+
+    //Image Loader
+    private ImageLoader imageLoader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
+
+
+
+        //Initializing google signin option
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestProfile()
+                .build();
+
+        //Initializing signinbutton
+        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+        signInButton.setSize(SignInButton.SIZE_WIDE);
+        signInButton.setScopes(gso.getScopeArray());
+
+        //Initializing google api client
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                .build();
+
+
+        //Setting onclick listener to signing button
+        signInButton.setOnClickListener(this);
     }
 
 
-    public void laptopSelected(View view) {
+    //This function will option signing intent
+    private void signIn() {
+        //Creating an intent
+        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
 
+        //Starting intent for result
+        startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 
-    public void desktopSelected(View view) {
-
-
-    }
-
-    public void changeText(View view) {
-        TextView antwoordA = (TextView) findViewById(R.id.antwoord3A);
-        antwoordA.setText("Heeft u schade op uw apparaat?");
-        ImageButton ButtonA = (ImageButton) findViewById(R.id.imageButtonA);
-        ButtonA.setImageResource(R.drawable.computer_schade);
-    }
-
-    public void call(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),
-                "calling", Toast.LENGTH_SHORT);
-        toast.show();
-            Intent in=new Intent(Intent.ACTION_DIAL,Uri.parse("tel:0031633094338"));
-            try{
-                startActivity(in);
-            }
-
-            catch (android.content.ActivityNotFoundException ex){
-                Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
-            }
-    }
-    public void mail(View view)
-    {
-        /* Create the Intent */
-        final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-
-/* Fill it with Data */
-        emailIntent.setType("plain/text");
-        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
-        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
-        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Beste PCmeester,\n\n");
-        Toast toast = Toast.makeText(getApplicationContext(),
-                "Bezig met starten van de Email Applicatie", Toast.LENGTH_SHORT);
-        toast.show();
-        try{this.startActivity(Intent.createChooser(emailIntent, "Email starten"));
-        }
-        catch (android.content.ActivityNotFoundException ex){
-            Toast.makeText(getApplicationContext(),"Email kon niet worden geopend",Toast.LENGTH_SHORT).show();
-        }
-
-    }
-    public void facebook(View view)
-    {
-        String uri = "fb://messaging/475877505906388";
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-        Toast toast = Toast.makeText(getApplicationContext(),
-                "Bezig met starten van Facebook Messenger", Toast.LENGTH_SHORT);
-        toast.show();
-        try{
-            startActivity(intent);
-        }
-        catch (android.content.ActivityNotFoundException ex){
-
-            Toast.makeText(getApplicationContext(),"Messenger niet geïnstalleerd, de website wordt nu geopend.",Toast.LENGTH_SHORT).show();
-            String url = "http://www.facebook.com/pcmeesters.nl/";
-            Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse(url));
-            startActivity(i);
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //If signin
+        if (requestCode == RC_SIGN_IN) {
+            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            //Calling a new function to handle signin
+            handleSignInResult(result);
         }
     }
 
+
+    //After the signing we are calling this function
+    private void handleSignInResult(GoogleSignInResult result) {
+        //If the login succeed
+        if (result.isSuccess()) {
+            //Getting google account
+            GoogleSignInAccount acct = result.getSignInAccount();
+            Intent startDiagnose = new Intent(this,MainActivity3.class );
+            startDiagnose.putExtra("User", acct);
+            startActivity(startDiagnose);
+            finish();
+        } else {
+            //If login fails
+            Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == signInButton) {
+            //Calling signin
+            signIn();
+        }
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+
+    }
 }
