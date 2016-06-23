@@ -5,9 +5,9 @@
     <string name="intro_question">Heeft u een probleem met uw computer klik dan hier onder:</string>
     <string name="contact_question">Neemt u liever direct contact op?</string>
     <string name="question_3">Heeft u een desktop of een laptop?</string>
-    <string name="awnser_b_to_question_3">Ik heb een desktop</string>
+    <string name="awnser_b_to_question_3">Ik heb een notebook</string>
 
-    <string name="awnser_a_to_question_3">Ik heb een notebook</string>
+    <string name="awnser_a_to_question_3">Ik heb een desktop</string>
     <string name="activate_phone">Klik dan hier</string>
 
 </resources>
