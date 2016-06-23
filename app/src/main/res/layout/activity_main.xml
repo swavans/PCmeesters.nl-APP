@@ -23,51 +23,35 @@ tools:context="nl.pcmeesters.pcmeestersnl.MainActivity">
             android:textAlignment="center"
             android:id="@+id/vraag3"
             android:text="@string/question_3"
-            android:textSize="25sp"
-            android:layout_marginBottom="10dp" />
+            android:textSize="30sp"/>
 
-        <ImageButton
+        <Button
             android:background = "@drawable/rounded_button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/imageButton"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/computer_scherm_aan"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="button2"
-            android:layout_marginTop="15dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="25dp"
             android:textAlignment="center"
-            android:id="@+id/antwoord3A"
+            android:layout_gravity="center"
+            android:padding="10dp"
             android:text="@string/awnser_a_to_question_3"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp" />
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:onClick="laptopSelected"/>
 
-        <ImageButton
-            android:background = "@drawable/rounded_button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/imageButton1"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/notebook_scherm_aan"
+
+        <Button
             android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="button1"
-            android:layout_marginTop="10dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="25dp"
             android:layout_gravity="center"
-            android:textAlignment="center"
-            android:id="@+id/antwoord3B"
-            android:text="@string/awnser_b_to_question_3"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp" />
 
+            android:textAlignment="center"
+            android:text="@string/awnser_b_to_question_3"
+            android:textSize="30sp"
+            android:background = "@drawable/rounded_button"
+            android:textColor="#ffffff"
+            android:onClick="desktopSelected"/>
 
 </LinearLayout>
 
