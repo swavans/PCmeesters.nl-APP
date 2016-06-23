@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         catch (android.content.ActivityNotFoundException ex){
 
             Toast.makeText(getApplicationContext(),"Messenger niet geïnstalleerd, de website wordt nu geopend.",Toast.LENGTH_SHORT).show();
-            String url = "http://www.facebook.com/pcmeesters.nl/messages/";
+            String url = "http://www.facebook.com/pcmeesters.nl/";
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
