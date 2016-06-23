@@ -48,7 +48,6 @@ tools:context="nl.pcmeesters.pcmeestersnl.MainActivity">
             android:text="@string/awnser_b_to_question_3"
             android:textSize="30sp"
             android:background = "@drawable/rounded_button"
-            android:shadowColor="@android:color/background_dark"
             android:textColor="#ffffff" />
 
 </LinearLayout>
