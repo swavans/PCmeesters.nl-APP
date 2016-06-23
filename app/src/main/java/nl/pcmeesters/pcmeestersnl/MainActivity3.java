@@ -27,7 +27,8 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Intent getUser = getIntent();
         GoogleSignInAccount acct = (GoogleSignInAccount) getUser.getExtras().get("User");
-        System.out.println(acct.getDisplayName());
+        TextView name = (TextView) findViewById(R.id.name);
+        name.setText(acct.getDisplayName());
     }
 
 

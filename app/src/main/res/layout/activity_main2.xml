@@ -8,13 +8,47 @@ tools:context=".MainActivity3">
     <include layout="@layout/content_main" />
 
     <LinearLayout
-        android:layout_margin="40dp"
+        android:layout_margin="30dp"
         android:layout_gravity="center"
 
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:textAlignment="center"
+                android:id="@+id/greet"
+                android:text="@string/greet"
+                android:textSize="15sp"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:textAlignment="center"
+                android:id="@+id/name"
+                android:text=""
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:textAlignment="center"
+                android:id="@+id/repair"
+                android:text="@string/greet2"
+                android:textSize="15sp"
+               />
+        </LinearLayout>
+
 
         <TextView
             android:layout_width="wrap_content"
