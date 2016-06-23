@@ -2,14 +2,14 @@
     <string name="app_name">PCmeesters.nl</string>
     <string name="action_settings">Settings</string>
     <string name="button1_name">Button1</string>
-    <string name="intro_question">Heeft u een probleem met uw computer klik dan hier onder:</string>
-    <string name="contact_question">Neemt u liever direct contact met ons op?</string>
-    <string name="question_3">Heeft u een desktop of een laptop?</string>
-    <string name="awnser_b_to_question_3">Ik heb een notebook</string>
+    <string name="intro_question">If you are experiencing problems with your pc please click here:</string>
+    <string name="contact_question">Click here if you want to contact an employee now</string>
+    <string name="question_3">Do you have a desktop or a notebook?</string>
+    <string name="awnser_b_to_question_3">I have a notebook</string>
 
-    <string name="awnser_a_to_question_3">Ik heb een desktop</string>
-    <string name="activate_phone">Klik dan hier</string>
-    <string name="greet">Hallo</string>
-    <string name="greet2"> vervelend dat je problemen hebt met je apparaat.</string>
+    <string name="awnser_a_to_question_3">I have a desktop</string>
+    <string name="activate_phone">Click here</string>
+    <string name="greet">Hello</string>
+    <string name="greet2"> sorry to here that you are experiencing issues with your device.</string>
 
 </resources>
