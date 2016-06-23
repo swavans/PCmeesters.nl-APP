@@ -38,7 +38,7 @@
         android:id="@+id/imageView2"
         android:src="@drawable/phone"
         android:layout_gravity="center|bottom"
-        android:longClickable="false"
+        android:longClickable="true"
         android:clickable="true"
         android:onClick="call"/>
 
@@ -51,6 +51,8 @@
         android:src="@drawable/email"
         android:layout_gravity="center|bottom"
         android:clickable="true"
+        android:longClickable="true"
+        android:onClick="mail"
         />
 </LinearLayout>
 
