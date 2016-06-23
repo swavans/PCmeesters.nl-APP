@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(),
                 "calling", Toast.LENGTH_SHORT);
         toast.show();
-            Intent in=new Intent(Intent.ACTION_DIAL,Uri.parse("tel:0633094338"));
+            Intent in=new Intent(Intent.ACTION_DIAL,Uri.parse("tel:0031633094338"));
             try{
                 startActivity(in);
             }
@@ -54,6 +54,26 @@ public class MainActivity extends AppCompatActivity {
             catch (android.content.ActivityNotFoundException ex){
                 Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
             }
+    }
+    public void mail(View view)
+    {
+        /* Create the Intent */
+        final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+
+/* Fill it with Data */
+        emailIntent.setType("plain/text");
+        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
+        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
+        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Beste PCmeester," +
+                "");
+
+        this.startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+    }
+    public void facebook(View view)
+    {
+        String uri = "fb://messaging/475877505906388";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+        startActivity(intent);
     }
 
 }
