@@ -13,7 +13,7 @@ public abstract class BottomMain extends AppCompatActivity {
 
     public void call(View view) {
         Toast toast = Toast.makeText(getApplicationContext(),
-                "calling", Toast.LENGTH_SHORT);
+                "Starten met bellen", Toast.LENGTH_SHORT);
         toast.show();
         Intent in=new Intent(Intent.ACTION_DIAL, Uri.parse("tel:0031633094338"));
         try{
@@ -63,4 +63,12 @@ public abstract class BottomMain extends AppCompatActivity {
             startActivity(i);
         }
     }
+    public void internet(View view)
+    {
+            String url = "http://www.pcmeesters.nl";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
+        }
 }
+

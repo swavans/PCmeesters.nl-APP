@@ -55,8 +55,8 @@ tools:context=".MainActivity3">
                 android:orientation="vertical">
         <ImageButton
             android:background = "@drawable/rounded_button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
             android:id="@+id/imageButtonA"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/computer_scherm_aan"
@@ -87,8 +87,8 @@ tools:context=".MainActivity3">
 
         <ImageButton
             android:background = "@drawable/rounded_button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
             android:id="@+id/imageButtonB"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/notebook_scherm_aan"
