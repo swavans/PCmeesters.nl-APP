@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top|center"
+                android:gravity="top|center"
                 android:textAlignment="center"
                 android:id="@+id/greet"
                 android:text="@string/greet"
@@ -49,16 +49,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
             >
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
+               android:padding="10dp">
                 <ImageButton
                     android:background = "@drawable/rounded_button"
                     android:layout_width="100dp"
@@ -80,7 +77,7 @@
                     android:id="@+id/answerA"
                     android:text="@string/awnser_a_to_question_3"
                     android:textSize="20sp"
-                    android:layout_marginTop="5dp"
+
                     />
             </LinearLayout>
 
@@ -88,8 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:padding="10dp"
                 >
 
                 <ImageButton
@@ -112,8 +108,7 @@
                     android:textAlignment="center"
                     android:id="@+id/answerB"
                     android:text="@string/awnser_b_to_question_3"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp" />
+                    android:textSize="20sp"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -122,8 +117,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:padding="10dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -150,8 +144,7 @@
                     android:textAlignment="center"
                     android:id="@+id/answerC"
                     android:text="@string/awnser_b_to_question_3"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp" />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
@@ -159,8 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
+                android:padding="10dp">
                 <ImageButton
                     android:background = "@drawable/rounded_button"
                     android:layout_width="100dp"
@@ -181,8 +173,7 @@
                     android:textAlignment="center"
                     android:id="@+id/answerD"
                     android:text="@string/awnser_b_to_question_3"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp" />
+                    android:textSize="20sp"/>
 
             </LinearLayout>
         </LinearLayout>

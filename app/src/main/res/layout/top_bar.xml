@@ -28,7 +28,6 @@
            android:background="@android:drawable/ic_menu_help"
            app:backgroundTint="#1CAFDB"
            android:src="@android:drawable/ic_menu_help"
-           android:="true"
            android:layout_centerInParent="true"
            android:layout_marginTop="-35dp"
            android:clickable="true"

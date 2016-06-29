@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:fitsSystemWindows="true"
-tools:context=".ActivityActivity3">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".ActivityActivity3">
     <include layout="@layout/top_bar" />
 
     <LinearLayout
         android:layout_gravity="center"
-        android:paddingStart="50dp"
-        android:paddingEnd="50dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
 
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top|center"
+            android:layout_gravity="center"
 
-            android:layout_marginBottom="30dp">
+            android:layout_marginBottom="15dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,13 +47,15 @@ tools:context=".ActivityActivity3">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <LinearLayout
-                android:layout_gravity="start"
-                android:layout_width="151dp"
+
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
         <ImageButton
             android:background = "@drawable/rounded_button"
             android:layout_width="@dimen/button_size"
@@ -73,9 +76,7 @@ tools:context=".ActivityActivity3">
             android:textAlignment="center"
             android:id="@+id/answerA"
             android:text="@string/awnser_a_to_question_3"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp"
-            />
+            android:textSize="20sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -84,7 +85,8 @@ tools:context=".ActivityActivity3">
                 android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                android:layout_marginStart="15dp">
+                android:layout_marginStart="15dp"
+                android:padding="10dp">
 
         <ImageButton
             android:background = "@drawable/rounded_button"
@@ -105,13 +107,13 @@ tools:context=".ActivityActivity3">
             android:textAlignment="center"
             android:id="@+id/answerB"
             android:text="@string/awnser_b_to_question_3"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp" />
+            android:textSize="20sp" />
             </LinearLayout>
 
         </LinearLayout>
 
 </LinearLayout>
+
 
     <include layout="@layout/bottom_bar" />
 
