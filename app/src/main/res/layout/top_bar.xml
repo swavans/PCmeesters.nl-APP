@@ -20,10 +20,7 @@
         android:layout_gravity="top"
         android:id="@+id/imageView"
         android:src="@drawable/logo" />
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:gravity="right">
+
 
        <android.support.design.widget.FloatingActionButton
            android:layout_width="wrap_content"
@@ -32,8 +29,14 @@
            app:backgroundTint="#1CAFDB"
            android:src="@android:drawable/ic_menu_help"
            android:="true"
-           android:layout_centerInParent="true"/>
-   </LinearLayout>
+           android:layout_centerInParent="true"
+           android:layout_marginTop="-35dp"
+           android:clickable="true"
+           android:visibility="visible"
+           android:longClickable="true"
+           android:adjustViewBounds="true"
+           android:layout_gravity="right" />
+
 
 
 
