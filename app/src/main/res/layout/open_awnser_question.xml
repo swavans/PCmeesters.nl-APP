@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/top_bar"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="130dp">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please enter you open answer"
+            android:textSize="30sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="left"
+                android:text="Enter text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter" />
+        
+        
+        
+    </LinearLayout>
+    
+    
+    
+    <include layout="@layout/bottom_bar"/>
+    </android.support.design.widget.CoordinatorLayout>
