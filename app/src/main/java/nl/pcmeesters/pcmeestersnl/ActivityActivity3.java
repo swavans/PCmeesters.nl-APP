@@ -15,7 +15,7 @@ public class ActivityActivity3 extends BottomBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.problemcategory_selection);
         Intent getUser = getIntent();
-        GoogleSignInAccount acct = (GoogleSignInAccount) getUser.getExtras().get("User");
+       GoogleSignInAccount acct = (GoogleSignInAccount) getUser.getExtras().get("User");
         TextView name = (TextView) findViewById(R.id.greet);
 //        name.append(" " + acct.getDisplayName()+ " "+ getString(R.string.greet2));
     }

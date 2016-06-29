@@ -23,6 +23,7 @@
         </activity>
 
         <activity android:name=".ActivityActivity3"/>
+        <activity android:name=".InternetProblemsActivity"/>
     </application>
 
 </manifest>

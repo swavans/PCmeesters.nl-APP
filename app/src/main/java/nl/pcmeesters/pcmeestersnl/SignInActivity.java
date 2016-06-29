@@ -94,7 +94,7 @@ public class SignInActivity extends BottomBarActivity implements View.OnClickLis
         if (result.isSuccess()) {
             //Getting google account
             GoogleSignInAccount acct = result.getSignInAccount();
-            Intent startDiagnose = new Intent(this,ActivityActivity3.class );
+            Intent startDiagnose = new Intent(this,InternetProblemsActivity.class );
             startDiagnose.putExtra("User", acct);
             startActivity(startDiagnose);
             finish();

@@ -12,6 +12,50 @@
     <string name="greet">Hello</string>
     <string name="greet2"> sorry to here that you are experiencing issues with your device.</string>
 
+    <!--Internet Questions-->
+    <string name="iQuestion0_question">How do you Connect to the Internet?</string>
+    <string name="iQuestion0_answerA">Wireless</string>
+    <string name="iQuestion0_nextIDA">1</string>
+    <string name="iQuestion0_answerB">Wired</string>
+    <string name="iQuestion0_nextIDB">1</string>
+
+    <string name="iQuestion1_question">Can u still connect to the internet?</string>
+    <string name="iQuestion1_answerA">Yes but slowly</string>
+    <string name="iQuestion1_nextIDA">2</string>
+    <string name="iQuestion1_answerB">Yes but not everywhere at home</string>
+    <string name="iQuestion1_nextIDB">3</string>
+    <string name="iQuestion1_answerC">Yes but not with this device</string>
+    <string name="iQuestion1_nextIDC">4</string>
+    <string name="iQuestion1_answerD">No</string>
+    <string name="iQuestion1_nextIDD">5</string>
+
+    <string name="iQuestion2_question">Are other device just as slow??</string>
+    <string name="iQuestion2_answerA">Yes</string>
+    <string name="iQuestion2_nextIDA">Please reset the router</string>
+    <string name="iQuestion2_answerB">No</string>
+    <string name="iQuestion2_nextIDB">The problem is in your devices internet adapter</string>
+
+    <string name="iQuestion3_question">Whats the aditional distance you want to cover?</string>
+    <string name="iQuestion3_answerA">One to Five Meters</string>
+    <string name="iQuestion3_nextIDA">Wifi Repeater</string>
+    <string name="iQuestion3_answerB">Five to Ten Meters</string>
+    <string name="iQuestion3_nextIDB">Wifi Homeplug</string>
+    <string name="iQuestion3_answerC">10 or more Meters</string>
+    <string name="iQuestion3_nextIDC">Stronger router</string>
+
+    <string name="iQuestion4_question">Please reboot your device. What does your internet icon display?</string>
+    <string name="iQuestion4_answerA">Yellow Marking</string>
+    <string name="iQuestion4_nextIDA">Wrong settings on device</string>
+    <string name="iQuestion4_answerB">Red Cross</string>
+    <string name="iQuestion4_nextIDB">Check cables device is probably disconnected</string>
+    <string name="iQuestion4_answerC">Nothing</string>
+    <string name="iQuestion4_nextIDC">Please check the time on the device. Probably wrong settings?</string>
+
+    <string name="iQuestion5_question">Please reboot your Router.Does it show lights?</string>
+    <string name="iQuestion5_answerA">Yes</string>
+    <string name="iQuestion5_nextIDA">Error in router settings or Malfunction</string>
+    <string name="iQuestion5_answerB">No</string>
+    <string name="iQuestion5_nextIDB">Router defect</string>
 
 
 </resources>
