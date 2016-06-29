@@ -64,7 +64,8 @@ tools:context=".ActivityActivity3">
             android:scaleType="fitCenter"
             android:contentDescription="buttonA"
             android:layout_marginTop="15dp"
-            android:onClick="changeText" />
+            android:onClick="changeTextA"
+            android:clickable="true" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,7 +96,8 @@ tools:context=".ActivityActivity3">
             android:padding="10dp"
             android:scaleType="fitCenter"
             android:contentDescription="buttonB"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:onClick="changeTextB" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

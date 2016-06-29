@@ -52,7 +52,8 @@
                 android:layout_gravity="start"
                 android:layout_width="151dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true">
                 <ImageButton
                     android:background = "@drawable/rounded_button"
                     android:layout_width="100dp"
@@ -64,13 +65,14 @@
                     android:scaleType="fitCenter"
                     android:contentDescription="buttonA"
                     android:layout_marginTop="15dp"
-                    android:onClick="changeText" />
+                    android:onClick="changeTextA"
+                    android:clickable="true" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:textAlignment="center"
-                    android:id="@+id/answerB"
+                    android:id="@+id/answerA"
                     android:text="@string/awnser_a_to_question_3"
                     android:textSize="20sp"
                     android:layout_marginTop="5dp"
@@ -83,7 +85,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginStart="15dp">
+                android:layout_marginStart="15dp"
+                android:clickable="true">
 
                 <ImageButton
                     android:background = "@drawable/rounded_button"
@@ -95,7 +98,8 @@
                     android:padding="10dp"
                     android:scaleType="fitCenter"
                     android:contentDescription="buttonB"
-                    android:layout_marginTop="15dp" />
+                    android:layout_marginTop="15dp"
+                    android:onClick="changeTextB" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -128,7 +132,10 @@
                 android:padding="10dp"
                 android:scaleType="fitCenter"
                 android:contentDescription="buttonB"
-                android:layout_marginTop="15dp" />
+                android:layout_marginTop="15dp"
+                android:onClick="changeTextC"
+                android:contextClickable="false"
+                android:clickable="true" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

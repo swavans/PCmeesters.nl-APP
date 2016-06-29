@@ -42,7 +42,8 @@
             android:id="@+id/question"
             android:text="@string/question_3"
             android:textSize="25sp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:clickable="false" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +70,8 @@
                     android:scaleType="fitCenter"
                     android:contentDescription="buttonA"
                     android:layout_marginTop="15dp"
-                    android:onClick="changeText" />
+                    android:onClick="changeTextA"
+                    android:clickable="true" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,7 +102,9 @@
                     android:padding="10dp"
                     android:scaleType="fitCenter"
                     android:contentDescription="buttonB"
-                    android:layout_marginTop="15dp" />
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="changeTextB" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -136,7 +140,9 @@
                     android:padding="10dp"
                     android:scaleType="fitCenter"
                     android:contentDescription="buttonB"
-                    android:layout_marginTop="15dp" />
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="changeTextC" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -165,7 +171,9 @@
                     android:padding="10dp"
                     android:scaleType="fitCenter"
                     android:contentDescription="buttonB"
-                    android:layout_marginTop="15dp" />
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="changeTextD" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.gms.common.server.converter.StringToIntConverter;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -15,6 +17,7 @@ public class InternetProblemsActivity  extends BottomBarActivity{
     //Questions are build by Question, Answer A, Next ID A, Answer B, Next ID B, etc
     private ArrayList<ArrayList> questions = new ArrayList<>();
     private int currentQuestionID = 0;
+
 
 
     @Override
@@ -59,9 +62,41 @@ public class InternetProblemsActivity  extends BottomBarActivity{
                 setContentView(R.layout.sign_in);
                 break;
         }
+        TextView question = (TextView) findViewById(R.id.question);
+        question.setText(currentQuestion.get(0));
     }
-    public void changeText(View view) {
-        currentQuestionID++;
+    public void changeTextA(View view) {
+        ArrayList<String> currentQuestion = questions.get(currentQuestionID);
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(2));}
+        catch (Exception e){
+            System.out.println(currentQuestion.get(2));
+        }
+        updateQuestion();
+    }
+    public void changeTextB(View view) {
+        ArrayList<String> currentQuestion = questions.get(currentQuestionID);
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(4));}
+        catch (Exception e){
+            System.out.println(currentQuestion.get(4));
+        }        updateQuestion();
+    }
+    public void changeTextC(View view) {
+        ArrayList<String> currentQuestion = questions.get(currentQuestionID);
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(6));}
+        catch (Exception e){
+            System.out.println(currentQuestion.get(6));
+        }        updateQuestion();
+    }
+    public void changeTextD(View view) {
+        ArrayList<String> currentQuestion = questions.get(currentQuestionID);
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(8));}
+        catch (Exception e){
+            System.out.println(currentQuestion.get(8));
+        }        updateQuestion();
+    }
+    @Override
+    public void onBackPressed() {
+        currentQuestionID--;
         updateQuestion();
     }
 
