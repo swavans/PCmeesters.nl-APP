@@ -7,7 +7,7 @@
     <string name="question_3">Do you have a desktop or a notebook?</string>
     <string name="awnser_b_to_question_3">I have a notebook</string>
 
-    <string name="awnser_a_to_question_3">I have a desktop</string>
+    <string name="answer_a_to_question_3">I have a desktop</string>
     <string name="activate_phone">Click here</string>
     <string name="greet">Hello</string>
     <string name="greet2"> sorry to here that you are experiencing issues with your device.</string>
@@ -18,6 +18,9 @@
     <string name="iQuestion0_nextIDA">1</string>
     <string name="iQuestion0_answerB">Wired</string>
     <string name="iQuestion0_nextIDB">1</string>
+    <string name="iQuestion0_imageA">wifi</string>
+    <string name="iQuestion0_imageB">ethernet</string>
+
 
     <string name="iQuestion1_question">Can u still connect to the internet?</string>
     <string name="iQuestion1_answerA">Yes but slowly</string>
@@ -28,12 +31,19 @@
     <string name="iQuestion1_nextIDC">4</string>
     <string name="iQuestion1_answerD">No</string>
     <string name="iQuestion1_nextIDD">5</string>
+    <string name="iQuestion1_imageA">wifi</string>
+    <string name="iQuestion1_imageB">ethernet</string>
+    <string name="iQuestion1_imageC">ethernet</string>
+    <string name="iQuestion1_imageD">ethernet</string>
+
 
     <string name="iQuestion2_question">Are other device just as slow??</string>
     <string name="iQuestion2_answerA">Yes</string>
     <string name="iQuestion2_nextIDA">Please reset the router</string>
     <string name="iQuestion2_answerB">No</string>
     <string name="iQuestion2_nextIDB">The problem is in your devices internet adapter</string>
+    <string name="iQuestion2_imageA">wifi</string>
+    <string name="iQuestion2_imageB">ethernet</string>
 
     <string name="iQuestion3_question">Whats the aditional distance you want to cover?</string>
     <string name="iQuestion3_answerA">One to Five Meters</string>
@@ -42,6 +52,9 @@
     <string name="iQuestion3_nextIDB">Wifi Homeplug</string>
     <string name="iQuestion3_answerC">10 or more Meters</string>
     <string name="iQuestion3_nextIDC">Stronger router</string>
+    <string name="iQuestion3_imageA">wifi</string>
+    <string name="iQuestion3_imageB">ethernet</string>
+    <string name="iQuestion3_imageC">ethernet</string>
 
     <string name="iQuestion4_question">Please reboot your device. What does your internet icon display?</string>
     <string name="iQuestion4_answerA">Yellow Marking</string>
@@ -50,12 +63,16 @@
     <string name="iQuestion4_nextIDB">Check cables device is probably disconnected</string>
     <string name="iQuestion4_answerC">Nothing</string>
     <string name="iQuestion4_nextIDC">Please check the time on the device. Probably wrong settings?</string>
+    <string name="iQuestion4_imageA">wifi</string>
+    <string name="iQuestion4_imageB">ethernet</string>
+    <string name="iQuestion4_imageC">ethernet</string>
 
     <string name="iQuestion5_question">Please reboot your Router.Does it show lights?</string>
     <string name="iQuestion5_answerA">Yes</string>
     <string name="iQuestion5_nextIDA">Error in router settings or Malfunction</string>
     <string name="iQuestion5_answerB">No</string>
     <string name="iQuestion5_nextIDB">Router defect</string>
-
+    <string name="iQuestion5_imageA">wifi</string>
+    <string name="iQuestion5_imageB">ethernet</string>
 
 </resources>
