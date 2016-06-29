@@ -22,18 +22,32 @@
 
 
        <android.support.design.widget.FloatingActionButton
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:background="@android:drawable/ic_menu_help"
-           app:backgroundTint="#1CAFDB"
-           android:src="@android:drawable/ic_menu_help"
-           android:layout_centerInParent="true"
-           android:layout_marginTop="-35dp"
-           android:clickable="true"
-           android:visibility="visible"
-           android:longClickable="true"
-           android:adjustViewBounds="true"
-           android:layout_gravity="right" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/ic_menu_help"
+    app:backgroundTint="#1CAFDB"
+    android:src="@android:drawable/ic_menu_help"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="-20dp"
+    android:clickable="true"
+    android:visibility="visible"
+    android:longClickable="true"
+    android:adjustViewBounds="true"
+    android:layout_gravity="right" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_help"
+        app:backgroundTint="#1CAFDB"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-40dp"
+        android:clickable="true"
+        android:visibility="visible"
+        android:longClickable="true"
+        android:adjustViewBounds="true"
+        android:layout_gravity="left" />
 
 
 
