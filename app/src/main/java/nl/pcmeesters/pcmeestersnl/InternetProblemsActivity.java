@@ -63,6 +63,7 @@ public class InternetProblemsActivity  extends BottomBarActivity{
                 getString(R.string.iQuestion1_answerC),getString(R.string.iQuestion1_nextIDC),
                 getString(R.string.iQuestion1_answerD),getString(R.string.iQuestion1_nextIDD)};
         question1.addAll(Arrays.asList(questionPart1));
+        questions.add(question1);
 
         String[] questionPart2 = new String[]{getString(R.string.iQuestion2_question),
                 getString(R.string.iQuestion2_answerA),getString(R.string.iQuestion2_nextIDA),
