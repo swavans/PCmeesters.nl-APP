@@ -13,11 +13,11 @@ public class ActivityActivity3 extends BottomBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.two_answer_question);
+        setContentView(R.layout.problemcategory_selection);
         Intent getUser = getIntent();
         GoogleSignInAccount acct = (GoogleSignInAccount) getUser.getExtras().get("User");
         TextView name = (TextView) findViewById(R.id.greet);
-        name.append(" " + acct.getDisplayName()+ " "+ getString(R.string.greet2));
+//        name.append(" " + acct.getDisplayName()+ " "+ getString(R.string.greet2));
     }
 
     public void changeText(View view) {
