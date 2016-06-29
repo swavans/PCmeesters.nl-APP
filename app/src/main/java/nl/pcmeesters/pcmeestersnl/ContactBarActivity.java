@@ -9,7 +9,7 @@ import android.widget.Toast;
 /**
  * Created by Worms on 24-6-2016.
  */
-public abstract class BottomActivity extends AppCompatActivity {
+public abstract class ContactBarActivity extends AppCompatActivity {
 
     public void call(View view) {
         Toast toast = Toast.makeText(getApplicationContext(),

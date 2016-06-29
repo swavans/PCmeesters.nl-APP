@@ -8,12 +8,12 @@ import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
-public class ActivityActivity3 extends BottomActivity {
+public class ActivityActivity3 extends ContactBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.two_answer_question);
         Intent getUser = getIntent();
         GoogleSignInAccount acct = (GoogleSignInAccount) getUser.getExtras().get("User");
         TextView name = (TextView) findViewById(R.id.greet);

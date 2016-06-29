@@ -16,7 +16,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class SignInActivity extends BottomActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+public class SignInActivity extends ContactBarActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
 
     //Signin button
     private SignInButton signInButton;
@@ -41,7 +41,7 @@ public class SignInActivity extends BottomActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.sign_in);
 
 
 
