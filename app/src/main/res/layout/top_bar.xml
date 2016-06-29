@@ -47,7 +47,8 @@
         android:visibility="visible"
         android:longClickable="true"
         android:adjustViewBounds="true"
-        android:layout_gravity="left" />
+        android:layout_gravity="left"
+        android:onClick="onBackPressed" />
 
 
 

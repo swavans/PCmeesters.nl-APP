@@ -75,7 +75,7 @@
                     android:layout_gravity="start"
                     android:textAlignment="center"
                     android:id="@+id/answerA"
-                    android:text="@string/awnser_a_to_question_3"
+                    android:text="@string/answer_a_to_question_3"
                     android:textSize="20sp"
                     />
             </LinearLayout>
