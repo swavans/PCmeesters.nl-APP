@@ -2,6 +2,7 @@ package nl.pcmeesters.pcmeestersnl;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,11 +29,31 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         System.out.println(currentQuestion.size());
         switch (currentQuestion.size())
         {
+
             case 5:setContentView(R.layout.two_answer_question);
+                TextView answer2A = (TextView) findViewById(R.id.answerA);
+                answer2A.setText(currentQuestion.get(1));
+                TextView answer2B = (TextView) findViewById(R.id.answerB);
+                answer2B.setText(currentQuestion.get(3));
                 break;
             case 7:setContentView(R.layout.three_answer_question);
+                TextView answer3A = (TextView) findViewById(R.id.answerA);
+                answer3A.setText(currentQuestion.get(1));
+                TextView answer3B = (TextView) findViewById(R.id.answerB);
+                answer3B.setText(currentQuestion.get(3));
+                TextView answer3C = (TextView) findViewById(R.id.answerC);
+                answer3C.setText(currentQuestion.get(5));
                 break;
             case 9:setContentView(R.layout.four_answer_question);
+                TextView answer4A = (TextView) findViewById(R.id.answerA);
+                answer4A.setText(currentQuestion.get(1));
+                TextView answer4B = (TextView) findViewById(R.id.answerB);
+                answer4B.setText(currentQuestion.get(3));
+                TextView answer4C = (TextView) findViewById(R.id.answerC);
+                answer4C.setText(currentQuestion.get(5));
+                TextView answer4D = (TextView) findViewById(R.id.answerC);
+                answer4D.setText(currentQuestion.get(7));
+
                 break;
             default:
                 setContentView(R.layout.sign_in);
