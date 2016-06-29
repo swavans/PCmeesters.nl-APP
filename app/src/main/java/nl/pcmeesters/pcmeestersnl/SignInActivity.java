@@ -1,10 +1,7 @@
 package nl.pcmeesters.pcmeestersnl;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,9 +16,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends BottomMain implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+public class SignInActivity extends BottomActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
 
     //Signin button
     private SignInButton signInButton;
@@ -99,7 +94,7 @@ public class MainActivity extends BottomMain implements View.OnClickListener, Go
         if (result.isSuccess()) {
             //Getting google account
             GoogleSignInAccount acct = result.getSignInAccount();
-            Intent startDiagnose = new Intent(this,MainActivity3.class );
+            Intent startDiagnose = new Intent(this,ActivityActivity3.class );
             startDiagnose.putExtra("User", acct);
             startActivity(startDiagnose);
             finish();

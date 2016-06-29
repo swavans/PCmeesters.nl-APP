@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202682160159",
+    "project_id": "pcmeestersnl-b3869"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202682160159:android:64629147bb28b886",
+        "android_client_info": {
+          "package_name": "nl.pcmeesters.pcmeestersnl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202682160159-oqr6uqfuunr2epb36pqp6f2v24636rp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nl.pcmeesters.pcmeestersnl",
+            "certificate_hash": "5E482B3BC9DD92676C4F34E8DF04434602AF26FB"
+          }
+        },
+        {
+          "client_id": "202682160159-5u9a3kjjbt14lipi75jobq33ev52q2eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALKof1jvONiWzjWzD_mhagYzyPqYHUT9s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
