@@ -16,7 +16,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class SignInActivity extends ContactBarActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
+public class SignInActivity extends BottomBarActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
 
     //Signin button
     private SignInButton signInButton;

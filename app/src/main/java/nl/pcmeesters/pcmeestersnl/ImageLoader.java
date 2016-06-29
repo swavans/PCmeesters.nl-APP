@@ -9,26 +9,25 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.BasicNetwork;
 import com.android.volley.toolbox.DiskBasedCache;
 import com.android.volley.toolbox.HurlStack;
-import com.android.volley.toolbox.ImageLoader;
 
 /**
  * Created by Belal on 10/8/2015.
  */
 
-public class CustomVolleyRequest {
+public class ImageLoader {
 
-    private static CustomVolleyRequest customVolleyRequest;
+    private static ImageLoader imageLoader;
     private static Context context;
     private RequestQueue requestQueue;
-    private ImageLoader imageLoader;
+    private com.android.volley.toolbox.ImageLoader imageLoader;
 
 
-    private CustomVolleyRequest(Context context) {
+    private ImageLoader(Context context) {
         this.context = context;
         this.requestQueue = getRequestQueue();
 
-        imageLoader = new ImageLoader(requestQueue,
-                new ImageLoader.ImageCache() {
+        imageLoader = new com.android.volley.toolbox.ImageLoader(requestQueue,
+                new com.android.volley.toolbox.ImageLoader.ImageCache() {
                     private final LruCache<String, Bitmap>
                             cache = new LruCache<String, Bitmap>(20);
 
@@ -44,11 +43,11 @@ public class CustomVolleyRequest {
                 });
     }
 
-    public static synchronized CustomVolleyRequest getInstance(Context context) {
-        if (customVolleyRequest == null) {
-            customVolleyRequest = new CustomVolleyRequest(context);
+    public static synchronized ImageLoader getInstance(Context context) {
+        if (imageLoader == null) {
+            imageLoader = new ImageLoader(context);
         }
-        return customVolleyRequest;
+        return imageLoader;
     }
 
     public RequestQueue getRequestQueue() {
@@ -61,7 +60,7 @@ public class CustomVolleyRequest {
         return requestQueue;
     }
 
-    public ImageLoader getImageLoader() {
+    public com.android.volley.toolbox.ImageLoader getImageLoader() {
         return imageLoader;
     }
 

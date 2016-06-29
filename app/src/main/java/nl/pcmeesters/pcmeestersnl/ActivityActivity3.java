@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
-public class ActivityActivity3 extends ContactBarActivity {
+public class ActivityActivity3 extends BottomBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
