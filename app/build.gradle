@@ -8,8 +8,8 @@ android {
         applicationId "nl.pcmeesters.pcmeestersnl"
         minSdkVersion 21
         targetSdkVersion 24
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.12"
     }
     buildTypes {
         release {
