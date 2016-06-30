@@ -29,7 +29,7 @@
     <string name="iQuestion1_nextIDB">3</string>
     <string name="iQuestion1_answerC">Yes but not with this device</string>
     <string name="iQuestion1_nextIDC">4</string>
-    <string name="iQuestion1_answerD">No</string>
+    <string name="iQuestion1_answerD">No i can't connect</string>
     <string name="iQuestion1_nextIDD">5</string>
     <string name="iQuestion1_imageA">wifi</string>
     <string name="iQuestion1_imageB">ethernet</string>
@@ -38,9 +38,9 @@
 
 
     <string name="iQuestion2_question">Are other device just as slow??</string>
-    <string name="iQuestion2_answerA">Yes</string>
+    <string name="iQuestion2_answerA">Yes they are as slow</string>
     <string name="iQuestion2_nextIDA">Please reset the router</string>
-    <string name="iQuestion2_answerB">No</string>
+    <string name="iQuestion2_answerB">No they aren't as slow</string>
     <string name="iQuestion2_nextIDB">The problem is in your devices internet adapter</string>
     <string name="iQuestion2_imageA">wifi</string>
     <string name="iQuestion2_imageB">ethernet</string>
@@ -68,9 +68,9 @@
     <string name="iQuestion4_imageC">ethernet</string>
 
     <string name="iQuestion5_question">Please reboot your Router.Does it show lights?</string>
-    <string name="iQuestion5_answerA">Yes</string>
+    <string name="iQuestion5_answerA">Yes it helped</string>
     <string name="iQuestion5_nextIDA">Error in router settings or Malfunction</string>
-    <string name="iQuestion5_answerB">No</string>
+    <string name="iQuestion5_answerB">No it didn't help</string>
     <string name="iQuestion5_nextIDB">Router defect</string>
     <string name="iQuestion5_imageA">wifi</string>
     <string name="iQuestion5_imageB">ethernet</string>
