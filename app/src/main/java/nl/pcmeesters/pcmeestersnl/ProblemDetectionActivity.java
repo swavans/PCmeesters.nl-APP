@@ -206,9 +206,9 @@ public class ProblemDetectionActivity extends BottomBarActivity{
     public void onBackPressed() {
 
         if(amountofQuestionsAsked>0){
-            updateQuestion();
             amountofQuestionsAsked--;
-        currentQuestionID= answerID.get(amountofQuestionsAsked);
+            currentQuestionID= answerID.get(amountofQuestionsAsked);
+            updateQuestion();
 
         }
         else
