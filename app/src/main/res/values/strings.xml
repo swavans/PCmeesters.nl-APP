@@ -74,5 +74,9 @@
     <string name="iQuestion5_nextIDB">Router defect</string>
     <string name="iQuestion5_imageA">wifi</string>
     <string name="iQuestion5_imageB">ethernet</string>
+    <string name="program_installing_problem_text">Problem Installing</string>
+    <string name="internet_problems_text">Internet Problems</string>
+    <string name="slow_computer_text">Slow Computer</string>
+    <string name="computer_off_problem_text">Computer won\'t turn on</string>
 
 </resources>
