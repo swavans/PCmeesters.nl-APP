@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-/**
- * Created by Worms on 24-6-2016.
- */
 public abstract class BottomBarActivity extends AppCompatActivity {
 
     public void call(View view) {
@@ -72,5 +69,9 @@ public abstract class BottomBarActivity extends AppCompatActivity {
             i.setData(Uri.parse(url));
             startActivity(i);
         }
+
+    public void exit(View view) {
+            finishAffinity();
+    }
 }
 
