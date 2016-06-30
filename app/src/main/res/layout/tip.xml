@@ -23,7 +23,7 @@
             android:textAlignment="center"
             android:id="@+id/tip"
             android:text="@string/question_3"
-            android:textSize="25sp"
+            android:textSize="@dimen/textSizeQuestion"
             android:layout_marginBottom="10dp" />
 
         <TextView
@@ -33,7 +33,7 @@
             android:text="@string/problem_solved"
             android:id="@+id/question"
             android:layout_gravity="center_horizontal"
-            android:textSize="20sp" />
+            android:textSize="@dimen/answerTextSize" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,7 +60,8 @@
             android:onClick="changeTextA"
             android:clickable="true"
             android:text="@string/yes_button"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttonText" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,7 +83,8 @@
             android:layout_marginTop="15dp"
             android:onClick="changeTextB"
             android:text="@string/contact_support"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttonText" />
             </LinearLayout>
 
         </LinearLayout>

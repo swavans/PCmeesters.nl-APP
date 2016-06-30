@@ -19,22 +19,26 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Please enter you open answer"
-            android:textSize="25sp"
-            android:id="@+id/question" />
+            android:textSize="@dimen/textSizeQuestion"
+            android:id="@+id/question"
+            android:textIsSelectable="false" />
             <EditText
                 android:layout_width="356dp"
                 android:layout_height="200dp"
                 android:gravity="left"
                 android:text="Enter text"
                 android:id="@+id/openAnswer"
-                android:nestedScrollingEnabled="true"/>
+                android:nestedScrollingEnabled="true"
+                android:textSize="@dimen/answerTextSize" />
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/submit"
             android:background="@drawable/rounded_button"
-            android:textColor="@color/abc_btn_colored_borderless_text_material"
-            android:onClick="enterOpenAnswer"/>
+            android:textColor="@android:color/white"
+            android:onClick="enterOpenAnswer"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/buttonText" />
         
         
         

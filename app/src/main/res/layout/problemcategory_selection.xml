@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="@dimen/textSizeQuestion"
         android:text="@string/selectCategory"
         android:layout_marginTop="130dp"/>
     <ScrollView
@@ -56,7 +56,7 @@
                         android:ellipsize="none"
                         android:scrollHorizontally="false"
                         android:text="@string/internet_problems_text"
-                        android:textSize="19sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp"
                         />
                 </LinearLayout>
@@ -87,7 +87,7 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/program_installing_problem_text"
-                        android:textSize="19sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp" />
                 </LinearLayout>
 
@@ -123,7 +123,7 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/slow_computer_text"
-                        android:textSize="19sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp"
                         />
                 </LinearLayout>
@@ -154,7 +154,7 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/computer_off_problem_text"
-                        android:textSize="19sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp" />
                 </LinearLayout>
 
@@ -189,9 +189,9 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/computer_virus_problem_text"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp"
-                        />
+                        android:textIsSelectable="false" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -220,7 +220,7 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/printer_problem_text"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp" />
                 </LinearLayout>
 
@@ -255,7 +255,7 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/other_devices_problems_text"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp"
                         />
                 </LinearLayout>
@@ -286,7 +286,7 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:text="@string/other_problems_text"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/answerTextSize"
                         android:layout_marginTop="5dp" />
                 </LinearLayout>
 

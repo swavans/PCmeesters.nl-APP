@@ -20,19 +20,22 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/thank_you_msg"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/textSizeQuestion"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:gravity="center"
             android:text="@string/procces_soon_msg"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/textSizeQuestion"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="158dp"
             android:layout_height="wrap_content"
             android:text="@string/exit_pcmeester"
-            android:onClick="exit"/>
+            android:onClick="exit"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
 
 
     </LinearLayout>
