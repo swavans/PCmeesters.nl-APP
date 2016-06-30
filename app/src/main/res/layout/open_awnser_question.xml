@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomBarActivity">
 <include layout="@layout/top_bar"/>
     
     <LinearLayout
@@ -20,10 +23,10 @@
             android:id="@+id/question" />
             <EditText
                 android:layout_width="356dp"
-                android:layout_height="300dp"
+                android:layout_height="250dp"
                 android:gravity="left"
                 android:text="Enter text"
-                android:id="@id/answerA"
+                android:id="@+id/openAnswer"
                 android:nestedScrollingEnabled="true"/>
         <Button
             android:layout_width="150dp"
@@ -31,7 +34,7 @@
             android:text="Enter"
             android:background="@drawable/rounded_button"
             android:textColor="@color/abc_btn_colored_borderless_text_material"
-            android:onClick="changeTextA"/>
+            android:onClick="enterOpenAnswer"/>
         
         
         

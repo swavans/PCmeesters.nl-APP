@@ -52,8 +52,8 @@ private GoogleSignInAccount acct;
 //        startActivity(startInternet);
     }
         public void other(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+        Intent startInternet = new Intent(this,OtherProblemsActivity.class );
+        startInternet.putExtra("User", acct);
+        startActivity(startInternet);
     }
 }

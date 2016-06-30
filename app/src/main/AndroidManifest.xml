@@ -30,6 +30,9 @@
         <activity android:name=".TipActivity"
             android:screenOrientation="portrait"
         />
+        <activity android:name=".OtherProblemsActivity"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".ProblemSelectionActivity"
             android:screenOrientation="portrait"
             />
