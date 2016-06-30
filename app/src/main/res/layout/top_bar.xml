@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -27,8 +27,8 @@
     android:background="@android:drawable/ic_menu_help"
     app:backgroundTint="#1CAFDB"
     android:src="@android:drawable/ic_menu_help"
-    android:layout_centerInParent="true"
-    android:layout_marginTop="-20dp"
+    android:layout_alignRight="@id/imageView"
+           android:layout_alignBottom="@id/imageView"
     android:clickable="true"
     android:visibility="visible"
     android:longClickable="true"
@@ -42,8 +42,8 @@
         android:background="@android:drawable/ic_menu_help"
         app:backgroundTint="#1CAFDB"
         android:src="@android:drawable/ic_menu_revert"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="-40dp"
+        android:layout_alignLeft="@id/imageView"
+        android:layout_alignBottom="@id/imageView"
         android:clickable="true"
         android:visibility="visible"
         android:longClickable="true"
@@ -58,4 +58,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>
