@@ -41,17 +41,17 @@ public class FormActivity extends BottomBarActivity {
         EditText phone = (EditText) findViewById(R.id.phoneEntered);
         EditText comment = (EditText) findViewById(R.id.commentEntered);
         if(nameEntered.getText().toString().trim().equals(""))
-            nameEntered.setError("Voer een naam in");
+            nameEntered.setError(getString(R.string.nameError));
         else if(emailEntered.getText().toString().trim().equals(""))
-            emailEntered.setError("Voer een Email adres in");
+            emailEntered.setError(getString(R.string.mailError));
         else if (phone.getText().toString().trim().equals(""))
-            phone.setError("Voer een telefoonnummer in");
+            phone.setError(getString(R.string.phoneError));
         else if(adres.getText().toString().trim().equals(""))
-            adres.setError("Voer een adres in");
+            adres.setError(getString(R.string.addressError));
         else if(zipCode.getText().toString().trim().equals(""))
-            zipCode.setError("Voer een postcode in");
+            zipCode.setError(getString(R.string.zipCodeError));
         else if(model.getText().toString().trim().equals(""))
-            model.setError("Voer een Model in");
+            model.setError(getString(R.string.modelError));
         else {
 
         /* Create the Intent */
@@ -64,21 +64,21 @@ public class FormActivity extends BottomBarActivity {
 /* Fill it with Data */
             emailIntent.setType("plain/text");
             emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Beste PCmeester,\n\n" +
-                    "Mijn " + model.getText() + " vertoont problemen en ik heb de app gebruikt om deze te registreren.\n De app heeft het volgende vast gesteld" + answer + "\n\n Mijn persoonlijke gegevens zijn:\n  Naam: "
-                    + nameEntered.getText() + "\n Adres: " + adres.getText() + "\n ZipCode: " + zipCode.getText() +
-                    "\n Telefoonnummer: " + phone.getText() + "\n Email: " + emailEntered.getText() + "\n\n Verder is het belangrijk dat u weet: \n " + comment.getText() + "\n\n Met vriendelijke groet, \n" + nameEntered.getText());
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.companyEmail)});
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.repairRequest));
+            emailIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.emailGreet) +
+                    getString(R.string.my) + model.getText() + getString(R.string.appConclusion) + answer + getString(R.string.contactInfo)+getString(R.string.name)
+                    + nameEntered.getText() + getString(R.string.address) + adres.getText() + getString(R.string.zipCode) + zipCode.getText() +
+                    getString(R.string.phonenumber) + phone.getText() + getString(R.string.email) + emailEntered.getText() + getString(R.string.alsoImportant) + comment.getText() + getString(R.string.bye) + nameEntered.getText());
 
             Toast toast = Toast.makeText(getApplicationContext(),
-                    "Bezig met starten van de Email Applicatie", Toast.LENGTH_SHORT);
+                    getString(R.string.emailStart), Toast.LENGTH_SHORT);
             toast.show();
             try {
                 startActivity(emailIntent);
                 sendEmail =true;
             } catch (android.content.ActivityNotFoundException ex) {
-                Toast.makeText(getApplicationContext(), "Email kon niet worden geopend", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),getString( R.string.emailError), Toast.LENGTH_SHORT).show();
             }
 
         }

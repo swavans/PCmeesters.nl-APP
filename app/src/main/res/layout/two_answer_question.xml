@@ -22,15 +22,6 @@
             android:layout_gravity="center"
 
             android:layout_marginBottom="15dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|left"
-                android:textAlignment="center"
-                android:id="@+id/greet"
-                android:text="@string/greet"
-                android:textSize="15sp"
-                 />
 
         </LinearLayout>
 

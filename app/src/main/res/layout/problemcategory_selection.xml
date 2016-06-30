@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:text="Select your problem category pls"
+        android:text="@string/selectCategory"
         android:layout_marginTop="130dp"/>
     <ScrollView
         android:layout_width="match_parent"
