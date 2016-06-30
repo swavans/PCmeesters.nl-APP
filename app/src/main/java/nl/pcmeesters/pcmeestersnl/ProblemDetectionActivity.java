@@ -450,6 +450,25 @@ public class ProblemDetectionActivity extends BottomBarActivity{
                     questionPart1 = new String[]{getString(R.string.odQuestion1_question),
                     getString(R.string.odQuestion1_nextIDA)};
                     question1.addAll(Arrays.asList(questionPart1));
+                break;
+            case 5: questionPart0 = new String[]{getString(R.string.prQuestion0_question),
+                getString(R.string.prQuestion0_IDA)};
+                question0.addAll(Arrays.asList(questionPart0));
+
+                questionPart1 = new String[]{getString(R.string.prQuestion1_question),
+                getString(R.string.prQuestion1_answerA),getString(R.string.prQuestion1_IDA),
+                getString(R.string.prQuestion1_answerB),getString(R.string.prQuestion1_IDB),
+                getString(R.string.prQuestion1_ImageA), getString(R.string.prQuestion1_ImageB)};
+                question1.addAll(Arrays.asList(questionPart1));
+
+                questionPart2 = new String[]{getString(R.string.prQuestion2_question),
+                getString(R.string.prQuestion2_answerA),getString(R.string.prQuestion2_IDA),
+                getString(R.string.prQuestion2_answerB),getString(R.string.prQuestion2_IDB),
+                getString(R.string.prQuestion2_ImageA),getString(R.string.prQuestion2_ImageB)};
+                question2.addAll(Arrays.asList(questionPart2));
+                break;
+
+
         }
         questions.add(question0);
         questions.add(question1);
