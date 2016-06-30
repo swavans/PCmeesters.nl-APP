@@ -324,7 +324,7 @@
     <string name="vQuestion1_imageB">yes_icon</string>
 
     <string name="vQuestion2_question">Why do you think you have a virus?</string>
-    <string name="vQuestion2_answerA">Because I get a lot of adds, pop-ups, or error messages when I'm online</string>
+    <string name="vQuestion2_answerA">Because I get a lot of adds, pop-ups, or error messages when I\'m online</string>
     <string name="vQuestion2_nextIDA">Try to reinstall your browser</string>
     <string name="vQuestion2_answerB">I get a lot of errors using a specific program</string>
     <string name="vQuestion2_nextIDB">Please reinstall that program</string>
@@ -348,7 +348,7 @@
     <string name="exit_pcmeester">Exit PCMeesters.nl</string>
     <string name="startCall">Starting the Call</string>
     <string name="companyPhone">tel:0031633094338</string>
-    <string name="noCallApp">cant start the call</string>
+    <string name="noCallApp">can\'t start the call</string>
     <string name="companyEmail">info@pcmeesters.nl</string>
     <string name="repairRequest">Repair Request</string>
     <string name="emailGreet">Dear PCmaster,\n\n</string>
@@ -360,7 +360,7 @@
     <string name="facebookPage">http://www.facebook.com/pcmeesters.nl/</string>
     <string name="websiteURL">http://www.pcmeesters.nl</string>
     <string name="nameError">Please enter your name</string>
-    <string name="mailError">Please enter a valid email adres</string>
+    <string name="mailError">Please enter a valid email address</string>
     <string name="phoneError">Please enter a valid phone number</string>
     <string name="addressError">Please enter your address</string>
     <string name="zipCodeError">Please enter your zipCode</string>
@@ -394,6 +394,7 @@
     <string name="contact_support">Contact Support</string>
     <string name="yes_button">YES</string>
     <string name="problem_solved">Did this solve your problem?</string>
+    <string name="greetings">I\'m sorry to hear that you are experiencing problems with your device. Please press "Sign in" so we can start the diagnoses.</string>
 
 
 </resources>

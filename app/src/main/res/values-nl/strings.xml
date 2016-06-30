@@ -282,10 +282,10 @@
     <string name="vQuestion2_answerB">Omdat ik een hoop foutmeldingen krijg bij een bepaald programma.</string>
     <string name="vQuestion2_nextIDB">Probeer het programma te verwijderen en opnieuw te installeren</string>
     <string name="vQuestion2_answerC">Omdat ik continu foutmeldingen en advertenties krijg te zien</string>
-    <string name="vQuestion2_nextIDC">Schakel een aantal programma's in de categorie "Opstarten" van taakbeheer uit </string>
+    <string name="vQuestion2_nextIDC">Schakel een aantal programma\'s in de categorie "Opstarten" van taakbeheer uit </string>
 
     <!-- text for problem categories -->
-    <string name="program_installing_problem_text">Problemen met Programma's</string>
+    <string name="program_installing_problem_text">Problemen met Programma\'s</string>
     <string name="internet_problems_text">Problemen met internet</string>
     <string name="slow_computer_text">Langzame Computer</string>
     <string name="computer_off_problem_text">Mijn apparaat gaat niet aan</string>
@@ -344,6 +344,8 @@
     <string name="contact_support">Contact opnemen</string>
     <string name="yes_button">Ja mijn probleem is opgelost</string>
     <string name="problem_solved">Is uw probleem nu opgelost?</string>
+    <string name="greetings">Wat vervelend te horen dat je problemen ondervindt met je apparaat. Klik hieronder op Sign in om te beginnen met het vaststellen van een diagnose.</string>
+
 
 
 </resources>

@@ -9,12 +9,15 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/textSizeQuestion"
         android:text="@string/selectCategory"
-        android:layout_marginTop="130dp"/>
+        android:layout_marginTop="130dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="80dp">
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="80dp"
+        android:paddingTop="0dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
