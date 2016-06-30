@@ -205,9 +205,10 @@ public class ProblemDetectionActivity extends BottomBarActivity{
     public void onBackPressed() {
 
         if(amountofQuestionsAsked>0){
+            updateQuestion();
             amountofQuestionsAsked--;
         currentQuestionID= answerID.get(amountofQuestionsAsked);
-        updateQuestion();
+
         }
         else
         {
@@ -331,6 +332,60 @@ public class ProblemDetectionActivity extends BottomBarActivity{
                         getString(R.string.pQuestion9_nextIDA)
                 };
                 question9.addAll(Arrays.asList(questionPart9));
+
+                break;
+            case 2:
+                questionPart0 = new String[]{getString(R.string.sQuestion0_question),
+                        getString(R.string.sQuestion0_answerA), getString(R.string.sQuestion0_nextIDA),
+                        getString(R.string.sQuestion0_answerB), getString(R.string.sQuestion0_nextIDB),
+                        getString(R.string.sQuestion0_answerC), getString(R.string.sQuestion0_nextIDC),
+                        getString(R.string.sQuestion0_answerD), getString(R.string.sQuestion0_nextIDD),
+                        getString(R.string.sQuestion0_imageA), getString(R.string.sQuestion0_imageB),
+                        getString(R.string.sQuestion0_imageC), getString(R.string.sQuestion0_imageD)};
+                question0.addAll(Arrays.asList(questionPart0));
+                questionPart1 = new String[]{getString(R.string.sQuestion1_question),
+                        getString(R.string.sQuestion1_answerA), getString(R.string.sQuestion1_nextIDA),
+                        getString(R.string.sQuestion1_answerB), getString(R.string.sQuestion1_nextIDB),
+                        getString(R.string.sQuestion1_answerC), getString(R.string.sQuestion1_nextIDC),
+                        getString(R.string.sQuestion1_imageA), getString(R.string.sQuestion1_imageB),
+                        getString(R.string.sQuestion1_imageC)} ;
+                question1.addAll(Arrays.asList(questionPart1));
+                questionPart2 = new String[]{getString(R.string.sQuestion2_question),
+                        getString(R.string.sQuestion2_answerA), getString(R.string.sQuestion2_nextIDA),
+                        getString(R.string.sQuestion2_answerB), getString(R.string.sQuestion2_nextIDB),
+                        getString(R.string.sQuestion2_answerC), getString(R.string.sQuestion2_nextIDC),
+                        getString(R.string.sQuestion2_imageA), getString(R.string.sQuestion2_imageB),
+                        getString(R.string.sQuestion2_imageC)};
+                question2.addAll(Arrays.asList(questionPart2));
+                questionPart3 = new String[]{getString(R.string.sQuestion3_question),
+                        getString(R.string.sQuestion3_answerA), getString(R.string.sQuestion3_nextIDA),
+                        getString(R.string.sQuestion3_answerB), getString(R.string.sQuestion3_nextIDB),
+                        getString(R.string.sQuestion3_answerC), getString(R.string.sQuestion3_nextIDC),
+                        getString(R.string.sQuestion3_imageA), getString(R.string.sQuestion3_imageB),
+                        getString(R.string.sQuestion3_imageC)
+                };
+                question3.addAll(Arrays.asList(questionPart3));
+                questionPart4 = new String[]{getString(R.string.sQuestion4_question),
+                        getString(R.string.sQuestion4_answerA), getString(R.string.sQuestion4_nextIDA),
+                        getString(R.string.sQuestion4_answerB), getString(R.string.sQuestion4_nextIDB),
+                        getString(R.string.sQuestion4_imageA), getString(R.string.sQuestion4_imageB)};
+                question4.addAll(Arrays.asList(questionPart4));
+
+                questionPart5 = new String[]{getString(R.string.sQuestion5_question),
+                        getString(R.string.sQuestion5_nextIDA)
+                };
+                question5.addAll(Arrays.asList(questionPart5));
+
+                questionPart6 = new String[]{getString(R.string.sQuestion6_question),
+                        getString(R.string.sQuestion6_answerA), getString(R.string.sQuestion6_nextIDA),
+                        getString(R.string.sQuestion6_answerB), getString(R.string.sQuestion6_nextIDB),
+                        getString(R.string.sQuestion6_imageA), getString(R.string.sQuestion6_imageB)};
+                question6.addAll(Arrays.asList(questionPart6));
+
+                questionPart7 = new String[]{getString(R.string.sQuestion7_question),
+                        getString(R.string.sQuestion7_nextIDA)
+                };
+                question7.addAll(Arrays.asList(questionPart7));
 
                 break;
             case 7:
