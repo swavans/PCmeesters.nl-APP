@@ -2,6 +2,7 @@ package nl.pcmeesters.pcmeestersnl;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
@@ -15,11 +16,10 @@ private GoogleSignInAccount acct;
          acct = (GoogleSignInAccount) getUser.getExtras().get("User");
     }
 
-    public void internetProblems()
-    {
+
+    public void internetProblems(View view) {
         Intent startInternet = new Intent(this,InternetProblemsActivity.class );
         startInternet.putExtra("User", acct);
         startActivity(startInternet);
     }
-
 }
