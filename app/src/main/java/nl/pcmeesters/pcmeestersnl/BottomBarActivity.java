@@ -72,5 +72,9 @@ public abstract class BottomBarActivity extends AppCompatActivity {
             i.setData(Uri.parse(url));
             startActivity(i);
         }
+
+    public void exit(View view) {
+        System.exit(0);
+    }
 }
 

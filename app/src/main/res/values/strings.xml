@@ -125,5 +125,6 @@
     <string name="other_problems_text">Other Problems</string>
     <string name="thank_you_msg">Thank you for completing the survey</string>
     <string name="procces_soon_msg">We will proccess your request as soon as possible</string>
+    <string name="exit_pcmeester">Exit PCMeesters.nl</string>
 
 </resources>
