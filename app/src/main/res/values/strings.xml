@@ -90,7 +90,7 @@
     <string name="pQuestion1_question">Has the program already been installed?</string>
     <string name="pQuestion1_answerA">yes it is installed</string>
     <string name="pQuestion1_nextIDA">2</string>
-    <string name="pQuestion1_answerB">No it isnt installed</string>
+    <string name="pQuestion1_answerB">No it isn\'t installed</string>
     <string name="pQuestion1_nextIDB">6</string>
     <string name="pQuestion1_imageA">wifi</string>
     <string name="pQuestion1_imageB">ethernet</string>
@@ -99,12 +99,111 @@
     <string name="pQuestion2_answerA">yes it starts</string>
     <string name="pQuestion2_nextIDA">3</string>
     <string name="pQuestion2_answerB">No it wont start</string>
-    <string name="pQuestion2_nextIDB">5</string>
+    <string name="pQuestion2_nextIDB">4</string>
     <string name="pQuestion2_imageA">wifi</string>
     <string name="pQuestion2_imageB">ethernet</string>
 
     <string name="pQuestion3_question">Please describe your problem</string>
     <string name="pQuestion3_nextIDA">Please try to reinstall the program.</string>
+
+    <string name="pQuestion4_question">Does the program show error messages?</string>
+    <string name="pQuestion4_answerA">yes it shows errors</string>
+    <string name="pQuestion4_nextIDA">5</string>
+    <string name="pQuestion4_answerB">No it no errors</string>
+    <string name="pQuestion4_nextIDB">6</string>
+    <string name="pQuestion4_imageA">wifi</string>
+    <string name="pQuestion4_imageB">ethernet</string>
+
+    <string name="pQuestion5_question">Please write down the error message in the Box below</string>
+    <string name="pQuestion5_nextIDA">Please try to reinstall the program.</string>
+
+    <string name="pQuestion6_question">Please describe the problem down below</string>
+    <string name="pQuestion6_nextIDA">The app doesn\'t have a solution please click no to contact support.</string>
+
+    <string name="pQuestion7_question">Do you want help installing the program?</string>
+    <string name="pQuestion7_answerA">Yes I Need help</string>
+    <string name="pQuestion7_nextIDA">8</string>
+    <string name="pQuestion7_answerB">No it\'s something else</string>
+    <string name="pQuestion7_nextIDB">9</string>
+    <string name="pQuestion7_imageA">wifi</string>
+    <string name="pQuestion7_imageB">ethernet</string>
+
+    <string name="pQuestion8_question">Please enter the name of your program</string>
+    <string name="pQuestion8_nextIDA">Please click no to contact support so we can make an appointment</string>
+
+    <string name="pQuestion9_question">Please describe the problem down below</string>
+    <string name="pQuestion9_nextIDA">The app doesn\'t have a solution please click no to contact support.</string>
+
+    <!--Slow Computer Questions-->
+    <string name="sQuestion0_question">How old is your device?</string>
+    <string name="sQuestion0_answerA">0-3 Years Old</string>
+    <string name="sQuestion0_nextIDA">1</string>
+    <string name="sQuestion0_answerB">3-5 Years Old</string>
+    <string name="sQuestion0_nextIDB">1</string>
+    <string name="sQuestion0_answerC">5-8 Years Old</string>
+    <string name="sQuestion0_nextIDC">1</string>
+    <string name="sQuestion0_answerD">8 Years or older</string>
+    <string name="sQuestion0_nextIDD">1</string>
+    <string name="sQuestion0_imageA">wifi</string>
+    <string name="sQuestion0_imageB">ethernet</string>
+    <string name="sQuestion0_imageC">ethernet</string>
+    <string name="sQuestion0_imageD">ethernet</string>
+
+    <string name="sQuestion1_question">How long have you been experiencing problems?</string>
+    <string name="sQuestion1_answerA">1-6 Weeks</string>
+    <string name="sQuestion1_nextIDA">2</string>
+    <string name="sQuestion1_answerB">2 - 6 Months</string>
+    <string name="sQuestion1_nextIDB">2</string>
+    <string name="sQuestion1_answerC">Since Purchase</string>
+    <string name="sQuestion1_nextIDC">2</string>
+    <string name="sQuestion1_imageA">wifi</string>
+    <string name="sQuestion1_imageB">ethernet</string>
+    <string name="sQuestion1_imageC">ethernet</string>
+
+    <string name="sQuestion2_question">Are you using Apple, Windows or Linux?</string>
+    <string name="sQuestion2_answerA">Apple</string>
+    <string name="sQuestion2_nextIDA">3</string>
+    <string name="sQuestion2_answerB">Windows</string>
+    <string name="sQuestion2_nextIDB">3</string>
+    <string name="sQuestion2_answerC">Linux</string>
+    <string name="sQuestion2_nextIDC">3</string>
+    <string name="sQuestion2_imageA">wifi</string>
+    <string name="sQuestion2_imageB">ethernet</string>
+    <string name="sQuestion2_imageC">ethernet</string>
+
+    <string name="sQuestion3_question">When are you experiencing the problem?</string>
+    <string name="sQuestion3_answerA">Always</string>
+    <string name="sQuestion3_nextIDA">4</string>
+    <string name="sQuestion3_answerB">When I\'m doing a lot at once</string>
+    <string name="sQuestion3_nextIDB">4</string>
+    <string name="sQuestion3_answerC">With Specific programs</string>
+    <string name="sQuestion3_nextIDC">7</string>
+    <string name="sQuestion3_imageA">wifi</string>
+    <string name="sQuestion3_imageB">ethernet</string>
+    <string name="sQuestion3_imageC">ethernet</string>
+
+    <string name="sQuestion4_question">Does the computer display a lot of error messages?</string>
+    <string name="sQuestion4_answerA">Yes it does</string>
+    <string name="sQuestion4_nextIDA">5</string>
+    <string name="sQuestion4_answerB">No it doesn\'t</string>
+    <string name="sQuestion4_nextIDB">6</string>
+    <string name="sQuestion4_imageA">wifi</string>
+    <string name="sQuestion4_imageB">ethernet</string>
+
+    <string name="sQuestion5_question">Please describe the messages</string>
+    <string name="sQuestion5_nextIDA">The app doesn\'t contain enough information to help. Please click no to contact support.</string>
+
+    <string name="sQuestion6_question">Does the device feel warm or hot to the touch?</string>
+    <string name="sQuestion6_answerA">Yes it does</string>
+    <string name="sQuestion6_nextIDA">Please make sure the ventilation holes at the bottom are clean and not blocked.</string>
+    <string name="sQuestion6_answerB">No it doesn\'t</string>
+    <string name="sQuestion6_nextIDB">Please reboot the device</string>
+    <string name="sQuestion6_imageA">wifi</string>
+    <string name="sQuestion6_imageB">ethernet</string>
+
+    <string name="sQuestion7_question">Please enter the name of the program</string>
+    <string name="sQuestion7_nextIDA">The app doesn\'t contain enough information to help. Please click no to contact support.</string>
+
 
 
     <!-- other problems question-->
