@@ -108,14 +108,15 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
         try{currentQuestionID= Integer.parseInt(currentQuestion.get(2));
         answerID.add(Integer.parseInt(currentQuestion.get(2)));
-            amountofQuestionsAsked++;}
+            amountofQuestionsAsked++;
+            updateQuestion();}
         catch (Exception e){
             Intent startTip = new Intent(this,TipActivity.class);
-       //     startTip.putExtra("Tip",currentQuestion.get(2));
-      //      startTip.putExtra("Answers",answers);
+            startTip.putExtra("Tip",currentQuestion.get(2));
+            startTip.putExtra("Answers",answers);
             startActivity(startTip);
         }
-        updateQuestion();
+
     }
     public void changeTextB(View view) {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
@@ -123,13 +124,15 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         answers.add(amountofQuestionsAsked, (String) answerB.getText());
         try{currentQuestionID= Integer.parseInt(currentQuestion.get(4));
             answerID.add(Integer.parseInt(currentQuestion.get(4)));
-            amountofQuestionsAsked++;}
+            amountofQuestionsAsked++;
+            updateQuestion();
+        }
         catch (Exception e){
             Intent startTip = new Intent(this,TipActivity.class);
-           // startTip.putExtra("Tip",currentQuestion.get(4));
-          //  startTip.putExtra("Answers",answers);
+            startTip.putExtra("Tip",currentQuestion.get(4));
+            startTip.putExtra("Answers",answers);
             startActivity(startTip);
-        }        updateQuestion();
+        }
     }
     public void changeTextC(View view) {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
@@ -137,14 +140,17 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         answers.add(amountofQuestionsAsked, (String) answerC.getText());
         try{currentQuestionID= Integer.parseInt(currentQuestion.get(6));
             answerID.add(Integer.parseInt(currentQuestion.get(6)));
-            amountofQuestionsAsked++;}
+            amountofQuestionsAsked++;
+            updateQuestion();}
         catch (Exception e){
+            System.out.println("Step One");
             Intent startTip = new Intent(this,TipActivity.class);
-           // startTip.putExtra("Tip",currentQuestion.get(6));
-          //  startTip.putExtra("Answers",answers);
+            System.out.println("Step Two");
+           startTip.putExtra("Tip",currentQuestion.get(6));
+            startTip.putExtra("Answers",answers);
             startActivity(startTip);
             }
-        updateQuestion();
+
     }
     public void changeTextD(View view) {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
@@ -152,14 +158,15 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         answers.add(amountofQuestionsAsked, (String) answerD.getText());
         try{currentQuestionID= Integer.parseInt(currentQuestion.get(8));
             answerID.add(Integer.parseInt(currentQuestion.get(8)));
-            amountofQuestionsAsked++;}
+            amountofQuestionsAsked++;
+            updateQuestion();}
         catch (Exception e){
             Intent startTip = new Intent(this,TipActivity.class);
-           // startTip.putExtra("Tip",currentQuestion.get(8));
-          //  startTip.putExtra("Answers",answers);
+            startTip.putExtra("Tip",currentQuestion.get(8));
+            startTip.putExtra("Answers",answers);
             startActivity(startTip);
             }
-        updateQuestion();
+
     }
     @Override
     public void onBackPressed() {
