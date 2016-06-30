@@ -119,14 +119,14 @@ public class ProblemDetectionActivity extends BottomBarActivity{
         answers.add(amountofQuestionsAsked,answerA.getText().toString());
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
         try {
-            currentQuestionID = Integer.parseInt(currentQuestion.get(2));
+            currentQuestionID = Integer.parseInt(currentQuestion.get(1));
 
-            answerID.add(Integer.parseInt(currentQuestion.get(2)));
+            answerID.add(Integer.parseInt(currentQuestion.get(1)));
             amountofQuestionsAsked++;
             updateQuestion();
         } catch (Exception e) {
             Intent startTip = new Intent(this, TipActivity.class);
-            startTip.putExtra("Tip", currentQuestion.get(2));
+            startTip.putExtra("Tip", currentQuestion.get(1));
             startTip.putExtra("Answers", answers);
             startActivity(startTip);
         }
@@ -337,12 +337,12 @@ public class ProblemDetectionActivity extends BottomBarActivity{
                  questionPart0 = new String[]{getString(R.string.oQuestion0_question),
                         getString(R.string.oQuestion0_nextIDA)};
                 question0.addAll(Arrays.asList(questionPart0));
-                questions.add(question0);
+
 
                  questionPart1 = new String[]{getString(R.string.oQuestion1_question),
                         getString(R.string.oQuestion1_nextIDA)};
                 question1.addAll(Arrays.asList(questionPart1));
-                questions.add(question1);
+
                 break;
         }
         questions.add(question0);
