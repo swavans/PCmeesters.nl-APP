@@ -90,7 +90,7 @@
     <string name="pQuestion1_question">Has the program already been installed?</string>
     <string name="pQuestion1_answerA">yes it is installed</string>
     <string name="pQuestion1_nextIDA">2</string>
-    <string name="pQuestion1_answerB">No it isnt installed</string>
+    <string name="pQuestion1_answerB">No it isn\'t installed</string>
     <string name="pQuestion1_nextIDB">6</string>
     <string name="pQuestion1_imageA">wifi</string>
     <string name="pQuestion1_imageB">ethernet</string>
@@ -99,12 +99,40 @@
     <string name="pQuestion2_answerA">yes it starts</string>
     <string name="pQuestion2_nextIDA">3</string>
     <string name="pQuestion2_answerB">No it wont start</string>
-    <string name="pQuestion2_nextIDB">5</string>
+    <string name="pQuestion2_nextIDB">4</string>
     <string name="pQuestion2_imageA">wifi</string>
     <string name="pQuestion2_imageB">ethernet</string>
 
     <string name="pQuestion3_question">Please describe your problem</string>
     <string name="pQuestion3_nextIDA">Please try to reinstall the program.</string>
+
+    <string name="pQuestion4_question">Does the program show error messages?</string>
+    <string name="pQuestion4_answerA">yes it shows errors</string>
+    <string name="pQuestion4_nextIDA">5</string>
+    <string name="pQuestion4_answerB">No it no errors</string>
+    <string name="pQuestion4_nextIDB">6</string>
+    <string name="pQuestion4_imageA">wifi</string>
+    <string name="pQuestion4_imageB">ethernet</string>
+
+    <string name="pQuestion5_question">Please write down the error message in the Box below</string>
+    <string name="pQuestion5_nextIDA">Please try to reinstall the program.</string>
+
+    <string name="pQuestion6_question">Please describe the problem down below</string>
+    <string name="pQuestion6_nextIDA">The app doesn\'t have a solution please click no to contact support.</string>
+
+    <string name="pQuestion7_question">Do you want help installing the program?</string>
+    <string name="pQuestion7_answerA">Yes I Need help</string>
+    <string name="pQuestion7_nextIDA">8</string>
+    <string name="pQuestion7_answerB">No it\'s something else</string>
+    <string name="pQuestion7_nextIDB">9</string>
+    <string name="pQuestion7_imageA">wifi</string>
+    <string name="pQuestion7_imageB">ethernet</string>
+
+    <string name="pQuestion8_question">Please enter the name of your program</string>
+    <string name="pQuestion8_nextIDA">Please click no to contact support so we can make an appointment</string>
+
+    <string name="pQuestion9_question">Please describe the problem down below</string>
+    <string name="pQuestion9_nextIDA">The app doesn\'t have a solution please click no to contact support.</string>
 
 
     <!-- other problems question-->
