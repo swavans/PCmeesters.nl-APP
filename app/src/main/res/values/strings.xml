@@ -220,9 +220,9 @@
     <string name="wQuestion1_nextIDB">2</string>
     <string name="wQuestion1_answerC">Linux</string>
     <string name="wQuestion1_nextIDC">2</string>
-    <string name="wQuestion1_imageA">wifi</string>
-    <string name="wQuestion1_imageB">ethernet</string>
-    <string name="wQuestion1_imageC">ethernet</string>
+    <string name="wQuestion1_imageA">apple_icon</string>
+    <string name="wQuestion1_imageB">windows_logo</string>
+    <string name="wQuestion1_imageC">linux_icon</string>
 
     <string name="wQuestion2_question">Does the device show any signs of life?</string>
     <string name="wQuestion2_answerA">Yes I see Lights</string>
@@ -311,17 +311,17 @@
     <string name="vQuestion0_nextIDB">1</string>
     <string name="vQuestion0_answerC">Linux</string>
     <string name="vQuestion0_nextIDC">1</string>
-    <string name="vQuestion0_imageA">wifi</string>
-    <string name="vQuestion0_imageB">ethernet</string>
-    <string name="vQuestion0_imageC">ethernet</string>
+    <string name="vQuestion0_imageA">apple_icon</string>
+    <string name="vQuestion0_imageB">windows_logo</string>
+    <string name="vQuestion0_imageC">linux_icon</string>
 
     <string name="vQuestion1_question">Can you still sign in to your device</string>
     <string name="vQuestion1_answerA">Yes</string>
     <string name="vQuestion1_nextIDA">2</string>
     <string name="vQuestion1_answerB">No</string>
     <string name="vQuestion1_nextIDB">Try Pressing F8 during startup and starting safe mode</string>
-    <string name="vQuestion1_imageA">computer_scherm_aan</string>
-    <string name="vQuestion1_imageB">computer_scherm_uit</string>
+    <string name="vQuestion1_imageA">error_icon</string>
+    <string name="vQuestion1_imageB">yes_icon</string>
 
     <string name="vQuestion2_question">Why do you think you have a virus?</string>
     <string name="vQuestion2_answerA">Because I get a lot of adds, pop-ups, or error messages when I'm online</string>
