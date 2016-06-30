@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="bottom"
-    tools:context=".ActivityActivity3"
     tools:showIn="@layout/sign_in"
     android:background="#1CAFDB"
     android:weightSum="1">

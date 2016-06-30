@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#1CAFDB</item>
         <item name="colorPrimaryDark">#169ac4</item>
-        <item name="colorAccent">#ffffff</item>
+        <item name="colorAccent">@android:color/black</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

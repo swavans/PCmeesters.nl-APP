@@ -36,6 +36,9 @@
         <activity android:name=".ProblemSelectionActivity"
             android:screenOrientation="portrait"
             />
+        <activity android:name=".FormActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

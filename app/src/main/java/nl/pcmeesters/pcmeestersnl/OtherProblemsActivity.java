@@ -40,8 +40,8 @@ public class OtherProblemsActivity extends BottomBarActivity{
 
 
     public void enterOpenAnswer(View view) {
-        TextView answerA = (TextView) findViewById(R.id.answerA);
-        answers.add(amountofQuestionsAsked, (String) answerA.getText());
+        EditText answerA = (EditText) findViewById(R.id.openAnswer);
+        answers.add(amountofQuestionsAsked,answerA.getText().toString());
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
         try {
             currentQuestionID = Integer.parseInt(currentQuestion.get(2));

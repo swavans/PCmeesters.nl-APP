@@ -15,13 +15,14 @@ import java.util.ArrayList;
  */
 public class TipActivity extends BottomBarActivity {
     private GoogleSignInAccount acct;
+    private ArrayList<String> answers;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tip);
         Intent getAnswers = getIntent();
         String tip = (String)getAnswers.getExtras().get("Tip");
-        ArrayList<String> answers = (ArrayList<String>) getAnswers.getExtras().get("answers");
+        answers =  getAnswers.getStringArrayListExtra("Answers");
         TextView tipView = (TextView)findViewById(R.id.tip);
         acct = (GoogleSignInAccount) getAnswers.getExtras().get("User");
         tipView.setText(tip);
@@ -31,9 +32,12 @@ public class TipActivity extends BottomBarActivity {
         Intent returnToMaster = new Intent(this,ProblemSelectionActivity.class);
         returnToMaster.putExtra("User",acct);
         startActivity(returnToMaster);
+        finish();
     }
     public void changeTextB(View view){
-      //  Intent sendForm = new Intent(this,FormActivity.class);
-       // startActivity(sendForm);
+        Intent sendForm = new Intent(this,FormActivity.class);
+        sendForm.putExtra("User",acct);
+        sendForm.putStringArrayListExtra("Answers",answers);
+        startActivity(sendForm);
     }
 }

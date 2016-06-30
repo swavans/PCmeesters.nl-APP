@@ -28,17 +28,18 @@ public abstract class BottomBarActivity extends AppCompatActivity {
     public void mail(View view)
     {
         /* Create the Intent */
-        final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
 
 /* Fill it with Data */
         emailIntent.setType("plain/text");
-        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
-        emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
-        emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Beste PCmeester,\n\n");
+        emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Beste PCmeester,\n\n");
         Toast toast = Toast.makeText(getApplicationContext(),
                 "Bezig met starten van de Email Applicatie", Toast.LENGTH_SHORT);
         toast.show();
-        try{this.startActivity(Intent.createChooser(emailIntent, "Email starten"));
+        try{startActivity(emailIntent);
         }
         catch (android.content.ActivityNotFoundException ex){
             Toast.makeText(getApplicationContext(),"Email kon niet worden geopend",Toast.LENGTH_SHORT).show();

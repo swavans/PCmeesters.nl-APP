@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.google.android.gms.common.server.converter.StringToIntConverter;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +23,9 @@ public class InternetProblemsActivity  extends BottomBarActivity{
     private ArrayList<String> answers;
     private ArrayList<Integer> answerID;
     private int amountofQuestionsAsked = 0;
+    private GoogleSignInAccount acct;
+
+
 
 
 
@@ -33,11 +36,12 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         updateQuestion();
         answers = new ArrayList<>();
         answerID = new ArrayList<>();
+        Intent getUser = getIntent();
+        acct = (GoogleSignInAccount) getUser.getExtras().get("User");
     }
 
     private void updateQuestion() {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
-        System.out.println(currentQuestion.size());
         switch (currentQuestion.size())
         {
 
@@ -113,7 +117,8 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         catch (Exception e){
             Intent startTip = new Intent(this,TipActivity.class);
             startTip.putExtra("Tip",currentQuestion.get(2));
-            startTip.putExtra("Answers",answers);
+            startTip.putStringArrayListExtra("Answers",answers);
+            startTip.putExtra("User",acct);
             startActivity(startTip);
         }
 
@@ -130,7 +135,8 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         catch (Exception e){
             Intent startTip = new Intent(this,TipActivity.class);
             startTip.putExtra("Tip",currentQuestion.get(4));
-            startTip.putExtra("Answers",answers);
+            startTip.putStringArrayListExtra("Answers",answers);
+            startTip.putExtra("User",acct);
             startActivity(startTip);
         }
     }
@@ -147,7 +153,8 @@ public class InternetProblemsActivity  extends BottomBarActivity{
             Intent startTip = new Intent(this,TipActivity.class);
             System.out.println("Step Two");
            startTip.putExtra("Tip",currentQuestion.get(6));
-            startTip.putExtra("Answers",answers);
+            startTip.putStringArrayListExtra("Answers",answers);
+            startTip.putExtra("User",acct);
             startActivity(startTip);
             }
 
@@ -163,7 +170,8 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         catch (Exception e){
             Intent startTip = new Intent(this,TipActivity.class);
             startTip.putExtra("Tip",currentQuestion.get(8));
-            startTip.putExtra("Answers",answers);
+            startTip.putStringArrayListExtra("Answers",answers);
+            startTip.putExtra("User",acct);
             startActivity(startTip);
             }
 
@@ -241,5 +249,11 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         };
         question5.addAll(Arrays.asList(questionPart5));
         questions.add(question5);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        System.out.println("Test");
     }
 }
