@@ -29,6 +29,8 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         updateQuestion();
     }
 
+
+
     private void updateQuestion() {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
         System.out.println(currentQuestion.size());
@@ -127,7 +129,9 @@ public class InternetProblemsActivity  extends BottomBarActivity{
     }
     @Override
     public void onBackPressed() {
-        currentQuestionID--;
+        if(currentQuestionID!=0) {
+            currentQuestionID--;
+        }
         updateQuestion();
     }
 
