@@ -228,7 +228,25 @@
     <string name="odQuestion1_question">Please describe your problem</string>
     <string name="odQuestion1_nextIDA">Hope we can help you</string>
 
+    <!-- text for printer problem categories -->
+    <string name="prQuestion0_question">Which model printer do you have?</string>
+    <string name="prQuestion0_IDA">1</string>
 
+    <string name="prQuestion1_question">Can you turn the printer on?</string>
+    <string name="prQuestion1_answerA">Yes it can turn on</string>
+    <string name="prQuestion1_IDA">2</string>
+    <string name="prQuestion1_answerB">No it does not turn on</string>
+    <string name="prQuestion1_IDB">Are all the cables plugged in?</string>
+    <string name="prQuestion1_ImageA">printer_problem</string>
+    <string name="prQuestion1_ImageB">printer_problem</string>
+
+    <string name="prQuestion2_question">Does the printer partially print?</string>
+    <string name="prQuestion2_answerA">Yes it does print</string>
+    <string name="prQuestion2_IDA">Do the cartridges still have ink?</string>
+    <string name="prQuestion2_answerB">No it does not print</string>
+    <string name="prQuestion2_IDB">Is there paper stuck inside the printer?</string>
+    <string name="prQuestion2_ImageA">printer_problem</string>
+    <string name="prQuestion2_ImageB">printer_problem</string>
 
 
     <!-- text for problem categories -->
@@ -243,5 +261,7 @@
     <string name="thank_you_msg">Thank you for completing the survey</string>
     <string name="procces_soon_msg">We will proccess your request as soon as possible</string>
     <string name="exit_pcmeester">Exit PCMeesters.nl</string>
+
+
 
 </resources>
