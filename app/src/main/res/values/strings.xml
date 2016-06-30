@@ -75,6 +75,38 @@
     <string name="iQuestion5_imageA">wifi</string>
     <string name="iQuestion5_imageB">ethernet</string>
 
+    <!--Software Questions-->
+    <string name="pQuestion0_question">Are you using Apple, Windows or Linux?</string>
+    <string name="pQuestion0_answerA">Apple</string>
+    <string name="pQuestion0_nextIDA">1</string>
+    <string name="pQuestion0_answerB">Windows</string>
+    <string name="pQuestion0_nextIDB">1</string>
+    <string name="pQuestion0_answerC">Linux</string>
+    <string name="pQuestion0_nextIDC">1</string>
+    <string name="pQuestion0_imageA">wifi</string>
+    <string name="pQuestion0_imageB">ethernet</string>
+    <string name="pQuestion0_imageC">ethernet</string>
+
+    <string name="pQuestion1_question">Has the program already been installed?</string>
+    <string name="pQuestion1_answerA">yes it is installed</string>
+    <string name="pQuestion1_nextIDA">2</string>
+    <string name="pQuestion1_answerB">No it isnt installed</string>
+    <string name="pQuestion1_nextIDB">6</string>
+    <string name="pQuestion1_imageA">wifi</string>
+    <string name="pQuestion1_imageB">ethernet</string>
+
+    <string name="pQuestion2_question">Is the program able of running?</string>
+    <string name="pQuestion2_answerA">yes it starts</string>
+    <string name="pQuestion2_nextIDA">3</string>
+    <string name="pQuestion2_answerB">No it wont start</string>
+    <string name="pQuestion2_nextIDB">5</string>
+    <string name="pQuestion2_imageA">wifi</string>
+    <string name="pQuestion2_imageB">ethernet</string>
+
+    <string name="pQuestion3_question">Please describe your problem</string>
+    <string name="pQuestion3_nextIDA">Please try to reinstall the program.</string>
+
+
     <!-- other problems question-->
     <string name="oQuestion0_question">Please describe your device</string>
     <string name="oQuestion0_nextIDA">1</string>

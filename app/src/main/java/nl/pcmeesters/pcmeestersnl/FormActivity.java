@@ -20,6 +20,7 @@ public class FormActivity extends BottomBarActivity {
     private ArrayList<String> answers;
     private EditText nameEntered;
     private EditText emailEntered;
+    private boolean sendEmail =false;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,12 +76,22 @@ public class FormActivity extends BottomBarActivity {
             toast.show();
             try {
                 startActivity(emailIntent);
+                sendEmail =true;
+
             } catch (android.content.ActivityNotFoundException ex) {
                 Toast.makeText(getApplicationContext(), "Email kon niet worden geopend", Toast.LENGTH_SHORT).show();
             }
 
         }
 
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        if(sendEmail)
+        {
+
+        }
     }
 
 }

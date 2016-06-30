@@ -16,44 +16,52 @@ private GoogleSignInAccount acct;
          acct = (GoogleSignInAccount) getUser.getExtras().get("User");
     }
     public void internetProblems(View view) {
-        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
+        Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
         startInternet.putExtra("User", acct);
+        startInternet.putExtra("Category", 0);
         startActivity(startInternet);
     }
 
     public void installingProblems(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+        Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
+        startInternet.putExtra("User", acct);
+        startInternet.putExtra("Category", 1);
+        startActivity(startInternet);
     }
         public void slowComputer(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+            Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
+            startInternet.putExtra("User", acct);
+            startInternet.putExtra("Category", 2);
+            startActivity(startInternet);
     }
         public void computerWontGoOn(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+            Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
+            startInternet.putExtra("User", acct);
+            startInternet.putExtra("Category", 3);
+            startActivity(startInternet);
     }
         public void computerVirus(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+            Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
+            startInternet.putExtra("User", acct);
+            startInternet.putExtra("Category", 4);
+            startActivity(startInternet);
     }
         public void printerproblem(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+            Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
+            startInternet.putExtra("User", acct);
+            startInternet.putExtra("Category", 5);
+            startActivity(startInternet);
     }
         public void otherDeviceProblem(View view) {
-//        Intent startInternet = new Intent(this,InternetProblemsActivity.class );
-//        startInternet.putExtra("User", acct);
-//        startActivity(startInternet);
+            Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
+            startInternet.putExtra("User", acct);
+            startInternet.putExtra("Category", 6);
+            startActivity(startInternet);
     }
         public void other(View view) {
-        Intent startInternet = new Intent(this,OtherProblemsActivity.class );
+        Intent startInternet = new Intent(this,ProblemDetectionActivity.class );
         startInternet.putExtra("User", acct);
+            startInternet.putExtra("Category", 7);
         startActivity(startInternet);
     }
 }
