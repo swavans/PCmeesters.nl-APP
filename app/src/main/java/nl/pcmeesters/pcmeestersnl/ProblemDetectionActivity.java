@@ -388,6 +388,47 @@ public class ProblemDetectionActivity extends BottomBarActivity{
                 question7.addAll(Arrays.asList(questionPart7));
 
                 break;
+            case 3:
+                questionPart0 = new String[]{getString(R.string.wQuestion0_question),
+                        getString(R.string.wQuestion0_answerA), getString(R.string.wQuestion0_nextIDA),
+                        getString(R.string.wQuestion0_answerB), getString(R.string.wQuestion0_nextIDB),
+                        getString(R.string.wQuestion0_imageA), getString(R.string.wQuestion0_imageB),};
+                question0.addAll(Arrays.asList(questionPart0));
+                questionPart1 = new String[]{getString(R.string.wQuestion1_question),
+                        getString(R.string.wQuestion1_answerA), getString(R.string.wQuestion1_nextIDA),
+                        getString(R.string.wQuestion1_answerB), getString(R.string.wQuestion1_nextIDB),
+                        getString(R.string.wQuestion1_answerC), getString(R.string.wQuestion1_nextIDC),
+                        getString(R.string.wQuestion1_imageA), getString(R.string.wQuestion1_imageB),
+                        getString(R.string.wQuestion1_imageC)} ;
+                question1.addAll(Arrays.asList(questionPart1));
+                questionPart2 = new String[]{getString(R.string.wQuestion2_question),
+                        getString(R.string.wQuestion2_answerA), getString(R.string.wQuestion2_nextIDA),
+                        getString(R.string.wQuestion2_answerB), getString(R.string.wQuestion2_nextIDB),
+                        getString(R.string.wQuestion2_answerC), getString(R.string.wQuestion2_nextIDC),
+                        getString(R.string.wQuestion2_imageA), getString(R.string.wQuestion2_imageB),
+                        getString(R.string.wQuestion2_imageC)};
+                question2.addAll(Arrays.asList(questionPart2));
+                questionPart3 = new String[]{getString(R.string.wQuestion3_question),
+                        getString(R.string.wQuestion3_answerA), getString(R.string.wQuestion3_nextIDA),
+                        getString(R.string.wQuestion3_answerB), getString(R.string.wQuestion3_nextIDB),
+                        getString(R.string.wQuestion3_imageA), getString(R.string.wQuestion3_imageB),
+                };
+                question3.addAll(Arrays.asList(questionPart3));
+                questionPart4 = new String[]{getString(R.string.wQuestion4_question),
+                        getString(R.string.wQuestion4_answerA), getString(R.string.wQuestion4_nextIDA),
+                        getString(R.string.wQuestion4_answerB), getString(R.string.wQuestion4_nextIDB),
+                        getString(R.string.wQuestion4_answerC), getString(R.string.wQuestion4_nextIDC),
+                        getString(R.string.wQuestion4_answerD), getString(R.string.wQuestion4_nextIDD),
+                        getString(R.string.wQuestion4_imageA), getString(R.string.wQuestion4_imageB),
+                        getString(R.string.wQuestion4_imageC), getString(R.string.wQuestion4_imageD)};
+                question4.addAll(Arrays.asList(questionPart4));
+
+                questionPart5 = new String[]{getString(R.string.wQuestion5_question),
+                        getString(R.string.wQuestion5_nextIDA)
+                };
+                question5.addAll(Arrays.asList(questionPart5));
+
+                break;
             case 7:
                 questionPart0 = new String[]{getString(R.string.oQuestion0_question),
                         getString(R.string.oQuestion0_nextIDA)};
@@ -420,8 +461,5 @@ public class ProblemDetectionActivity extends BottomBarActivity{
         questions.add(question7);
         questions.add(question8);
         questions.add(question9);
-
     }
-
-
 }

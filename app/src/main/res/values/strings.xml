@@ -204,6 +204,61 @@
     <string name="sQuestion7_question">Please enter the name of the program</string>
     <string name="sQuestion7_nextIDA">The app doesn\'t contain enough information to help. Please click no to contact support.</string>
 
+    <!--Computer wont turn on Questions-->
+    <string name="wQuestion0_question">Do you have a Notebook or a Desktop?</string>
+    <string name="wQuestion0_answerA">I have a Notebook</string>
+    <string name="wQuestion0_nextIDA">1</string>
+    <string name="wQuestion0_answerB">I have a desktop</string>
+    <string name="wQuestion0_nextIDB">1</string>
+    <string name="wQuestion0_imageA">notebook_scherm_aan</string>
+    <string name="wQuestion0_imageB">desktop_scherm_aan</string>
+
+    <string name="wQuestion1_question">Are you using Apple, Windows or Linux?</string>
+    <string name="wQuestion1_answerA">Apple</string>
+    <string name="wQuestion1_nextIDA">2</string>
+    <string name="wQuestion1_answerB">Windows</string>
+    <string name="wQuestion1_nextIDB">2</string>
+    <string name="wQuestion1_answerC">Linux</string>
+    <string name="wQuestion1_nextIDC">2</string>
+    <string name="wQuestion1_imageA">wifi</string>
+    <string name="wQuestion1_imageB">ethernet</string>
+    <string name="wQuestion1_imageC">ethernet</string>
+
+    <string name="wQuestion2_question">Does the device show any signs of life?</string>
+    <string name="wQuestion2_answerA">Yes I see Lights</string>
+    <string name="wQuestion2_nextIDA">3</string>
+    <string name="wQuestion2_answerB">Yes I hear sound</string>
+    <string name="wQuestion2_nextIDB">5</string>
+    <string name="wQuestion2_answerC">No it doesn\'t do a thing</string>
+    <string name="wQuestion2_nextIDC">Please make sure the power cable is plugged in correctly</string>
+    <string name="wQuestion2_imageA">desktop_scherm_aan</string>
+    <string name="wQuestion2_imageB">desktop_scherm_aan_en_geluid</string>
+    <string name="wQuestion2_imageC">desktop_scherm_uit</string>
+
+    <string name="wQuestion3_question">Does the screen turn on?</string>
+    <string name="wQuestion3_answerA">Yes the screen is on</string>
+    <string name="wQuestion3_nextIDA">4</string>
+    <string name="wQuestion3_answerB">No the screen is off</string>
+    <string name="wQuestion3_nextIDB">Please make sure that the display cable is inserted correctly</string>
+    <string name="wQuestion3_imageA">desktop_scherm_aan</string>
+    <string name="wQuestion3_imageB">desktop_scherm_uit</string>
+
+    <string name="wQuestion4_question">Which of the following happens?</string>
+    <string name="wQuestion4_answerA">The screen freezes after a couple of seconds</string>
+    <string name="wQuestion4_nextIDA">Please unplug the power cable wait 30 seconds and plug it back in</string>
+    <string name="wQuestion4_answerB">The device reboots before I can use it properly</string>
+    <string name="wQuestion4_nextIDB">Try pressing F8 during start-up and launching the device in "last working configuration"</string>
+    <string name="wQuestion4_answerC">The screen turns black and stays black</string>
+    <string name="wQuestion4_nextIDC">Please disconnect the power cable wait 30 seconds and plug it back in</string>
+    <string name="wQuestion4_answerD">None of the above</string>
+    <string name="wQuestion4_nextIDD">5</string>
+    <string name="wQuestion4_imageA">desktop_overig_problemen</string>
+    <string name="wQuestion4_imageB">desktop_overig_problemen</string>
+    <string name="wQuestion4_imageC">desktop_overig_problemen</string>
+    <string name="wQuestion4_imageD">desktop_overig_problemen</string>
+
+    <string name="wQuestion5_question">Please describe what happens</string>
+    <string name="wQuestion5_nextIDA">We currently have no advice for you in the app. Please contact support by pressing no.</string>
 
 
     <!-- other problems question-->

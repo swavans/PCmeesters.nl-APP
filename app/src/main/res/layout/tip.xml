@@ -62,7 +62,7 @@
             android:onClick="changeTextA"
             android:clickable="true"
             android:text="YES"
-            android:textColor="@color/abc_btn_colored_borderless_text_material" />
+            android:textColor="@android:color/white"/>
             </LinearLayout>
 
             <LinearLayout
@@ -83,8 +83,8 @@
             android:contentDescription="buttonB"
             android:layout_marginTop="15dp"
             android:onClick="changeTextB"
-            android:text="NO"
-            android:textColor="@color/abc_btn_colored_borderless_text_material"/>
+            android:text="Contact Support"
+            android:textColor="@android:color/white"/>
             </LinearLayout>
 
         </LinearLayout>
