@@ -28,7 +28,7 @@ public class TipActivity extends BottomBarActivity {
         startActivity(returnToMaster);
     }
     public void changeTextB(View view){
-        Intent sendForm = new Intent(this,FormActivity.class);
-        startActivity(sendForm);
+      //  Intent sendForm = new Intent(this,FormActivity.class);
+       // startActivity(sendForm);
     }
 }
