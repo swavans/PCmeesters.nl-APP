@@ -31,10 +31,10 @@
     <string name="iQuestion1_nextIDC">4</string>
     <string name="iQuestion1_answerD">No i can not connect</string>
     <string name="iQuestion1_nextIDD">5</string>
-    <string name="iQuestion1_imageA">wifi</string>
-    <string name="iQuestion1_imageB">ethernet</string>
-    <string name="iQuestion1_imageC">ethernet</string>
-    <string name="iQuestion1_imageD">ethernet</string>
+    <string name="iQuestion1_imageA">low_speed</string>
+    <string name="iQuestion1_imageB">wifi_range</string>
+    <string name="iQuestion1_imageC">device_no_wifi</string>
+    <string name="iQuestion1_imageD">no_wifi</string>
 
 
     <string name="iQuestion2_question">Are other device just as slow??</string>
@@ -42,8 +42,8 @@
     <string name="iQuestion2_nextIDA">Please reset the router</string>
     <string name="iQuestion2_answerB">No they are not as slow</string>
     <string name="iQuestion2_nextIDB">The problem is in your devices internet adapter</string>
-    <string name="iQuestion2_imageA">wifi</string>
-    <string name="iQuestion2_imageB">ethernet</string>
+    <string name="iQuestion2_imageA">low_speed</string>
+    <string name="iQuestion2_imageB">high_speed</string>
 
     <string name="iQuestion3_question">Whats the aditional distance you want to cover?</string>
     <string name="iQuestion3_answerA">One to Five Meters</string>
@@ -52,9 +52,9 @@
     <string name="iQuestion3_nextIDB">Wifi Homeplug</string>
     <string name="iQuestion3_answerC">10 or more Meters</string>
     <string name="iQuestion3_nextIDC">Stronger router</string>
-    <string name="iQuestion3_imageA">wifi</string>
-    <string name="iQuestion3_imageB">ethernet</string>
-    <string name="iQuestion3_imageC">ethernet</string>
+    <string name="iQuestion3_imageA">smaller_then_5</string>
+    <string name="iQuestion3_imageB">a5_till_10</string>
+    <string name="iQuestion3_imageC">greater_then_10</string>
 
     <string name="iQuestion4_question">Please reboot your device. What does your internet icon display?</string>
     <string name="iQuestion4_answerA">Yellow Marking</string>
@@ -63,17 +63,17 @@
     <string name="iQuestion4_nextIDB">Check cables device is probably disconnected</string>
     <string name="iQuestion4_answerC">Nothing</string>
     <string name="iQuestion4_nextIDC">Please check the time on the device. Probably wrong settings?</string>
-    <string name="iQuestion4_imageA">wifi</string>
-    <string name="iQuestion4_imageB">ethernet</string>
-    <string name="iQuestion4_imageC">ethernet</string>
+    <string name="iQuestion4_imageA">yellow_internet_icon</string>
+    <string name="iQuestion4_imageB">red_internet_icon</string>
+    <string name="iQuestion4_imageC">nothing_internet_icon</string>
 
     <string name="iQuestion5_question">Please reboot your Router.Does it show lights?</string>
     <string name="iQuestion5_answerA">Yes it helped</string>
     <string name="iQuestion5_nextIDA">Error in router settings or Malfunction</string>
     <string name="iQuestion5_answerB">No it did not help</string>
     <string name="iQuestion5_nextIDB">Router defect</string>
-    <string name="iQuestion5_imageA">wifi</string>
-    <string name="iQuestion5_imageB">ethernet</string>
+    <string name="iQuestion5_imageA">led_green</string>
+    <string name="iQuestion5_imageB">led_black</string>
 
     <!--Software Questions-->
     <string name="pQuestion0_question">Are you using Apple, Windows or Linux?</string>
@@ -83,25 +83,25 @@
     <string name="pQuestion0_nextIDB">1</string>
     <string name="pQuestion0_answerC">Linux</string>
     <string name="pQuestion0_nextIDC">1</string>
-    <string name="pQuestion0_imageA">wifi</string>
-    <string name="pQuestion0_imageB">ethernet</string>
-    <string name="pQuestion0_imageC">ethernet</string>
+    <string name="pQuestion0_imageA">apple_icon</string>
+    <string name="pQuestion0_imageB">windows_logo</string>
+    <string name="pQuestion0_imageC">linux_icon</string>
 
     <string name="pQuestion1_question">Has the program already been installed?</string>
     <string name="pQuestion1_answerA">yes it is installed</string>
     <string name="pQuestion1_nextIDA">2</string>
     <string name="pQuestion1_answerB">No it isn\'t installed</string>
     <string name="pQuestion1_nextIDB">6</string>
-    <string name="pQuestion1_imageA">wifi</string>
-    <string name="pQuestion1_imageB">ethernet</string>
+    <string name="pQuestion1_imageA">program_installed</string>
+    <string name="pQuestion1_imageB">program_not_installed</string>
 
     <string name="pQuestion2_question">Is the program able of running?</string>
     <string name="pQuestion2_answerA">yes it starts</string>
     <string name="pQuestion2_nextIDA">3</string>
     <string name="pQuestion2_answerB">No it wont start</string>
     <string name="pQuestion2_nextIDB">4</string>
-    <string name="pQuestion2_imageA">wifi</string>
-    <string name="pQuestion2_imageB">ethernet</string>
+    <string name="pQuestion2_imageA">program_installed</string>
+    <string name="pQuestion2_imageB">program_not_installed</string>
 
     <string name="pQuestion3_question">Please describe your problem</string>
     <string name="pQuestion3_nextIDA">Please try to reinstall the program.</string>
@@ -109,10 +109,10 @@
     <string name="pQuestion4_question">Does the program show error messages?</string>
     <string name="pQuestion4_answerA">yes it shows errors</string>
     <string name="pQuestion4_nextIDA">5</string>
-    <string name="pQuestion4_answerB">No it no errors</string>
+    <string name="pQuestion4_answerB">No it shows no errors</string>
     <string name="pQuestion4_nextIDB">6</string>
-    <string name="pQuestion4_imageA">wifi</string>
-    <string name="pQuestion4_imageB">ethernet</string>
+    <string name="pQuestion4_imageA">error_icon</string>
+    <string name="pQuestion4_imageB">no_error_icon</string>
 
     <string name="pQuestion5_question">Please write down the error message in the Box below</string>
     <string name="pQuestion5_nextIDA">Please try to reinstall the program.</string>
@@ -125,8 +125,8 @@
     <string name="pQuestion7_nextIDA">8</string>
     <string name="pQuestion7_answerB">No it\'s something else</string>
     <string name="pQuestion7_nextIDB">9</string>
-    <string name="pQuestion7_imageA">wifi</string>
-    <string name="pQuestion7_imageB">ethernet</string>
+    <string name="pQuestion7_imageA">yes_icon</string>
+    <string name="pQuestion7_imageB">error_icon</string>
 
     <string name="pQuestion8_question">Please enter the name of your program</string>
     <string name="pQuestion8_nextIDA">Please click no to contact support so we can make an appointment</string>
@@ -144,10 +144,10 @@
     <string name="sQuestion0_nextIDC">1</string>
     <string name="sQuestion0_answerD">8 Years or older</string>
     <string name="sQuestion0_nextIDD">1</string>
-    <string name="sQuestion0_imageA">wifi</string>
-    <string name="sQuestion0_imageB">ethernet</string>
-    <string name="sQuestion0_imageC">ethernet</string>
-    <string name="sQuestion0_imageD">ethernet</string>
+    <string name="sQuestion0_imageA">a0_3</string>
+    <string name="sQuestion0_imageB">a3_5</string>
+    <string name="sQuestion0_imageC">a5_8</string>
+    <string name="sQuestion0_imageD">greater_then_8</string>
 
     <string name="sQuestion1_question">How long have you been experiencing problems?</string>
     <string name="sQuestion1_answerA">1–6 Weeks</string>
@@ -156,9 +156,9 @@
     <string name="sQuestion1_nextIDB">2</string>
     <string name="sQuestion1_answerC">Since Purchase</string>
     <string name="sQuestion1_nextIDC">2</string>
-    <string name="sQuestion1_imageA">wifi</string>
-    <string name="sQuestion1_imageB">ethernet</string>
-    <string name="sQuestion1_imageC">ethernet</string>
+    <string name="sQuestion1_imageA">a1_6</string>
+    <string name="sQuestion1_imageB">a2_6</string>
+    <string name="sQuestion1_imageC">start</string>
 
     <string name="sQuestion2_question">Are you using Apple, Windows or Linux?</string>
     <string name="sQuestion2_answerA">Apple</string>
@@ -167,9 +167,9 @@
     <string name="sQuestion2_nextIDB">3</string>
     <string name="sQuestion2_answerC">Linux</string>
     <string name="sQuestion2_nextIDC">3</string>
-    <string name="sQuestion2_imageA">wifi</string>
-    <string name="sQuestion2_imageB">ethernet</string>
-    <string name="sQuestion2_imageC">ethernet</string>
+    <string name="sQuestion2_imageA">apple_icon</string>
+    <string name="sQuestion2_imageB">windows_logo</string>
+    <string name="sQuestion2_imageC">linux_icon</string>
 
     <string name="sQuestion3_question">When are you experiencing the problem?</string>
     <string name="sQuestion3_answerA">Always</string>
@@ -178,17 +178,17 @@
     <string name="sQuestion3_nextIDB">4</string>
     <string name="sQuestion3_answerC">With Specific programs</string>
     <string name="sQuestion3_nextIDC">7</string>
-    <string name="sQuestion3_imageA">wifi</string>
-    <string name="sQuestion3_imageB">ethernet</string>
-    <string name="sQuestion3_imageC">ethernet</string>
+    <string name="sQuestion3_imageA">infinity</string>
+    <string name="sQuestion3_imageB">busy_pc</string>
+    <string name="sQuestion3_imageC">program_icon</string>
 
     <string name="sQuestion4_question">Does the computer display a lot of error messages?</string>
     <string name="sQuestion4_answerA">Yes it does</string>
     <string name="sQuestion4_nextIDA">5</string>
     <string name="sQuestion4_answerB">No it doesn\'t</string>
     <string name="sQuestion4_nextIDB">6</string>
-    <string name="sQuestion4_imageA">wifi</string>
-    <string name="sQuestion4_imageB">ethernet</string>
+    <string name="sQuestion4_imageA">error_icon</string>
+    <string name="sQuestion4_imageB">no_error_icon</string>
 
     <string name="sQuestion5_question">Please describe the messages</string>
     <string name="sQuestion5_nextIDA">The app doesn\'t contain enough information to help. Please click no to contact support.</string>
@@ -198,8 +198,8 @@
     <string name="sQuestion6_nextIDA">Please make sure the ventilation holes at the bottom are clean and not blocked.</string>
     <string name="sQuestion6_answerB">No it doesn\'t</string>
     <string name="sQuestion6_nextIDB">Please reboot the device</string>
-    <string name="sQuestion6_imageA">wifi</string>
-    <string name="sQuestion6_imageB">ethernet</string>
+    <string name="sQuestion6_imageA">hot_temperature</string>
+    <string name="sQuestion6_imageB">normal_temperature</string>
 
     <string name="sQuestion7_question">Please enter the name of the program</string>
     <string name="sQuestion7_nextIDA">The app doesn\'t contain enough information to help. Please click no to contact support.</string>
