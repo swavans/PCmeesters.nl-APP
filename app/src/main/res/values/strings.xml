@@ -80,5 +80,9 @@
     <string name="internet_problems_text">Internet Problems</string>
     <string name="slow_computer_text">Slow Computer</string>
     <string name="computer_off_problem_text">Computer won\'t turn on</string>
+    <string name="computer_virus_problem_text">Computer Virus</string>
+    <string name="printer_problem_text">Printer Problem</string>
+    <string name="other_devices_problems_text">Problems with other devices</string>
+    <string name="other_problems_text">Other Problems</string>
 
 </resources>

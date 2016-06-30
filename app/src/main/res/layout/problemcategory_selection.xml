@@ -79,7 +79,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        android:onClick="installingProblems"/>
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
@@ -114,7 +115,8 @@
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
                         android:layout_marginTop="15dp"
-                        android:onClick="changeText" />
+                        android:onClick="slowComputer"
+                        />
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
@@ -140,11 +142,12 @@
                         android:layout_height="100dp"
                         android:id="@+id/computer_off_button"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/notebook_scherm_uit"
+                        android:src="@drawable/computer_off_problem"
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        android:onClick="computerWontGoOn"/>
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
@@ -172,21 +175,20 @@
                         android:background = "@drawable/rounded_button"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/imageButtonA"
+                        android:id="@+id/virus_problem_button"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/computer_scherm_aan"
+                        android:src="@drawable/computer_virus_problem"
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
                         android:layout_marginTop="15dp"
-                        android:onClick="changeText" />
+                        android:onClick="computerVirus"/>
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textAlignment="center"
-                        android:id="@+id/antwoord3A"
-                        android:text="@string/awnser_a_to_question_3"
+                        android:text="@string/computer_virus_problem_text"
                         android:textSize="20sp"
                         android:layout_marginTop="5dp"
                         />
@@ -204,20 +206,20 @@
                         android:background = "@drawable/rounded_button"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/imageButtonB"
+                        android:id="@+id/printer_problem_button"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/notebook_scherm_aan"
+                        android:src="@drawable/printer_problem"
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        android:onClick="printerproblem"/>
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textAlignment="center"
-                        android:id="@+id/antwoord3B"
-                        android:text="@string/awnser_b_to_question_3"
+                        android:text="@string/printer_problem_text"
                         android:textSize="20sp"
                         android:layout_marginTop="5dp" />
                 </LinearLayout>
@@ -239,21 +241,20 @@
                         android:background = "@drawable/rounded_button"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:id="@+id/imageButtonA"
+                        android:id="@+id/other_Devices_Button"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/computer_scherm_aan"
+                        android:src="@drawable/other_devices"
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
                         android:layout_marginTop="15dp"
-                        android:onClick="changeText" />
+                        android:onClick="otherDeviceProblem" />
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textAlignment="center"
-                        android:id="@+id/antwoord3A"
-                        android:text="@string/awnser_a_to_question_3"
+                        android:text="@string/other_devices_problems_text"
                         android:textSize="20sp"
                         android:layout_marginTop="5dp"
                         />
@@ -273,18 +274,18 @@
                         android:layout_height="100dp"
                         android:id="@+id/imageButtonB"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/notebook_scherm_aan"
+                        android:src="@drawable/question_mark"
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:layout_marginTop="15dp" />
+                        android:layout_marginTop="15dp"
+                        android:onClick="other"/>
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:textAlignment="center"
-                        android:id="@+id/antwoord3B"
-                        android:text="@string/awnser_b_to_question_3"
+                        android:text="@string/other_problems_text"
                         android:textSize="20sp"
                         android:layout_marginTop="5dp" />
                 </LinearLayout>
