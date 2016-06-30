@@ -17,19 +17,21 @@
             android:gravity="center"
             android:text="Please enter you open answer"
             android:textSize="25sp"
-            android:id="@+id/antwoord3A" />
+            android:id="@+id/question" />
             <EditText
                 android:layout_width="356dp"
                 android:layout_height="300dp"
                 android:gravity="left"
                 android:text="Enter text"
+                android:id="@id/answerA"
                 android:nestedScrollingEnabled="true"/>
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Enter"
             android:background="@drawable/rounded_button"
-            android:textColor="@color/abc_btn_colored_borderless_text_material" />
+            android:textColor="@color/abc_btn_colored_borderless_text_material"
+            android:onClick="changeTextA"/>
         
         
         
