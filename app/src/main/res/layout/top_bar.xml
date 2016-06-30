@@ -4,36 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:baselineAligned="false"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
 
-    tools:showIn="@layout/sign_in"
-    android:baselineAligned="false">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/sign_in">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/app_name"
         android:layout_gravity="top"
-        android:id="@+id/imageView"
+        android:contentDescription="@string/app_name"
         android:src="@drawable/logo" />
 
 
-       <android.support.design.widget.FloatingActionButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@android:drawable/ic_menu_help"
-    app:backgroundTint="#1CAFDB"
-    android:src="@android:drawable/ic_menu_help"
-    android:layout_alignRight="@id/imageView"
-           android:layout_alignBottom="@id/imageView"
-    android:clickable="true"
-    android:visibility="visible"
-    android:longClickable="true"
-    android:adjustViewBounds="true"
-    android:layout_gravity="right"
-           android:onClick="onHelpPressed"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_alignRight="@id/imageView"
+        android:layout_gravity="right"
+        android:adjustViewBounds="true"
+        android:background="@android:drawable/ic_menu_help"
+        android:clickable="true"
+        android:longClickable="true"
+        android:src="@android:drawable/ic_menu_help"
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="#1CAFDB" />
+    //android:onClick="onHelpPressed"/>
 
 </RelativeLayout>

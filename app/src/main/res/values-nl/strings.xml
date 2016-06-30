@@ -1,16 +1,10 @@
 <resources>
     <string name="app_name">PCmeesters.nl</string>
-    <string name="action_settings">Instellingen</string>
-    <string name="button1_name">Knop1</string>
-    <string name="intro_question">Als u problemen heeft met uw apparaat klikt u dan hieronder:</string>
     <string name="contact_question">Klik hier als u direct contact met ons wilt opnemen.</string>
     <string name="question_3">Heeft u een laptop of een desktop?</string>
     <string name="awnser_b_to_question_3">Ik heb een laptop</string>
 
     <string name="answer_a_to_question_3">Ik heb een desktop</string>
-    <string name="activate_phone">Klik hier</string>
-    <string name="greet">Hallo</string>
-    <string name="greet2"> wat vervelend om te horen dat je problemen ondervindt met je apparaat.</string>
 
     <!--Internet Questions-->
     <string name="iQuestion0_question">Hoe maak je verbinding met het internet?</string>
@@ -265,8 +259,6 @@
     <string name="vQuestion0_nextIDA">1</string>
     <string name="vQuestion0_answerB">Ik gebruik Windows</string>
     <string name="vQuestion0_nextIDB">1</string>
-    <string name="vQuestion0_answerC">Ik gebruik Linux</string>
-    <string name="vQuestion0_nextIDC">1</string>
 
     <string name="vQuestion1_question">Kunt u nog steeds inloggen?</string>
     <string name="vQuestion1_answerA">Ja ik kan inloggen</string>

@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/greetings"
-            android:id="@+id/textView2"
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"
             android:textSize="@dimen/textSizeQuestion"
