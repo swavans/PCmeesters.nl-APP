@@ -114,7 +114,7 @@
     <string name="oQuestion1_question">Please describe your problem</string>
     <string name="oQuestion1_nextIDA">Hope we can help you</string>
 
-
+    <!-- text for problem categories -->
     <string name="program_installing_problem_text">Problem Installing</string>
     <string name="internet_problems_text">Internet Problems</string>
     <string name="slow_computer_text">Slow Computer</string>
@@ -123,5 +123,7 @@
     <string name="printer_problem_text">Printer Problem</string>
     <string name="other_devices_problems_text">Problems with other devices</string>
     <string name="other_problems_text">Other Problems</string>
+    <string name="thank_you_msg">Thank you for completing the survey</string>
+    <string name="procces_soon_msg">We will proccess your request as soon as possible</string>
 
 </resources>
