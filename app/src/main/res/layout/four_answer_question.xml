@@ -71,7 +71,7 @@
                     android:onClick="changeTextA"
                     android:clickable="true" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -103,7 +103,7 @@
                     android:clickable="true"
                     android:onClick="changeTextB" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textAlignment="center"
@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_gravity="center"
->
+                android:padding="10dp">
                 <ImageButton
                     android:background = "@drawable/rounded_button"
                     android:layout_width="100dp"
@@ -139,7 +139,7 @@
                     android:clickable="true"
                     android:onClick="changeTextC" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:textAlignment="center"
@@ -168,7 +168,7 @@
                     android:clickable="true"
                     android:onClick="changeTextD" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:textAlignment="center"
