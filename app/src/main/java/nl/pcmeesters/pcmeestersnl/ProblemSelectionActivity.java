@@ -10,6 +10,9 @@ public class ProblemSelectionActivity extends BottomBarActivity{
 
     }
 
+    public void internetProblems()
+    {
 
+    }
 
 }
