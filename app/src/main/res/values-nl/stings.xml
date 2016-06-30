@@ -286,7 +286,7 @@
     <string name="vQuestion1_imageB">computer_scherm_uit</string>
 
     <string name="vQuestion2_question">Why do you think you have a virus?</string>
-    <string name="vQuestion2_answerA">Because I get a lot of adds, pop-ups, or error messages when I'm online</string>
+    <string name="vQuestion2_answerA">Because I get a lot of adds, pop-ups, or error messages when I\'m online</string>
     <string name="vQuestion2_nextIDA">Try to reinstall your browser</string>
     <string name="vQuestion2_answerB">I get a lot of errors using a specific program</string>
     <string name="vQuestion2_nextIDB">Please reinstall that program</string>
@@ -335,7 +335,7 @@
     <string name="zipCode">"\n ZipCode: "</string>
     <string name="phonenumber">"\n Phone number: "</string>
     <string name="email">"\n Email: "</string>
-    <string name="alsoImportant">"\n\n It's also important that you know that: \n "</string>
+    <string name="alsoImportant">"\n\n It\'s also important that you know that: \n "</string>
     <string name="bye">\n\n Yours Faithfully, \n</string>
     <string name="loginError">Login Failed</string>
     <string name="call_now">Call Now</string>
