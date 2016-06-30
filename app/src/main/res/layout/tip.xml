@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     >
     <include layout="@layout/top_bar" />
@@ -32,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Did this solve your problem?"
+            android:text="@string/problem_solved"
             android:id="@+id/question"
             android:layout_gravity="center_horizontal"
             android:textSize="20sp" />
@@ -61,7 +59,7 @@
             android:layout_marginTop="15dp"
             android:onClick="changeTextA"
             android:clickable="true"
-            android:text="YES"
+            android:text="@string/yes_button"
             android:textColor="@android:color/white"/>
             </LinearLayout>
 
@@ -83,7 +81,7 @@
             android:contentDescription="buttonB"
             android:layout_marginTop="15dp"
             android:onClick="changeTextB"
-            android:text="Contact Support"
+            android:text="@string/contact_support"
             android:textColor="@android:color/white"/>
             </LinearLayout>
 

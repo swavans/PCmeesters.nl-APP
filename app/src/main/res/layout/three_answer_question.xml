@@ -16,23 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|center"
-
-            android:layout_marginBottom="15dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|left"
-                android:textAlignment="center"
-                android:id="@+id/greet"
-                android:text="@string/greet"
-                android:textSize="15sp"
-                />
-
-        </LinearLayout>
 
 
         <TextView

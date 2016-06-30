@@ -128,6 +128,7 @@ public class ProblemDetectionActivity extends BottomBarActivity{
             Intent startTip = new Intent(this, TipActivity.class);
             startTip.putExtra("Tip", currentQuestion.get(1));
             startTip.putExtra("Answers", answers);
+            startTip.putExtra("User",acct);
             startActivity(startTip);
         }
     }
@@ -428,6 +429,25 @@ public class ProblemDetectionActivity extends BottomBarActivity{
                 };
                 question5.addAll(Arrays.asList(questionPart5));
 
+                break;
+            case 4:
+                questionPart0 = new String[]{getString(R.string.vQuestion0_question),
+                        getString(R.string.vQuestion0_answerA), getString(R.string.vQuestion0_nextIDA),
+                        getString(R.string.vQuestion0_answerB), getString(R.string.vQuestion0_nextIDB),
+                        getString(R.string.vQuestion0_imageA), getString(R.string.vQuestion0_imageB),};
+                question0.addAll(Arrays.asList(questionPart0));
+                questionPart1 = new String[]{getString(R.string.vQuestion1_question),
+                        getString(R.string.vQuestion1_answerA), getString(R.string.vQuestion1_nextIDA),
+                        getString(R.string.vQuestion1_answerB), getString(R.string.vQuestion1_nextIDB),
+                        getString(R.string.vQuestion1_imageA), getString(R.string.vQuestion1_imageB),} ;
+                question1.addAll(Arrays.asList(questionPart1));
+                questionPart2 = new String[]{getString(R.string.vQuestion2_question),
+                        getString(R.string.vQuestion2_answerA), getString(R.string.vQuestion2_nextIDA),
+                        getString(R.string.vQuestion2_answerB), getString(R.string.vQuestion2_nextIDB),
+                        getString(R.string.vQuestion2_answerC), getString(R.string.vQuestion2_nextIDC),
+                        getString(R.string.vQuestion2_imageA), getString(R.string.vQuestion2_imageB),
+                        getString(R.string.vQuestion2_imageC)};
+                question2.addAll(Arrays.asList(questionPart2));
                 break;
             case 7:
                 questionPart0 = new String[]{getString(R.string.oQuestion0_question),

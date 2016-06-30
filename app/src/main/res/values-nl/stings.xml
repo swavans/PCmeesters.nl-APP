@@ -1,15 +1,361 @@
 <resources>
     <string name="app_name">PCmeesters.nl</string>
     <string name="action_settings">Instellingen</string>
-    <string name="button1_name">Knop 1</string>
-    <string name="intro_question">Heb je een probleem met uw computer klik dan hier onder:</string>
-    <string name="contact_question">Neem je liever direct contact met ons op?</string>
-    <string name="question_3">Heb je een desktop of een laptop?</string>
-    <string name="awnser_b_to_question_3">Ik heb een notebook</string>
+    <string name="button1_name">Knop1</string>
+    <string name="intro_question">Als u problemen heeft met uw apparaat klikt u dan hieronder:</string>
+    <string name="contact_question">Klik hier als u direct contact met ons wilt opnemen.</string>
+    <string name="question_3">Heeft u een laptop of een desktop?</string>
+    <string name="awnser_b_to_question_3">Ik heb een laptop</string>
 
-    <string name="awnser_a_to_question_3">Ik heb een desktop</string>
-    <string name="activate_phone">Klik dan hier</string>
+    <string name="answer_a_to_question_3">Ik heb een desktop</string>
+    <string name="activate_phone">Klik hier</string>
     <string name="greet">Hallo</string>
-    <string name="greet2"> vervelend dat je problemen hebt met je apparaat.</string>
+    <string name="greet2"> wat vervelend om te horen dat je problemen ondervindt met je apparaat.</string>
+
+    <!--Internet Questions-->
+    <string name="iQuestion0_question">Hoe maak je verbinding met het internet?</string>
+    <string name="iQuestion0_answerA">Draadloos</string>
+    <string name="iQuestion0_nextIDA">1</string>
+    <string name="iQuestion0_answerB">Met Draad</string>
+    <string name="iQuestion0_nextIDB">1</string>
+
+
+
+    <string name="iQuestion1_question">Kunt u nog steeds verbinding maken met het internet?</string>
+    <string name="iQuestion1_answerA">Ja maar heel langzaam</string>
+    <string name="iQuestion1_nextIDA">2</string>
+    <string name="iQuestion1_answerB">Ja maar niet overal binneshuis</string>
+    <string name="iQuestion1_nextIDB">3</string>
+    <string name="iQuestion1_answerC">Ja maar niet met dit apparaat</string>
+    <string name="iQuestion1_nextIDC">4</string>
+    <string name="iQuestion1_answerD">Nee er komt geen verbinding tot stand</string>
+    <string name="iQuestion1_nextIDD">5</string>
+
+
+
+    <string name="iQuestion2_question">Zijn andere apparaten net zo langzaam?</string>
+    <string name="iQuestion2_answerA">Ja deze zijn net zo langzaam</string>
+    <string name="iQuestion2_nextIDA">Haal de stekker uit de router, wacht 30 seconden en plaats deze dan opnieuw.</string>
+    <string name="iQuestion2_answerB">Nee die zijn sneller</string>
+    <string name="iQuestion2_nextIDB">Controleer of er op de achtergrond geen bestanden zoals updates worden gedownload</string>
+
+
+    <string name="iQuestion3_question">Hoeveel meter bereik komt u te kort?</string>
+    <string name="iQuestion3_answerA">Een tot Vijf Meter</string>
+    <string name="iQuestion3_nextIDA">Wij adviseren u een wifi-repeater aan te schaffen zie shop.pcmeesters.nl voor meer informatie</string>
+    <string name="iQuestion3_answerB">Vijf tot 10 meter</string>
+    <string name="iQuestion3_nextIDB">Wij adviseren u een wifi-homeplug aan te schaffen zie shop.pcmeesters.nl voor meer informatie</string>
+    <string name="iQuestion3_answerC">Tien meter of meer</string>
+    <string name="iQuestion3_nextIDC">Wij adviseren u een andere router aan te schaffen zie shop.pcmeesters.nl voor meer informatie</string>
+
+
+    <string name="iQuestion4_question">Herstart uw computer. Hoe ziet het internet icoontje rechtonderaan er uit?</string>
+    <string name="iQuestion4_answerA">Een geel uitroepteken</string>
+    <string name="iQuestion4_nextIDA">Klik erop met de rechtermuistoets en druk op problemen oplossen</string>
+    <string name="iQuestion4_answerB">Een rood kruis</string>
+    <string name="iQuestion4_nextIDB">Controleer de kabel deze is waarschijnlijk gebroken</string>
+    <string name="iQuestion4_answerC">Het icoontje ziet er normaal uit</string>
+    <string name="iQuestion4_nextIDC">Als het goed is kunt u nu op internet</string>
+
+
+    <string name="iQuestion5_question">Haal de stekker uit de router, wacht 30 seconden en plaats deze dan opnieuw. Branden de lampjes? (dit kan even duren)</string>
+    <string name="iQuestion5_answerA">Ja er branden lampjes</string>
+    <string name="iQuestion5_nextIDA">Hou de reset knop achter op de router ingedrukt. Dit is vaak een kleine ronde knop met het woord reset eronder op de achterkant van de router.</string>
+    <string name="iQuestion5_answerB">Nee er branden geen lampjes</string>
+    <string name="iQuestion5_nextIDB">De router is defect of krijgt geen stroom. Wij adviseren u een nieuwe aan te schaffen. Bezoek onze webshop of neem contact op met de ondersteuning voor meer informatie</string>
+
+
+    <!--Software Questions-->
+    <string name="pQuestion0_question">Maakt u gebruik van Apple, Windows of Linux?</string>
+    <string name="pQuestion0_answerA">Ik gebruik Apple</string>
+    <string name="pQuestion0_nextIDA">1</string>
+    <string name="pQuestion0_answerB">Ik gebruik Windows</string>
+    <string name="pQuestion0_nextIDB">1</string>
+    <string name="pQuestion0_answerC">Ik gebruik Linux</string>
+    <string name="pQuestion0_nextIDC">1</string>
+
+    <string name="pQuestion1_question">Staat het programma op dit moment op uw computer?</string>
+    <string name="pQuestion1_answerA">Ja het is geïnstalleerd</string>
+    <string name="pQuestion1_nextIDA">2</string>
+    <string name="pQuestion1_answerB">Nee het is nog niet geïnstalleerd</string>
+    <string name="pQuestion1_nextIDB">6</string>
+
+
+    <string name="pQuestion2_question">Start het programma normaal?</string>
+    <string name="pQuestion2_answerA">Ja het start</string>
+    <string name="pQuestion2_nextIDA">3</string>
+    <string name="pQuestion2_answerB">Nee het start niet (normaal)</string>
+    <string name="pQuestion2_nextIDB">4</string>
+
+
+    <string name="pQuestion3_question">Welke problemen ervaart u met het programma?</string>
+    <string name="pQuestion3_nextIDA">Heeft u geprobeert het programma te verwijderen en opnieuw te installeren?</string>
+
+    <string name="pQuestion4_question">Geeft het programma foutmeldingen?</string>
+    <string name="pQuestion4_answerA">Ja er komen meldingen in beeld</string>
+    <string name="pQuestion4_nextIDA">5</string>
+    <string name="pQuestion4_answerB">Nee het vertoont geen fouten</string>
+    <string name="pQuestion4_nextIDB">6</string>
+
+
+    <string name="pQuestion5_question">Vul alstublieft de foutmelding hieronder in</string>
+    <string name="pQuestion5_nextIDA">Heeft u geprobeert het programma te verwijderen en opnieuw te installeren?</string>
+
+    <string name="pQuestion6_question">Omschrijf uw probleem hieronder</string>
+    <string name="pQuestion6_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+    <string name="pQuestion7_question">Heeft u hulp nodig bij de installatie van het programma?</string>
+    <string name="pQuestion7_answerA">Ja ik heb hulp nodig</string>
+    <string name="pQuestion7_nextIDA">8</string>
+    <string name="pQuestion7_answerB">Nee het gaat om iets anders</string>
+    <string name="pQuestion7_nextIDB">9</string>
+
+
+    <string name="pQuestion8_question">Vul hieronder alstublieft de naam van uw programma in:</string>
+    <string name="pQuestion8_nextIDA">Klik op contact opnemen om een afspraak te maken voor de installatie</string>
+
+    <string name="pQuestion9_question">Omschrijf uw probleem of wens:</string>
+    <string name="pQuestion9_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+    <!--Slow Computer Questions-->
+    <string name="sQuestion0_question">Hoe oud is uw Apparaat?</string>
+    <string name="sQuestion0_answerA">0–3 Jaar</string>
+    <string name="sQuestion0_nextIDA">1</string>
+    <string name="sQuestion0_answerB">3–5 Jaar</string>
+    <string name="sQuestion0_nextIDB">1</string>
+    <string name="sQuestion0_answerC">5–8 Jaar</string>
+    <string name="sQuestion0_nextIDC">1</string>
+    <string name="sQuestion0_answerD">8 Jaar of ouder</string>
+    <string name="sQuestion0_nextIDD">1</string>
+
+
+    <string name="sQuestion1_question">Hoe lang ervaart u al problemen?</string>
+    <string name="sQuestion1_answerA">1–6 Weken</string>
+    <string name="sQuestion1_nextIDA">2</string>
+    <string name="sQuestion1_answerB">2 – 6 Maanden</string>
+    <string name="sQuestion1_nextIDB">2</string>
+    <string name="sQuestion1_answerC">Sinds de aanschaf</string>
+    <string name="sQuestion1_nextIDC">2</string>
+
+    <string name="sQuestion2_question">Maakt u gebruik van Apple, Windows of Linux?</string>
+    <string name="sQuestion2_answerA">Ik gebruik Apple</string>
+    <string name="sQuestion2_nextIDA">3</string>
+    <string name="sQuestion2_answerB">Ik gebruik Windows</string>
+    <string name="sQuestion2_nextIDB">3</string>
+    <string name="sQuestion2_answerC">Ik gebruik Linux</string>
+    <string name="sQuestion2_nextIDC">3</string>
+
+
+
+    <string name="sQuestion3_question">Wanneer ervaart u de problemen?</string>
+    <string name="sQuestion3_answerA">Continu</string>
+    <string name="sQuestion3_nextIDA">4</string>
+    <string name="sQuestion3_answerB">Wanneer ik veel dingen tegelijk doe</string>
+    <string name="sQuestion3_nextIDB">4</string>
+    <string name="sQuestion3_answerC">Bij specifieke programma\'s</string>
+    <string name="sQuestion3_nextIDC">7</string>
+
+
+
+    <string name="sQuestion4_question">Geeft de Computer foutmeldingen?</string>
+    <string name="sQuestion4_answerA">Ja er verschijnen meldingen</string>
+    <string name="sQuestion4_nextIDA">5</string>
+    <string name="sQuestion4_answerB">Nee er verschijnen geen meldingen</string>
+    <string name="sQuestion4_nextIDB">6</string>
+
+
+    <string name="sQuestion5_question">Omschrijf hieronder alstublieft de foutmelding</string>
+    <string name="sQuestion5_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+    <string name="sQuestion6_question">Wordt het apparaat erg warm?</string>
+    <string name="sQuestion6_answerA">Ja het is oncomfortabel</string>
+    <string name="sQuestion6_nextIDA">Controleer dat de onderkant van de laptop niet geblokkeerd wordt door stof of bijvoorbeeld een tafelkleed</string>
+    <string name="sQuestion6_answerB">Nee de temperatuur is normaal</string>
+    <string name="sQuestion6_nextIDB">Start het apparaat opnieuw op</string>
+
+
+    <string name="sQuestion7_question">Voer de naam van het programma in</string>
+    <string name="sQuestion7_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+    <!--Computer wont turn on Questions-->
+    <string name="wQuestion0_question">Heeft u een notebook of een desktop</string>
+    <string name="wQuestion0_answerA">Ik heb een notebook</string>
+    <string name="wQuestion0_nextIDA">1</string>
+    <string name="wQuestion0_answerB">Ik heb een desktop</string>
+    <string name="wQuestion0_nextIDB">1</string>
+
+
+    <string name="wQuestion1_question">Gebruikt u Apple, Windows of Linux?</string>
+    <string name="wQuestion1_answerA">Ik gebruik Apple</string>
+    <string name="wQuestion1_nextIDA">2</string>
+    <string name="wQuestion1_answerB">Ik gebruik Windows</string>
+    <string name="wQuestion1_nextIDB">2</string>
+    <string name="wQuestion1_answerC">Ik gebruik Linux</string>
+    <string name="wQuestion1_nextIDC">2</string>
+
+
+    <string name="wQuestion2_question">Vertoont het apparaat nog tekenen van leven?</string>
+    <string name="wQuestion2_answerA">Ja er branden lampjes of het scherm gaat aan</string>
+    <string name="wQuestion2_nextIDA">3</string>
+    <string name="wQuestion2_answerB">Ja ik hoor geluid</string>
+    <string name="wQuestion2_nextIDB">5</string>
+    <string name="wQuestion2_answerC">Nee ik hoor en zie niks</string>
+    <string name="wQuestion2_nextIDC">Controleer of de stroomkabel goed zit ingeplugd</string>
+
+    <string name="wQuestion3_question">Gaat het scherm aan?</string>
+    <string name="wQuestion3_answerA">Ja het scherm is aan</string>
+    <string name="wQuestion3_nextIDA">4</string>
+    <string name="wQuestion3_answerB">Nee het scherm is uit</string>
+    <string name="wQuestion3_nextIDB">Controleer of de beeldscherm kabel (vaak een blauwe of witte stekker) aan beide kanten goed is ingeplugd</string>
+
+    <string name="wQuestion4_question">Welk van de volgende situaties is van toepassing?</string>
+    <string name="wQuestion4_answerA">Het scherm bevriest na een paar seconden</string>
+    <string name="wQuestion4_nextIDA">Haal de stekker of de accu uit het apparaat, wacht 30 seconden en start het apparaat dan opnieuw.</string>
+    <string name="wQuestion4_answerB">Het apparaat start opnieuw op voor ik het kan gebruiken</string>
+    <string name="wQuestion4_nextIDB">Druk tijdens het opstarten op F8 en kies met de pijltoetsen voor "laatst bekende juiste configuratie" druk dan op enter</string>
+    <string name="wQuestion4_answerC">Het scherm wordt zwart en blijft zwart.</string>
+    <string name="wQuestion4_nextIDC">Haal de stekker en/of de accu uit het apparaat, wacht 30 seconden en start het apparaat dan opnieuw.</string>
+    <string name="wQuestion4_answerD">Geen van alle</string>
+    <string name="wQuestion4_nextIDD">5</string>
+
+
+    <string name="wQuestion5_question">Omschrijf wat er gebeurt. Let hierbij op geluiden of patronen in lampjes.</string>
+    <string name="wQuestion5_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+
+    <!-- other problems question-->
+    <string name="oQuestion0_question">Om wat voor apparaat gaat het?</string>
+    <string name="oQuestion0_nextIDA">1</string>
+
+    <string name="oQuestion1_question">Wat is het probleem?</string>
+    <string name="oQuestion1_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+    <!-- text for otherdevices -->
+    <string name="odQuestion0_question">Met wat voor apparaat heb je problemen?</string>
+    <string name="odQuestion0_awnserA">Een smarthphone</string>
+    <string name="odQuestion0_nextIDA">1</string>
+    <string name="odQuestion0_awnserB">Een tablet</string>
+    <string name="odQuestion0_nextIDB">1</string>
+    <string name="odQuestion0_awnserC">Een ander apparaat</string>
+    <string name="odQuestion0_nextIDC">1</string>
+    <string name="odQuestion0_imageA">phone_icon</string>
+    <string name="odQuestion0_imageB">tablet</string>
+    <string name="odQuestion0_imageC">question_mark</string>
+
+    <string name="odQuestion1_question">Omschrijf uw probleem</string>
+    <string name="odQuestion1_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
+
+    <!-- text for printer problem categories -->
+    <string name="prQuestion0_question">Wat voor printer heeft u?</string>
+    <string name="prQuestion0_IDA">1</string>
+
+    <string name="prQuestion1_question">Gaat de printer nog aan?</string>
+    <string name="prQuestion1_answerA">Yes it can turn on</string>
+    <string name="prQuestion1_IDA">2</string>
+    <string name="prQuestion1_answerB">No it does not turn on</string>
+    <string name="prQuestion1_IDB">Are all the cables plugged in?</string>
+    <string name="prQuestion1_ImageA">printer_problem</string>
+    <string name="prQuestion1_ImageB">printer_problem</string>
+
+    <string name="prQuestion2_question">Does the printer partially print?</string>
+    <string name="prQuestion2_answerA">Yes it does print</string>
+    <string name="prQuestion2_IDA">Do the cartridges still have ink?</string>
+    <string name="prQuestion2_answerB">No it does not print</string>
+    <string name="prQuestion2_IDB">Is there paper stuck inside the printer?</string>
+    <string name="prQuestion2_ImageA">printer_problem</string>
+    <string name="prQuestion2_ImageB">printer_problem</string>
+
+    <!-- Virus Problem Questions -->
+    <string name="vQuestion0_question">Are you using Apple, Windows or Linux?</string>
+    <string name="vQuestion0_answerA">Apple</string>
+    <string name="vQuestion0_nextIDA">1</string>
+    <string name="vQuestion0_answerB">Windows</string>
+    <string name="vQuestion0_nextIDB">1</string>
+    <string name="vQuestion0_answerC">Linux</string>
+    <string name="vQuestion0_nextIDC">1</string>
+    <string name="vQuestion0_imageA">wifi</string>
+    <string name="vQuestion0_imageB">ethernet</string>
+    <string name="vQuestion0_imageC">ethernet</string>
+
+    <string name="vQuestion1_question">Can you still sign in to your device</string>
+    <string name="vQuestion1_answerA">Yes</string>
+    <string name="vQuestion1_nextIDA">2</string>
+    <string name="vQuestion1_answerB">No</string>
+    <string name="vQuestion1_nextIDB">Try Pressing F8 during startup and starting safe mode</string>
+    <string name="vQuestion1_imageA">computer_scherm_aan</string>
+    <string name="vQuestion1_imageB">computer_scherm_uit</string>
+
+    <string name="vQuestion2_question">Why do you think you have a virus?</string>
+    <string name="vQuestion2_answerA">Because I get a lot of adds, pop-ups, or error messages when I'm online</string>
+    <string name="vQuestion2_nextIDA">Try to reinstall your browser</string>
+    <string name="vQuestion2_answerB">I get a lot of errors using a specific program</string>
+    <string name="vQuestion2_nextIDB">Please reinstall that program</string>
+    <string name="vQuestion2_answerC">I always get strange messages and adds</string>
+    <string name="vQuestion2_nextIDC">Try disabling some startup programs in taskmanager</string>
+    <string name="vQuestion2_imageA">computer_overige_problemen</string>
+    <string name="vQuestion2_imageB">computer_email_problemen</string>
+    <string name="vQuestion2_imageC">computer_virus</string>
+
+    <!-- text for problem categories -->
+    <string name="program_installing_problem_text">Problem Installing</string>
+    <string name="internet_problems_text">Internet Problems</string>
+    <string name="slow_computer_text">Slow Computer</string>
+    <string name="computer_off_problem_text">Computer won\'t turn on</string>
+    <string name="computer_virus_problem_text">Computer Virus</string>
+    <string name="printer_problem_text">Printer Problem</string>
+    <string name="other_devices_problems_text">Problems with other devices</string>
+    <string name="other_problems_text">Other Problems</string>
+    <string name="thank_you_msg">Thank you for completing the survey</string>
+    <string name="procces_soon_msg">We will process your request as soon as possible</string>
+    <string name="exit_pcmeester">Exit PCMeesters.nl</string>
+    <string name="startCall">Starting the Call</string>
+    <string name="companyPhone">tel:0031633094338</string>
+    <string name="noCallApp">cant start the call</string>
+    <string name="companyEmail">info@pcmeesters.nl</string>
+    <string name="repairRequest">Repair Request</string>
+    <string name="emailGreet">Dear PCmaster,\n\n</string>
+    <string name="emailStart">Starting your email app</string>
+    <string name="emailError">Email could not start</string>
+    <string name="facebookContact">fb://messaging/475877505906388</string>
+    <string name="startChat">Starting a chat with one of our experts</string>
+    <string name="redirectFacebook">No chat application found. Redirecting to facebook .</string>
+    <string name="facebookPage">http://www.facebook.com/pcmeesters.nl/</string>
+    <string name="websiteURL">http://www.pcmeesters.nl</string>
+    <string name="nameError">Please enter your name</string>
+    <string name="mailError">Please enter a valid email adres</string>
+    <string name="phoneError">Please enter a valid phone number</string>
+    <string name="addressError">Please enter your address</string>
+    <string name="zipCodeError">Please enter your zipCode</string>
+    <string name="modelError">Please enter your device\'s model and brand</string>
+    <string name="my">"My "</string>
+    <string name="appConclusion">" is having some issues and I used the app to diagnose it.\n The app came to the following conclusion: "</string>
+    <string name="contactInfo">\n\n My contact information is: \n</string>
+    <string name="name">"  Name: "</string>
+    <string name="address">"\n Address: "</string>
+    <string name="zipCode">"\n ZipCode: "</string>
+    <string name="phonenumber">"\n Phone number: "</string>
+    <string name="email">"\n Email: "</string>
+    <string name="alsoImportant">"\n\n It's also important that you know that: \n "</string>
+    <string name="bye">\n\n Yours Faithfully, \n</string>
+    <string name="loginError">Login Failed</string>
+    <string name="call_now">Call Now</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="facebook">Facebook</string>
+    <string name="internet">Internet</string>
+    <string name="contactSupport">We advise you to contact our technical support. You can do this by entering your details here and click send</string>
+    <string name="namef">Name:</string>
+    <string name="e_mailf">E-mail:</string>
+    <string name="phone">Phone:</string>
+    <string name="addressf">Address:</string>
+    <string name="zipcodef">ZipCode:</string>
+    <string name="brand_and_modelf">Brand and Model:</string>
+    <string name="additional_comment">Additional Comment</string>
+    <string name="send">Send</string>
+    <string name="submit">Submit</string>
+    <string name="selectCategory">Please select the category that best suits your problem</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="yes_button">YES</string>
+    <string name="problem_solved">Did this solve your problem?</string>
+
 
 </resources>

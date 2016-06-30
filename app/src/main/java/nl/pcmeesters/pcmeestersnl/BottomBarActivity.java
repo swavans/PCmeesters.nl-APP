@@ -10,15 +10,15 @@ public abstract class BottomBarActivity extends AppCompatActivity {
 
     public void call(View view) {
         Toast toast = Toast.makeText(getApplicationContext(),
-                "Starten met bellen", Toast.LENGTH_SHORT);
+                R.string.startCall, Toast.LENGTH_SHORT);
         toast.show();
-        Intent in=new Intent(Intent.ACTION_DIAL, Uri.parse("tel:0031633094338"));
+        Intent in=new Intent(Intent.ACTION_DIAL, Uri.parse(getString(R.string.companyPhone)));
         try{
             startActivity(in);
         }
 
         catch (android.content.ActivityNotFoundException ex){
-            Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.noCallApp,Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -30,33 +30,33 @@ public abstract class BottomBarActivity extends AppCompatActivity {
 /* Fill it with Data */
         emailIntent.setType("plain/text");
         emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@pcmeesters.nl"});
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Reparatie aanvraag");
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "Beste PCmeester,\n\n");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{getString(R.string.companyEmail)});
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.repairRequest));
+        emailIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.emailGreet));
         Toast toast = Toast.makeText(getApplicationContext(),
-                "Bezig met starten van de Email Applicatie", Toast.LENGTH_SHORT);
+                R.string.emailStart, Toast.LENGTH_SHORT);
         toast.show();
         try{startActivity(emailIntent);
         }
         catch (android.content.ActivityNotFoundException ex){
-            Toast.makeText(getApplicationContext(),"Email kon niet worden geopend",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.emailError,Toast.LENGTH_SHORT).show();
         }
 
     }
     public void facebook(View view)
     {
-        String uri = "fb://messaging/475877505906388";
+        String uri = getString(R.string.facebookContact);
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         Toast toast = Toast.makeText(getApplicationContext(),
-                "Bezig met starten van Facebook Messenger", Toast.LENGTH_SHORT);
+                R.string.startChat, Toast.LENGTH_SHORT);
         toast.show();
         try{
             startActivity(intent);
         }
         catch (android.content.ActivityNotFoundException ex){
 
-            Toast.makeText(getApplicationContext(),"Messenger niet geïnstalleerd, de website wordt nu geopend.",Toast.LENGTH_SHORT).show();
-            String url = "http://www.facebook.com/pcmeesters.nl/";
+            Toast.makeText(getApplicationContext(), R.string.redirectFacebook,Toast.LENGTH_SHORT).show();
+            String url = getString(R.string.facebookPage);
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
@@ -64,7 +64,7 @@ public abstract class BottomBarActivity extends AppCompatActivity {
     }
     public void internet(View view)
     {
-            String url = "http://www.pcmeesters.nl";
+            String url = getString(R.string.websiteURL);
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);

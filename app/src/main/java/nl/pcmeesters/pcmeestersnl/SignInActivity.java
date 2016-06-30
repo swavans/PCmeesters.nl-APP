@@ -100,7 +100,7 @@ public class SignInActivity extends BottomBarActivity implements View.OnClickLis
             finish();
         } else {
             //If login fails
-            Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.loginError, Toast.LENGTH_LONG).show();
         }
     }
 
