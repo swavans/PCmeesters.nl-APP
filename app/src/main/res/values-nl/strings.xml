@@ -12,6 +12,9 @@
     <string name="iQuestion0_nextIDA">1</string>
     <string name="iQuestion0_answerB">Met Draad</string>
     <string name="iQuestion0_nextIDB">1</string>
+    <string name="iQuestion0_imageA">wifi</string>
+    <string name="iQuestion0_imageB">ethernet</string>
+
 
 
 
@@ -24,6 +27,10 @@
     <string name="iQuestion1_nextIDC">4</string>
     <string name="iQuestion1_answerD">Nee er komt geen verbinding tot stand</string>
     <string name="iQuestion1_nextIDD">5</string>
+    <string name="iQuestion1_imageA">low_speed</string>
+    <string name="iQuestion1_imageB">wifi_range</string>
+    <string name="iQuestion1_imageC">device_no_wifi</string>
+    <string name="iQuestion1_imageD">no_wifi</string>
 
 
 
@@ -32,6 +39,8 @@
     <string name="iQuestion2_nextIDA">Haal de stekker uit de router, wacht 30 seconden en plaats deze dan opnieuw.</string>
     <string name="iQuestion2_answerB">Nee die zijn sneller</string>
     <string name="iQuestion2_nextIDB">Controleer of er op de achtergrond geen bestanden zoals updates worden gedownload</string>
+    <string name="iQuestion2_imageA">low_speed</string>
+    <string name="iQuestion2_imageB">high_speed</string>
 
 
     <string name="iQuestion3_question">Hoeveel meter bereik komt u te kort?</string>
@@ -41,6 +50,9 @@
     <string name="iQuestion3_nextIDB">Wij adviseren u een wifi-homeplug aan te schaffen zie shop.pcmeesters.nl voor meer informatie</string>
     <string name="iQuestion3_answerC">Tien meter of meer</string>
     <string name="iQuestion3_nextIDC">Wij adviseren u een andere router aan te schaffen zie shop.pcmeesters.nl voor meer informatie</string>
+    <string name="iQuestion3_imageA">smaller_then_5</string>
+    <string name="iQuestion3_imageB">a5_till_10</string>
+    <string name="iQuestion3_imageC">greater_then_10</string>
 
 
     <string name="iQuestion4_question">Herstart uw computer. Hoe ziet het internet icoontje rechtonderaan er uit?</string>
@@ -49,7 +61,10 @@
     <string name="iQuestion4_answerB">Een rood kruis</string>
     <string name="iQuestion4_nextIDB">Controleer de kabel deze is waarschijnlijk gebroken</string>
     <string name="iQuestion4_answerC">Het icoontje ziet er normaal uit</string>
-    <string name="iQuestion4_nextIDC">Als het goed is kunt u nu op internet</string>
+    <string name="iQuestion4_nextIDC">Controleer de datum en de tijd op het apparaat. En pas deze waarnodig aan.</string>
+    <string name="iQuestion4_imageA">yellow_internet_icon</string>
+    <string name="iQuestion4_imageB">red_internet_icon</string>
+    <string name="iQuestion4_imageC">nothing_internet_icon</string>
 
 
     <string name="iQuestion5_question">Haal de stekker uit de router, wacht 30 seconden en plaats deze dan opnieuw. Branden de lampjes? (dit kan even duren)</string>
@@ -57,7 +72,8 @@
     <string name="iQuestion5_nextIDA">Hou de reset knop achter op de router ingedrukt. Dit is vaak een kleine ronde knop met het woord reset eronder op de achterkant van de router.</string>
     <string name="iQuestion5_answerB">Nee er branden geen lampjes</string>
     <string name="iQuestion5_nextIDB">De router is defect of krijgt geen stroom. Wij adviseren u een nieuwe aan te schaffen. Bezoek onze webshop of neem contact op met de ondersteuning voor meer informatie</string>
-
+    <string name="iQuestion5_imageA">led_green</string>
+    <string name="iQuestion5_imageB">led_black</string>
 
     <!--Software Questions-->
     <string name="pQuestion0_question">Maakt u gebruik van Apple, Windows of Linux?</string>
@@ -67,12 +83,17 @@
     <string name="pQuestion0_nextIDB">1</string>
     <string name="pQuestion0_answerC">Ik gebruik Linux</string>
     <string name="pQuestion0_nextIDC">1</string>
+    <string name="pQuestion0_imageA">apple_icon</string>
+    <string name="pQuestion0_imageB">windows_logo</string>
+    <string name="pQuestion0_imageC">linux_icon</string>
 
     <string name="pQuestion1_question">Staat het programma op dit moment op uw computer?</string>
     <string name="pQuestion1_answerA">Ja het is geïnstalleerd</string>
     <string name="pQuestion1_nextIDA">2</string>
     <string name="pQuestion1_answerB">Nee het is nog niet geïnstalleerd</string>
     <string name="pQuestion1_nextIDB">6</string>
+    <string name="pQuestion1_imageA">program_installed</string>
+    <string name="pQuestion1_imageB">program_not_installed</string>
 
 
     <string name="pQuestion2_question">Start het programma normaal?</string>
@@ -80,6 +101,8 @@
     <string name="pQuestion2_nextIDA">3</string>
     <string name="pQuestion2_answerB">Nee het start niet (normaal)</string>
     <string name="pQuestion2_nextIDB">4</string>
+    <string name="pQuestion2_imageA">program_installed</string>
+    <string name="pQuestion2_imageB">program_not_installed</string>
 
 
     <string name="pQuestion3_question">Welke problemen ervaart u met het programma?</string>
@@ -90,6 +113,8 @@
     <string name="pQuestion4_nextIDA">5</string>
     <string name="pQuestion4_answerB">Nee het vertoont geen fouten</string>
     <string name="pQuestion4_nextIDB">6</string>
+    <string name="pQuestion4_imageA">error_icon</string>
+    <string name="pQuestion4_imageB">no_error_icon</string>
 
 
     <string name="pQuestion5_question">Vul alstublieft de foutmelding hieronder in</string>
@@ -103,6 +128,9 @@
     <string name="pQuestion7_nextIDA">8</string>
     <string name="pQuestion7_answerB">Nee het gaat om iets anders</string>
     <string name="pQuestion7_nextIDB">9</string>
+    <string name="pQuestion7_imageA">yes_icon</string>
+    <string name="pQuestion7_imageB">error_icon</string>
+
 
 
     <string name="pQuestion8_question">Vul hieronder alstublieft de naam van uw programma in:</string>
@@ -121,6 +149,10 @@
     <string name="sQuestion0_nextIDC">1</string>
     <string name="sQuestion0_answerD">8 Jaar of ouder</string>
     <string name="sQuestion0_nextIDD">1</string>
+    <string name="sQuestion0_imageA">a0_3</string>
+    <string name="sQuestion0_imageB">a3_5</string>
+    <string name="sQuestion0_imageC">a5_8</string>
+    <string name="sQuestion0_imageD">greater_then_8</string>
 
 
     <string name="sQuestion1_question">Hoe lang ervaart u al problemen?</string>
@@ -130,6 +162,9 @@
     <string name="sQuestion1_nextIDB">2</string>
     <string name="sQuestion1_answerC">Sinds de aanschaf</string>
     <string name="sQuestion1_nextIDC">2</string>
+    <string name="sQuestion1_imageA">a1_6</string>
+    <string name="sQuestion1_imageB">a2_6</string>
+    <string name="sQuestion1_imageC">start</string>
 
     <string name="sQuestion2_question">Maakt u gebruik van Apple, Windows of Linux?</string>
     <string name="sQuestion2_answerA">Ik gebruik Apple</string>
@@ -138,6 +173,9 @@
     <string name="sQuestion2_nextIDB">3</string>
     <string name="sQuestion2_answerC">Ik gebruik Linux</string>
     <string name="sQuestion2_nextIDC">3</string>
+    <string name="sQuestion2_imageA">apple_icon</string>
+    <string name="sQuestion2_imageB">windows_logo</string>
+    <string name="sQuestion2_imageC">linux_icon</string>
 
 
 
@@ -148,6 +186,9 @@
     <string name="sQuestion3_nextIDB">4</string>
     <string name="sQuestion3_answerC">Bij specifieke programma\'s</string>
     <string name="sQuestion3_nextIDC">7</string>
+    <string name="sQuestion3_imageA">infinity</string>
+    <string name="sQuestion3_imageB">busy_pc</string>
+    <string name="sQuestion3_imageC">program_icon</string>
 
 
 
@@ -156,6 +197,9 @@
     <string name="sQuestion4_nextIDA">5</string>
     <string name="sQuestion4_answerB">Nee er verschijnen geen meldingen</string>
     <string name="sQuestion4_nextIDB">6</string>
+    <string name="sQuestion4_imageA">error_icon</string>
+    <string name="sQuestion4_imageB">no_error_icon</string>
+
 
 
     <string name="sQuestion5_question">Omschrijf hieronder alstublieft de foutmelding</string>
@@ -166,6 +210,8 @@
     <string name="sQuestion6_nextIDA">Controleer dat de onderkant van de laptop niet geblokkeerd wordt door stof of bijvoorbeeld een tafelkleed</string>
     <string name="sQuestion6_answerB">Nee de temperatuur is normaal</string>
     <string name="sQuestion6_nextIDB">Start het apparaat opnieuw op</string>
+    <string name="sQuestion6_imageA">hot_temperature</string>
+    <string name="sQuestion6_imageB">normal_temperature</string>
 
 
     <string name="sQuestion7_question">Voer de naam van het programma in</string>
@@ -177,6 +223,8 @@
     <string name="wQuestion0_nextIDA">1</string>
     <string name="wQuestion0_answerB">Ik heb een desktop</string>
     <string name="wQuestion0_nextIDB">1</string>
+    <string name="wQuestion0_imageA">notebook_scherm_aan</string>
+    <string name="wQuestion0_imageB">computer_scherm_aan</string>
 
 
     <string name="wQuestion1_question">Gebruikt u Apple, Windows of Linux?</string>
@@ -186,6 +234,9 @@
     <string name="wQuestion1_nextIDB">2</string>
     <string name="wQuestion1_answerC">Ik gebruik Linux</string>
     <string name="wQuestion1_nextIDC">2</string>
+    <string name="wQuestion1_imageA">apple_icon</string>
+    <string name="wQuestion1_imageB">windows_logo</string>
+    <string name="wQuestion1_imageC">linux_icon</string>
 
 
     <string name="wQuestion2_question">Vertoont het apparaat nog tekenen van leven?</string>
@@ -195,12 +246,17 @@
     <string name="wQuestion2_nextIDB">5</string>
     <string name="wQuestion2_answerC">Nee ik hoor en zie niks</string>
     <string name="wQuestion2_nextIDC">Controleer of de stroomkabel goed zit ingeplugd</string>
+    <string name="wQuestion2_imageA">desktop_scherm_aan</string>
+    <string name="wQuestion2_imageB">desktop_scherm_aan_en_geluid</string>
+    <string name="wQuestion2_imageC">desktop_scherm_uit</string>
 
     <string name="wQuestion3_question">Gaat het scherm aan?</string>
     <string name="wQuestion3_answerA">Ja het scherm is aan</string>
     <string name="wQuestion3_nextIDA">4</string>
     <string name="wQuestion3_answerB">Nee het scherm is uit</string>
     <string name="wQuestion3_nextIDB">Controleer of de beeldscherm kabel (vaak een blauwe of witte stekker) aan beide kanten goed is ingeplugd</string>
+    <string name="wQuestion3_imageA">desktop_scherm_aan</string>
+    <string name="wQuestion3_imageB">desktop_scherm_uit</string>
 
     <string name="wQuestion4_question">Welk van de volgende situaties is van toepassing?</string>
     <string name="wQuestion4_answerA">Het scherm bevriest na een paar seconden</string>
@@ -211,6 +267,10 @@
     <string name="wQuestion4_nextIDC">Haal de stekker en/of de accu uit het apparaat, wacht 30 seconden en start het apparaat dan opnieuw.</string>
     <string name="wQuestion4_answerD">Geen van alle</string>
     <string name="wQuestion4_nextIDD">5</string>
+    <string name="wQuestion4_imageA">desktop_overig_problemen</string>
+    <string name="wQuestion4_imageB">desktop_overig_problemen</string>
+    <string name="wQuestion4_imageC">desktop_overig_problemen</string>
+    <string name="wQuestion4_imageD">desktop_overig_problemen</string>
 
 
     <string name="wQuestion5_question">Omschrijf wat er gebeurt. Let hierbij op geluiden of patronen in lampjes.</string>
@@ -232,6 +292,9 @@
     <string name="odQuestion0_nextIDB">1</string>
     <string name="odQuestion0_awnserC">Een ander apparaat</string>
     <string name="odQuestion0_nextIDC">1</string>
+    <string name="odQuestion0_imageA">phone_icon</string>
+    <string name="odQuestion0_imageB">tablet</string>
+    <string name="odQuestion0_imageC">question_mark</string>
 
     <string name="odQuestion1_question">Omschrijf uw probleem</string>
     <string name="odQuestion1_nextIDA">Op dit moment heeft de app geen oplossing voor je. Klik hieronder op contact opnemen.</string>
@@ -245,28 +308,35 @@
     <string name="prQuestion1_IDA">2</string>
     <string name="prQuestion1_answerB">Nee hij gaat niet aan</string>
     <string name="prQuestion1_IDB">Controleer of alle stekkers zijn ingeplugd</string>
+    <string name="prQuestion1_ImageA">printer_problem</string>
+    <string name="prQuestion1_ImageB">printer_problem</string>
 
     <string name="prQuestion2_question">Drukt de printer nog gedeeltelijk af?</string>
     <string name="prQuestion2_answerA">Ja hij drukt af.</string>
     <string name="prQuestion2_IDA">Bevestig dat de cartridges vol en niet over de datum zijn. Als de printer een maand of meer heeft stil gestaan dan kan het zijn dat ze zijn uitgedroogd. </string>
     <string name="prQuestion2_answerB">Nee hij drukt niet af</string>
     <string name="prQuestion2_IDB">Open de printer en controleer deze op vastzittend papier?</string>
+    <string name="prQuestion2_ImageA">printer_problem</string>
+    <string name="prQuestion2_ImageB">printer_problem</string>
 
 
     <!-- Virus Problem Questions -->
-    <string name="vQuestion0_question">Maakt u gebruik van Apple, Windows of Linux?</string>
+    <string name="vQuestion0_question">Maakt u gebruik van Apple of Windows?</string>
     <string name="vQuestion0_answerA">Ik gebruik Apple</string>
     <string name="vQuestion0_nextIDA">1</string>
     <string name="vQuestion0_answerB">Ik gebruik Windows</string>
     <string name="vQuestion0_nextIDB">1</string>
+    <string name="vQuestion0_imageA">apple_icon</string>
+    <string name="vQuestion0_imageB">windows_logo</string>
 
     <string name="vQuestion1_question">Kunt u nog steeds inloggen?</string>
     <string name="vQuestion1_answerA">Ja ik kan inloggen</string>
     <string name="vQuestion1_nextIDA">2</string>
     <string name="vQuestion1_answerB">Nee ik kan niet inloggen</string>
     <string name="vQuestion1_nextIDB">Druk op F8 tijdens het opstarten en kies voor "veilige modus"</string>
-    <string name="vQuestion1_imageA">computer_scherm_aan</string>
-    <string name="vQuestion1_imageB">computer_scherm_uit</string>
+    <string name="vQuestion1_imageA">error_icon</string>
+    <string name="vQuestion1_imageB">yes_icon</string>
+
 
     <string name="vQuestion2_question">Waarom vermoed u dat u een virus heeft?</string>
     <string name="vQuestion2_answerA">Ik krijg een hoop advertenties en pop-ups op internet.</string>
@@ -275,6 +345,9 @@
     <string name="vQuestion2_nextIDB">Probeer het programma te verwijderen en opnieuw te installeren</string>
     <string name="vQuestion2_answerC">Ik krijg continu foutmeldingen en advertenties</string>
     <string name="vQuestion2_nextIDC">Schakel een aantal programma\'s in de categorie "Opstarten" van taakbeheer uit </string>
+    <string name="vQuestion2_imageA">computer_overige_problemen</string>
+    <string name="vQuestion2_imageB">computer_email_problemen</string>
+    <string name="vQuestion2_imageC">computer_virus</string>
 
     <!-- text for problem categories -->
     <string name="program_installing_problem_text">Problemen met Programma\'s</string>

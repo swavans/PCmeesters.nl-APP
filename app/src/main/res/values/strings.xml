@@ -205,7 +205,7 @@
     <string name="wQuestion0_answerB">I have a desktop</string>
     <string name="wQuestion0_nextIDB">1</string>
     <string name="wQuestion0_imageA">notebook_scherm_aan</string>
-    <string name="wQuestion0_imageB">desktop_scherm_aan</string>
+    <string name="wQuestion0_imageB">computer_scherm_aan</string>
 
     <string name="wQuestion1_question">Are you using Apple, Windows or Linux?</string>
     <string name="wQuestion1_answerA">Apple</string>
@@ -298,7 +298,7 @@
     <string name="prQuestion2_ImageB">printer_problem</string>
 
     <!-- Virus Problem Questions -->
-    <string name="vQuestion0_question">Are you using Apple, Windows or Linux?</string>
+    <string name="vQuestion0_question">Are you using Apple pr Windows?</string>
     <string name="vQuestion0_answerA">Apple</string>
     <string name="vQuestion0_nextIDA">1</string>
     <string name="vQuestion0_answerB">Windows</string>
