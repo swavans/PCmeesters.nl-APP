@@ -77,7 +77,6 @@ public class FormActivity extends BottomBarActivity {
             try {
                 startActivity(emailIntent);
                 sendEmail =true;
-
             } catch (android.content.ActivityNotFoundException ex) {
                 Toast.makeText(getApplicationContext(), "Email kon niet worden geopend", Toast.LENGTH_SHORT).show();
             }
@@ -90,7 +89,7 @@ public class FormActivity extends BottomBarActivity {
         super.onRestart();
         if(sendEmail)
         {
-
+            setContentView(R.layout.end_screen);
         }
     }
 
