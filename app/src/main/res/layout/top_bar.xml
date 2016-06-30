@@ -36,26 +36,4 @@
     android:layout_gravity="right"
            android:onClick="onHelpPressed"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/ic_menu_help"
-        app:backgroundTint="#1CAFDB"
-        android:src="@android:drawable/ic_menu_revert"
-        android:layout_alignLeft="@id/imageView"
-        android:layout_alignBottom="@id/imageView"
-        android:clickable="true"
-        android:visibility="visible"
-        android:longClickable="true"
-        android:adjustViewBounds="true"
-        android:layout_gravity="left"
-        android:onClick="onBackPressed2"
-        android:nestedScrollingEnabled="false" />
-
-
-
-
-
-
-
 </RelativeLayout>

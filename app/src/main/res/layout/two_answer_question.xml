@@ -9,7 +9,8 @@
     <include layout="@layout/top_bar" />
 
     <LinearLayout
-        android:layout_gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginTop="110dp"
         android:padding="20dp"
 
         android:layout_width="match_parent"
