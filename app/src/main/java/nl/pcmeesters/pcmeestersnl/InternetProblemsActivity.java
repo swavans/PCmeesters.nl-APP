@@ -1,5 +1,6 @@
 package nl.pcmeesters.pcmeestersnl;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import com.google.android.gms.common.server.converter.StringToIntConverter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+
 
 /**
  * Created by School on 29-6-2016.
@@ -19,6 +20,9 @@ public class InternetProblemsActivity  extends BottomBarActivity{
     //Questions are build by Question, Answer A, Next ID A, Answer B, Next ID B, etc
     private ArrayList<ArrayList> questions = new ArrayList<>();
     private int currentQuestionID = 0;
+    private ArrayList<String> answers;
+    private ArrayList<Integer> answerID;
+    private int amountofQuestionsAsked = 0;
 
 
 
@@ -27,6 +31,8 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         super.onCreate(savedInstanceState);
         addQuestions();
         updateQuestion();
+        answers = new ArrayList<>();
+        answerID = new ArrayList<>();
     }
 
     private void updateQuestion() {
@@ -97,39 +103,78 @@ public class InternetProblemsActivity  extends BottomBarActivity{
         question.setText(currentQuestion.get(0));
     }
     public void changeTextA(View view) {
+        TextView answerA = (TextView) findViewById(R.id.answerA);
+        answers.add(amountofQuestionsAsked, (String) answerA.getText());
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
-        try{currentQuestionID= Integer.parseInt(currentQuestion.get(2));}
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(2));
+        answerID.add(Integer.parseInt(currentQuestion.get(2)));
+            amountofQuestionsAsked++;}
         catch (Exception e){
-            System.out.println(currentQuestion.get(2));
+            Intent startTip = new Intent(this,TipActivity.class);
+       //     startTip.putExtra("Tip",currentQuestion.get(2));
+      //      startTip.putExtra("Answers",answers);
+            startActivity(startTip);
         }
         updateQuestion();
     }
     public void changeTextB(View view) {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
-        try{currentQuestionID= Integer.parseInt(currentQuestion.get(4));}
+        TextView answerB = (TextView) findViewById(R.id.answerB);
+        answers.add(amountofQuestionsAsked, (String) answerB.getText());
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(4));
+            answerID.add(Integer.parseInt(currentQuestion.get(4)));
+            amountofQuestionsAsked++;}
         catch (Exception e){
-            System.out.println(currentQuestion.get(4));
+            Intent startTip = new Intent(this,TipActivity.class);
+           // startTip.putExtra("Tip",currentQuestion.get(4));
+          //  startTip.putExtra("Answers",answers);
+            startActivity(startTip);
         }        updateQuestion();
     }
     public void changeTextC(View view) {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
-        try{currentQuestionID= Integer.parseInt(currentQuestion.get(6));}
+        TextView answerC = (TextView) findViewById(R.id.answerC);
+        answers.add(amountofQuestionsAsked, (String) answerC.getText());
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(6));
+            answerID.add(Integer.parseInt(currentQuestion.get(6)));
+            amountofQuestionsAsked++;}
         catch (Exception e){
-            System.out.println(currentQuestion.get(6));
-        }        updateQuestion();
+            Intent startTip = new Intent(this,TipActivity.class);
+           // startTip.putExtra("Tip",currentQuestion.get(6));
+          //  startTip.putExtra("Answers",answers);
+            startActivity(startTip);
+            }
+        updateQuestion();
     }
     public void changeTextD(View view) {
         ArrayList<String> currentQuestion = questions.get(currentQuestionID);
-        try{currentQuestionID= Integer.parseInt(currentQuestion.get(8));}
+        TextView answerD = (TextView) findViewById(R.id.answerD);
+        answers.add(amountofQuestionsAsked, (String) answerD.getText());
+        try{currentQuestionID= Integer.parseInt(currentQuestion.get(8));
+            answerID.add(Integer.parseInt(currentQuestion.get(8)));
+            amountofQuestionsAsked++;}
         catch (Exception e){
-            System.out.println(currentQuestion.get(8));
-        }        updateQuestion();
+            Intent startTip = new Intent(this,TipActivity.class);
+           // startTip.putExtra("Tip",currentQuestion.get(8));
+          //  startTip.putExtra("Answers",answers);
+            startActivity(startTip);
+            }
+        updateQuestion();
     }
     @Override
     public void onBackPressed() {
-        currentQuestionID--;
+
+        if(amountofQuestionsAsked>0){
+            amountofQuestionsAsked--;
+        currentQuestionID= answerID.get(amountofQuestionsAsked);
         updateQuestion();
+        }
+        else
+        {
+            super.onBackPressed();
+        }
     }
+
 
     private void addQuestions(){
          ArrayList<String> question0 = new ArrayList<>();

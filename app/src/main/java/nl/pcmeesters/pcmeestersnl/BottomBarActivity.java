@@ -24,6 +24,7 @@ public abstract class BottomBarActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"yourActivity is not founded",Toast.LENGTH_SHORT).show();
         }
     }
+
     public void mail(View view)
     {
         /* Create the Intent */

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".ActivityActivity3">
+    <include layout="@layout/top_bar" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/tip"
+            android:text="@string/question_3"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Did this solve your problem?"
+            android:id="@+id/question"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+        <Button
+            android:background = "@drawable/rounded_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/buttonA"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="buttonA"
+            android:layout_marginTop="15dp"
+            android:onClick="changeTextA"
+            android:clickable="true"
+            android:text="YES"
+            android:textColor="@color/abc_btn_colored_borderless_text_material" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                android:padding="10dp">
+
+        <Button
+            android:background = "@drawable/rounded_button"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:id="@+id/buttonB"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="buttonB"
+            android:layout_marginTop="15dp"
+            android:onClick="changeTextB"
+            android:text="NO"
+            android:textColor="@color/abc_btn_colored_borderless_text_material"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+    <include layout="@layout/bottom_bar" />
+
+
+</android.support.design.widget.CoordinatorLayout>
