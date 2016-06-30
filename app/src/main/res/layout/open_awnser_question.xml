@@ -23,7 +23,7 @@
             android:id="@+id/question" />
             <EditText
                 android:layout_width="356dp"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:gravity="left"
                 android:text="Enter text"
                 android:id="@+id/openAnswer"
