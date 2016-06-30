@@ -269,11 +269,11 @@
     <string name="vQuestion1_imageB">computer_scherm_uit</string>
 
     <string name="vQuestion2_question">Waarom vermoed u dat u een virus heeft?</string>
-    <string name="vQuestion2_answerA">Omdat ik een hoop advertenties en pop-ups krijg als ik op internet zit.</string>
+    <string name="vQuestion2_answerA">Ik krijg een hoop advertenties en pop-ups op internet.</string>
     <string name="vQuestion2_nextIDA">Probeer je internet browser opnieuw te installeren</string>
-    <string name="vQuestion2_answerB">Omdat ik een hoop foutmeldingen krijg bij een bepaald programma.</string>
+    <string name="vQuestion2_answerB">Ik krijg een foutmelding bij programma\'s.</string>
     <string name="vQuestion2_nextIDB">Probeer het programma te verwijderen en opnieuw te installeren</string>
-    <string name="vQuestion2_answerC">Omdat ik continu foutmeldingen en advertenties krijg te zien</string>
+    <string name="vQuestion2_answerC">Ik krijg continu foutmeldingen en advertenties</string>
     <string name="vQuestion2_nextIDC">Schakel een aantal programma\'s in de categorie "Opstarten" van taakbeheer uit </string>
 
     <!-- text for problem categories -->
