@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginTop="@dimen/margintTop1st"
+        android:layout_marginTop="@dimen/marginTop1st"
         android:layout_marginBottom="@dimen/marginBottom1st"
         android:padding="@dimen/paddingAll1st">
 

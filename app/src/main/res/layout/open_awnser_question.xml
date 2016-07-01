@@ -12,21 +12,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="160dp">
+        android:layout_marginTop="@dimen/marginTop1st"
+        android:layout_marginBottom="@dimen/marginBottom1st"
+        android:padding="@dimen/paddingAll1st">
         
         <TextView
-            android:layout_width="375dp"
+            android:layout_width="@dimen/textBoxWidth"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Please enter you open answer"
+            android:text=""
             android:textSize="@dimen/textSizeQuestion"
             android:id="@+id/question"
             android:textIsSelectable="false" />
             <EditText
-                android:layout_width="356dp"
-                android:layout_height="200dp"
-                android:gravity="left"
-                android:text="Enter text"
+                android:layout_width="@dimen/textBoxWidth"
+                android:layout_height="@dimen/textBoxHeight"
+                android:gravity="center"
+                android:text=""
                 android:id="@+id/openAnswer"
                 android:nestedScrollingEnabled="true"
                 android:textSize="@dimen/answerTextSize" />
@@ -36,8 +38,8 @@
             android:text="@string/submit"
             android:background="@drawable/rounded_button"
             android:textColor="@android:color/white"
-            android:onClick="enterOpenAnswer"
-            android:layout_marginTop="20dp"
+            android:onClick=""
+            android:layout_marginTop="@dimen/sendButtonTopMargin"
             android:textSize="@dimen/buttonText" />
         
         
