@@ -106,7 +106,7 @@
     <string name="pQuestion4_answerB">No it shows no errors</string>
     <string name="pQuestion4_nextIDB">6</string>
     <string name="pQuestion4_imageA">error_icon</string>
-    <string name="pQuestion4_imageB">no_error_icon</string>
+    <string name="pQuestion4_imageB">computer_scherm_aan</string>
 
     <string name="pQuestion5_question">Please write down the error message in the Box below</string>
     <string name="pQuestion5_nextIDA">Please try to reinstall the program.</string>
@@ -182,7 +182,7 @@
     <string name="sQuestion4_answerB">No it doesn\'t</string>
     <string name="sQuestion4_nextIDB">6</string>
     <string name="sQuestion4_imageA">error_icon</string>
-    <string name="sQuestion4_imageB">no_error_icon</string>
+    <string name="sQuestion4_imageB">computer_scherm_aan</string>
 
     <string name="sQuestion5_question">Please describe the messages</string>
     <string name="sQuestion5_nextIDA">The app doesn\'t contain enough information to help. Please click no to contact support.</string>
