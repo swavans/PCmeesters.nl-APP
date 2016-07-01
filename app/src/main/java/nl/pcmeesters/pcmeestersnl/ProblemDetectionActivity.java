@@ -506,8 +506,7 @@ public class ProblemDetectionActivity extends BottomBarActivity{
 
     public void helpMe(View view)
     {
-        finishAffinity();
-        Toast toast = Toast.makeText(this,"help me!!!1!",Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this,"Hulp is op dit moment niet beschikbaar. Klik onderaan op een van de contact buttons om contact op te nemen",Toast.LENGTH_SHORT);
         toast.show();
     }
 

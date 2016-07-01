@@ -8,9 +8,10 @@
 
     <LinearLayout
         android:layout_gravity="center"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-
+        android:padding="@dimen/paddingAll1st"
+        android:layout_marginBottom="@dimen/marginBottom1st"
+        android:layout_marginTop="@dimen/marginTop1st"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -24,7 +25,7 @@
             android:id="@+id/tip"
             android:text="@string/question_3"
             android:textSize="@dimen/textSizeQuestion"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="@dimen/marginBetweenButtons" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -33,61 +34,56 @@
             android:text="@string/problem_solved"
             android:id="@+id/question"
             android:layout_gravity="center_horizontal"
-            android:textSize="@dimen/answerTextSize" />
+            android:textSize="@dimen/answerTextSize"
+            android:layout_marginBottom="@dimen/marginBetweenButtons"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <GridLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:rowCount="2"
+            android:columnCount="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
 
-            <LinearLayout
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
-        <Button
-            android:background = "@drawable/rounded_button"
-            android:layout_width="@dimen/button_size"
-            android:layout_height="@dimen/button_size"
-            android:id="@+id/buttonA"
-            android:layout_gravity="center_horizontal"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="buttonA"
-            android:layout_marginTop="15dp"
-            android:onClick="changeTextA"
-            android:clickable="true"
-            android:text="@string/yes_button"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/buttonText" />
-            </LinearLayout>
-
-            <LinearLayout
+            <Button
+                android:layout_margin="@dimen/marginBetweenButtons"
+                android:background = "@drawable/rounded_button"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:id="@+id/buttonA"
                 android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="buttonA"
+                android:onClick="changeTextA"
+                android:clickable="true"
+                android:text="@string/yes_button"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/buttonText"
+                android:layout_row="0"
+                android:layout_column="0" />
 
-        <Button
-            android:background = "@drawable/rounded_button"
+            <Button
+                android:layout_margin="@dimen/marginBetweenButtons"
+                android:background = "@drawable/rounded_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:id="@+id/buttonB"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:padding="10dp"
             android:scaleType="fitCenter"
             android:contentDescription="buttonB"
-            android:layout_marginTop="15dp"
             android:onClick="changeTextB"
             android:text="@string/contact_support"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/buttonText" />
-            </LinearLayout>
+            android:textSize="@dimen/buttonText"
+                android:layout_row="0"
+                android:layout_column="1" />
 
-        </LinearLayout>
+        </GridLayout>
 
 </LinearLayout>
 

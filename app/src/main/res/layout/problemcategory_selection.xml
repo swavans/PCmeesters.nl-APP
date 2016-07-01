@@ -40,7 +40,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
-                        android:onClick="internetProblems"/>
+                        android:onClick="internetProblems"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -60,7 +61,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:onClick="installingProblems"/>
+                        android:onClick="installingProblems"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -82,6 +84,7 @@
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
                         android:onClick="slowComputer"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"
                         />
                     <TextView
                         android:layout_width="@dimen/answerWidth"
@@ -103,7 +106,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:onClick="computerWontGoOn"/>
+                        android:onClick="computerWontGoOn"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -123,7 +127,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
-                        android:onClick="computerVirus"/>
+                        android:onClick="computerVirus"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -145,7 +150,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:onClick="printerproblem"/>
+                        android:onClick="printerproblem"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -166,7 +172,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonA"
-                        android:onClick="otherDeviceProblem" />
+                        android:onClick="otherDeviceProblem"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -187,7 +194,8 @@
                         android:padding="10dp"
                         android:scaleType="fitCenter"
                         android:contentDescription="buttonB"
-                        android:onClick="other"/>
+                        android:onClick="other"
+                        android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
                     <TextView
                         android:layout_width="@dimen/answerWidth"
                         android:layout_height="wrap_content"
@@ -195,7 +203,8 @@
                         android:textAlignment="center"
                         android:text="@string/other_problems_text"
                         android:textSize="@dimen/answerTextSize"
-                       />
+                        android:layout_marginBottom="@dimen/marginBetweenButtons"
+                        />
 
         </GridLayout>
     </ScrollView>

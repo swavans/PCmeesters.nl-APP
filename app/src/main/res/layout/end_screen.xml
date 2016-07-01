@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_gravity="center"
         android:orientation="vertical"
         android:layout_marginTop="@dimen/marginTop1st"
         android:layout_marginBottom="@dimen/marginBottom1st"
@@ -36,7 +37,8 @@
             android:onClick="exit"
             android:background="@drawable/rounded_button"
             android:layout_marginTop="@dimen/sendButtonTopMargin"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:textSize="@dimen/buttonText"/>
 
 
     </LinearLayout>

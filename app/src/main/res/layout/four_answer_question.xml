@@ -3,17 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true">
     <include layout="@layout/top_bar" />
-
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@id/imageView"
+        android:layout_gravity="right"
+        android:adjustViewBounds="true"
+        android:background="@android:drawable/ic_menu_help"
+        android:clickable="true"
+        android:longClickable="true"
+        android:id="@+id/helpButton"
+        android:src="@android:drawable/ic_menu_help"
+        android:visibility="visible"
+        app:backgroundTint="#1CAFDB"
+        android:onClick="helpMe"
+        />
     <LinearLayout
-        android:layout_gravity="top"
+        android:layout_gravity="center"
         android:layout_marginTop="@dimen/marginTop1st"
         android:layout_marginBottom="@dimen/marginBottom1st"
         android:padding="@dimen/paddingAll1st"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="match_parent"
@@ -144,6 +161,7 @@
     </ScrollView>
     </LinearLayout>
 
+    <!--android:onClick="helpMe"/>-->
     <include layout="@layout/bottom_bar" />
 
 

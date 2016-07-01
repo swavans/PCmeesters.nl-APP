@@ -7,23 +7,28 @@
     android:fitsSystemWindows="true"
   >
     <include layout="@layout/top_bar" />
-
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@id/imageView"
+        android:layout_gravity="right"
+        android:adjustViewBounds="true"
+        android:background="@android:drawable/ic_menu_help"
+        android:clickable="true"
+        android:longClickable="true"
+        android:id="@+id/helpButton"
+        android:src="@android:drawable/ic_menu_help"
+        app:backgroundTint="#1CAFDB"
+        android:onClick="helpMe"/>
     <LinearLayout
-        android:layout_gravity="top"
-        android:layout_marginTop="110dp"
-        android:padding="20dp"
-
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginTop1st"
+        android:layout_marginBottom="@dimen/marginBottom1st"
+        android:padding="@dimen/paddingAll1st"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-            android:layout_marginBottom="15dp">
-
-        </LinearLayout>
 
 
         <TextView
@@ -34,73 +39,64 @@
             android:id="@+id/question"
             android:text="@string/question_3"
             android:textSize="@dimen/textSizeQuestion"
-            android:layout_marginBottom="10dp" />
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/marginBetweenButtons" />
+        <GridLayout
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:orientation="vertical"
             android:gravity="center">
 
-            <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
         <ImageButton
             android:background = "@drawable/rounded_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:id="@+id/buttonA"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:src="@drawable/computer_scherm_aan"
             android:padding="10dp"
             android:scaleType="fitCenter"
             android:contentDescription="buttonA"
-
             android:onClick="changeTextA"
-            android:clickable="true" />
+            android:clickable="true"
+            android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/answerWidth"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:id="@+id/answerA"
             android:text="TEST"
+            android:textSize="@dimen/answerTextSize"
+            android:layout_marginBottom="@dimen/marginBetweenButtons"/>
 
-            android:textSize="@dimen/answerTextSize" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                android:padding="10dp">
 
         <ImageButton
             android:background = "@drawable/rounded_button"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:id="@+id/buttonB"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:src="@drawable/notebook_scherm_aan"
             android:padding="10dp"
             android:scaleType="fitCenter"
             android:contentDescription="buttonB"
-            android:layout_marginTop="15dp"
-            android:onClick="changeTextB" />
+            android:onClick="changeTextB"
+            android:layout_marginBottom="@dimen/buttonToAnswerMargin"/>
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="@dimen/answerWidth"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:id="@+id/answerB"
             android:text="@string/awnser_b_to_question_3"
-            android:textSize="@dimen/answerTextSize" />
-            </LinearLayout>
+            android:textSize="@dimen/answerTextSize"
+            android:layout_marginBottom="@dimen/marginBetweenButtons"/>
 
-        </LinearLayout>
+        </GridLayout>
 
 </LinearLayout>
 

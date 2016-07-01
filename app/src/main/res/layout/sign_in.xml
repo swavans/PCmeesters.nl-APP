@@ -7,10 +7,11 @@
     tools:context=".SignInActivity">
     <include layout="@layout/top_bar" />
     <LinearLayout
-        android:layout_margin="40dp"
-        android:layout_gravity="center"
 
-
+        android:layout_gravity="top"
+        android:layout_marginTop="@dimen/marginTop1st"
+        android:layout_marginBottom="@dimen/marginBottom1st"
+        android:padding="@dimen/paddingAll1st"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -24,7 +25,7 @@
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"
             android:textSize="@dimen/textSizeQuestion"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="@dimen/marginBetweenButtons" />
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
