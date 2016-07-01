@@ -23,6 +23,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/contactSupport"
             android:textSize="@dimen/textSizeQuestion"/>
+
 <android.support.v4.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -38,7 +39,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/namef"
                 android:layout_row="0"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -47,7 +50,9 @@
                 android:ems="10"
                 android:id="@+id/nameEnterd"
                 android:layout_row="0"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +60,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/e_mailf"
                 android:layout_row="1"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -64,7 +71,9 @@
                 android:ems="10"
                 android:id="@+id/emailEntered"
                 android:layout_row="1"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -72,7 +81,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/phone"
                 android:layout_row="2"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -81,7 +92,9 @@
                 android:ems="10"
                 android:id="@+id/phoneEntered"
                 android:layout_row="2"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,7 +102,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/addressf"
                 android:layout_row="3"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -98,7 +113,9 @@
                 android:ems="10"
                 android:id="@+id/adressEntered"
                 android:layout_row="3"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,7 +123,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/zipcodef"
                 android:layout_row="4"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -114,7 +133,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/brand_and_modelf"
                 android:layout_row="5"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -123,7 +144,9 @@
                 android:ems="10"
                 android:id="@+id/zipCodeEntered"
                 android:layout_row="4"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -131,7 +154,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/additional_comment"
                 android:layout_row="6"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:textSize="@dimen/answerTextSize"
+                />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -140,7 +165,9 @@
                 android:id="@+id/brandAndModelEntered"
                 android:layout_row="5"
                 android:ems="10"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:textSize="@dimen/answerTextSize"
+                />
 
 
             <EditText
@@ -151,20 +178,19 @@
                 android:layout_row="6"
                 android:ems="10"
                 android:layout_column="1"
-
-
+                android:textSize="@dimen/answerTextSize"
                  />
 
         </GridLayout>
 </android.support.v4.widget.NestedScrollView>
         <Button
-            android:layout_width="150dp"
+            android:layout_width="@dimen/sendButtonSize"
             android:layout_height="wrap_content"
             android:text="@string/send"
             android:background="@drawable/rounded_button"
             android:textColor="#ffffff"
             android:layout_gravity="bottom|center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="@dimen/sendButtonTopMargin"
             android:onClick="sendForm"
             android:textSize="@dimen/buttonText" />
     </LinearLayout>
