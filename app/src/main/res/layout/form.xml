@@ -7,22 +7,25 @@
     tools:context=".SignInActivity">
     <include layout="@layout/top_bar" />
     <LinearLayout
-        android:layout_margin="40dp"
+        android:layout_marginTop="@dimen/margintTop1st"
+        android:layout_marginBottom="@dimen/marginBottom1st"
+        android:padding="@dimen/paddingAll1st"
         android:layout_gravity="center"
-
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:isScrollContainer="true">
 
 
         <TextView
-            android:layout_width="358dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/contactSupport"
             android:textSize="@dimen/textSizeQuestion"/>
-
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -153,7 +156,7 @@
                  />
 
         </GridLayout>
-
+</android.support.v4.widget.NestedScrollView>
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"

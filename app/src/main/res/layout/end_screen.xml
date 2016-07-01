@@ -11,9 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="100dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margintTop1st"
+        android:layout_marginBottom="@dimen/marginBottom1st"
+        android:padding="@dimen/paddingAll1st">
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,17 +25,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/marginBetweenTextsTop"
             android:gravity="center"
             android:text="@string/procces_soon_msg"
             android:textSize="@dimen/textSizeQuestion"/>
         <Button
-            android:layout_width="158dp"
+            android:layout_width="@dimen/sendButtonSize"
             android:layout_height="wrap_content"
             android:text="@string/exit_pcmeester"
             android:onClick="exit"
             android:background="@drawable/rounded_button"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/sendButtonTopMargin"
             android:textColor="#ffffff" />
 
 

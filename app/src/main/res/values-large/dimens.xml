@@ -1,8 +1,11 @@
 <resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">14dp</dimen>
     <dimen name="button_size">78dp</dimen>
     <dimen name="contact_image_size">28dp</dimen>
     <dimen name="textSizeQuestion">18sp</dimen>
     <dimen name="answerTextSize">16sp</dimen>
     <dimen name="buttonText">10sp</dimen>
+    <dimen name="sendButtonSize">150dp</dimen>
+    <dimen name="contactNowBottom">15sp</dimen>
 </resources>

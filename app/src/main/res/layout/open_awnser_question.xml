@@ -31,7 +31,7 @@
                 android:nestedScrollingEnabled="true"
                 android:textSize="@dimen/answerTextSize" />
         <Button
-            android:layout_width="150dp"
+            android:layout_width="@dimen/sendButtonSize"
             android:layout_height="wrap_content"
             android:text="@string/submit"
             android:background="@drawable/rounded_button"

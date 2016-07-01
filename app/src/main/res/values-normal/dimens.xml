@@ -8,10 +8,4 @@
     <dimen name="buttonText">10sp</dimen>
     <dimen name="sendButtonSize">150dp</dimen>
     <dimen name="contactNowBottom">15sp</dimen>
-    <dimen name="contactButtonTextSize">12sp</dimen>
-    <dimen name="margintTop1st">120dp</dimen>
-    <dimen name="marginBottom1st">100dp</dimen>
-    <dimen name="sendButtonTopMargin">20dp</dimen>
-    <dimen name="marginBetweenTextsTop">50dp</dimen>
-    <dimen name="paddingAll1st">20dp</dimen>
 </resources>
