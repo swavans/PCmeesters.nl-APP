@@ -22,6 +22,7 @@ public abstract class BottomBarActivity extends AppCompatActivity {
         }
     }
 
+
     public void mail(View view)
     {
         /* Create the Intent */

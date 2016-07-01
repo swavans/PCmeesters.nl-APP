@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:baselineAligned="false"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".ProblemDetectionActivity"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/sign_in">
@@ -24,17 +25,17 @@
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/imageView"
+        android:layout_below="@+id/imageView"
         android:layout_alignRight="@id/imageView"
         android:layout_gravity="right"
         android:adjustViewBounds="true"
         android:background="@android:drawable/ic_menu_help"
         android:clickable="true"
         android:longClickable="true"
+        android:id="@+id/helpButton"
         android:src="@android:drawable/ic_menu_help"
         android:visibility="visible"
-        android:layout_marginTop="50dp"
-        app:backgroundTint="#1CAFDB" />
-    //android:onClick="onHelpPressed"/>
+        app:backgroundTint="#1CAFDB"/>
+        <!--android:onClick="helpMe"/>-->
 
 </RelativeLayout>
