@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
@@ -501,4 +503,12 @@ public class ProblemDetectionActivity extends BottomBarActivity{
         questions.add(question8);
         questions.add(question9);
     }
+
+    public void helpMe(View view)
+    {
+        finishAffinity();
+        Toast toast = Toast.makeText(this,"help me!!!1!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
 }
